@@ -19,21 +19,21 @@ namespace Fitessa
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultUI(); // <-- This line is important!
             builder.Services.AddControllersWithViews();
+            builder.Services.AddRazorPages();
             builder.Services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
 
             var app = builder.Build();
 
-            // Seed the database with initial data
             using (var scope = app.Services.CreateScope())
             {
                 var services = scope.ServiceProvider;
                 DbInitializer.Seed(services);
             }
 
-            // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())
             {
                 app.UseMigrationsEndPoint();
@@ -50,6 +50,7 @@ namespace Fitessa
 
             app.UseRouting();
 
+            app.UseAuthentication(); // <--- This must come BEFORE UseAuthorization
             app.UseAuthorization();
 
             app.MapControllerRoute(
