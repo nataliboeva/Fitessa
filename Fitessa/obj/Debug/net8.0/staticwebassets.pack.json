@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Fitessa.ai3jli5lx1.bundle.scp.css"
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.Web.bundle.scp.css",
+      "PackagePath": "staticwebassets\\Fitessa.Web.o9utgj66h5.bundle.scp.css"
     },
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\site.css",
@@ -245,24 +245,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fitessa.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fitessa.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fitessa.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fitessa.Web.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Fitessa.props",
-      "PackagePath": "build\\Fitessa.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Fitessa.Web.props",
+      "PackagePath": "build\\Fitessa.Web.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Fitessa.props",
-      "PackagePath": "buildMultiTargeting\\Fitessa.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Fitessa.Web.props",
+      "PackagePath": "buildMultiTargeting\\Fitessa.Web.props"
     },
     {
-      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Fitessa.props",
-      "PackagePath": "buildTransitive\\Fitessa.props"
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Fitessa.Web.props",
+      "PackagePath": "buildTransitive\\Fitessa.Web.props"
     }
   ],
   "ElementsToRemove": []

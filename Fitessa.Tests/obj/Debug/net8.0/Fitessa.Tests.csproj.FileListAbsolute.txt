@@ -1,0 +1,12 @@
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\bin\Debug\net8.0\Fitessa.Tests.deps.json
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\bin\Debug\net8.0\Fitessa.Tests.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\bin\Debug\net8.0\Fitessa.Tests.pdb
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.AssemblyInfoInputs.cache
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.AssemblyInfo.cs
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.csproj.CoreCompileInputs.cache
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.sourcelink.json
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\refint\Fitessa.Tests.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.pdb
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\ref\Fitessa.Tests.dll

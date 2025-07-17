@@ -1,6 +1,9 @@
 using Fitessa.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Fitessa.Data.Entities;
+using Fitessa.Services.Interfaces;
+using Fitessa.Services.Services;
 
 namespace Fitessa
 {
@@ -16,11 +19,19 @@ namespace Fitessa
                 options.UseSqlServer(connectionString));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            builder.Services.AddDefaultIdentity<ApplicationUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>();
             builder.Services.AddControllersWithViews();
+            builder.Services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
 
             var app = builder.Build();
+
+            // Seed the database with initial data
+            using (var scope = app.Services.CreateScope())
+            {
+                var services = scope.ServiceProvider;
+                DbInitializer.Seed(services);
+            }
 
             // Configure the HTTP request pipeline.
             if (app.Environment.IsDevelopment())

@@ -1,0 +1,16 @@
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\bin\Debug\net8.0\Fitessa.Services.deps.json
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\bin\Debug\net8.0\Fitessa.Services.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\bin\Debug\net8.0\Fitessa.Services.pdb
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\bin\Debug\net8.0\Fitessa.Data.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\bin\Debug\net8.0\Fitessa.Data.pdb
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.csproj.AssemblyReference.cache
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.AssemblyInfoInputs.cache
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.AssemblyInfo.cs
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.csproj.CoreCompileInputs.cache
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.sourcelink.json
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa..394D64A0.Up2Date
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\refint\Fitessa.Services.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\Fitessa.Services.pdb
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Services\obj\Debug\net8.0\ref\Fitessa.Services.dll

@@ -1,0 +1,22 @@
+@model IEnumerable<Fitessa.Data.Entities.SubscriptionPlan>
+
+<h2>Available Subscription Plans</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Duration (days)</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var plan in Model)
+    {
+        <tr>
+            <td>@plan.Name</td>
+            <td>@plan.Price.ToString("C")</td>
+            <td>@plan.DurationDays</td>
+        </tr>
+    }
+    </tbody>
+</table> 
