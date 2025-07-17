@@ -13,7 +13,6 @@ namespace Fitessa.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString));
@@ -21,7 +20,7 @@ namespace Fitessa.Web
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultUI(); // <-- This line is important!
+                .AddDefaultUI();
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
             builder.Services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
@@ -41,7 +40,6 @@ namespace Fitessa.Web
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
 
@@ -50,7 +48,7 @@ namespace Fitessa.Web
 
             app.UseRouting();
 
-            app.UseAuthentication(); // <--- This must come BEFORE UseAuthorization
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.MapControllerRoute(

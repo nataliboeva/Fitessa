@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aBwvlycCjmLRv7JpwI+vnN2VUD9zeWEIU9HRLGYZu3w=",
+  "Hash": "Wv1Wbng3up1kbyXs+hR9Yd3NyQCmZt61tV9WD6xmZ54=",
   "Source": "Fitessa.Web",
   "BasePath": "_content/Fitessa.Web",
   "Mode": "Default",
@@ -1291,8 +1291,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "o9utgj66h5",
-      "Integrity": "fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=",
+      "Fingerprint": "7zyz5sfl91",
+      "Integrity": "0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Fitessa.Web.styles.css"
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "o9utgj66h5",
-      "Integrity": "fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=",
+      "Fingerprint": "7zyz5sfl91",
+      "Integrity": "0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.Web.bundle.scp.css"
@@ -2745,6 +2745,96 @@
       ]
     },
     {
+      "Route": "Fitessa.Web.7zyz5sfl91.bundle.scp.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.Web.bundle.scp.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "935"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 22:10:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7zyz5sfl91"
+        },
+        {
+          "Name": "label",
+          "Value": "Fitessa.Web.bundle.scp.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts="
+        }
+      ]
+    },
+    {
+      "Route": "Fitessa.Web.7zyz5sfl91.styles.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Fitessa.Web.styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "935"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 17 Jul 2025 22:10:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7zyz5sfl91"
+        },
+        {
+          "Name": "label",
+          "Value": "Fitessa.Web.styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts="
+        }
+      ]
+    },
+    {
       "Route": "Fitessa.Web.bundle.scp.css",
       "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.Web.bundle.scp.css",
       "Selectors": [],
@@ -2755,7 +2845,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1129"
+          "Value": "935"
         },
         {
           "Name": "Content-Type",
@@ -2763,11 +2853,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=\""
+          "Value": "\"0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 11:51:27 GMT"
+          "Value": "Thu, 17 Jul 2025 22:10:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2777,97 +2867,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ="
-        }
-      ]
-    },
-    {
-      "Route": "Fitessa.Web.o9utgj66h5.bundle.scp.css",
-      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.Web.bundle.scp.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 11:51:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o9utgj66h5"
-        },
-        {
-          "Name": "label",
-          "Value": "Fitessa.Web.bundle.scp.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ="
-        }
-      ]
-    },
-    {
-      "Route": "Fitessa.Web.o9utgj66h5.styles.css",
-      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Fitessa.Web.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1129"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 11:51:27 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "o9utgj66h5"
-        },
-        {
-          "Name": "label",
-          "Value": "Fitessa.Web.styles.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ="
+          "Value": "sha256-0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts="
         }
       ]
     },
@@ -2882,7 +2882,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1129"
+          "Value": "935"
         },
         {
           "Name": "Content-Type",
@@ -2890,11 +2890,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=\""
+          "Value": "\"0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 11:51:27 GMT"
+          "Value": "Thu, 17 Jul 2025 22:10:36 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2904,7 +2904,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-fFq+hfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ="
+          "Value": "sha256-0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts="
         }
       ]
     },

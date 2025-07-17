@@ -1,0 +1,42 @@
+@model Fitessa.Data.Entities.SubscriptionPlan
+@{
+    ViewData["Title"] = "Create Subscription Plan";
+}
+
+<h1>Create Subscription Plan</h1>
+@if (TempData["PlanCreated"] != null)
+{
+    <div class="alert alert-success">@TempData["PlanCreated"]</div>
+}
+<form asp-action="Create" method="post" class="card" style="max-width: 500px;">
+    <div class="card-body">
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="mb-3">
+            <label asp-for="Name" class="form-label"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Price" class="form-label"></label>
+            <input asp-for="Price" class="form-control" />
+            <span asp-validation-for="Price" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="DurationDays" class="form-label"></label>
+            <input asp-for="DurationDays" class="form-control" />
+            <span asp-validation-for="DurationDays" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="IsActive" class="form-label"></label>
+            <input asp-for="IsActive" type="checkbox" class="form-check-input ms-2" />
+            <span asp-validation-for="IsActive" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success">Create</button>
+        <a asp-action="Index" class="btn btn-secondary ms-2">Back to List</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+} 

@@ -31,7 +31,6 @@ namespace Fitessa.Data
             modelBuilder.Entity<WorkoutProgramExercise>()
                 .HasKey(wpe => new { wpe.WorkoutProgramId, wpe.ExerciseId });
 
-            // Configure decimal precision
             modelBuilder.Entity<MeasurementLog>()
                 .Property(m => m.WeightKg)
                 .HasPrecision(10, 2);

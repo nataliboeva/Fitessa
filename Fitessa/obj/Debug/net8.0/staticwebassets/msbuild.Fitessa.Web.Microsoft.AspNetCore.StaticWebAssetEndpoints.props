@@ -24,17 +24,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 10:23:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/Fitessa.Web.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Fitessa.Web.o9utgj66h5.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/Fitessa.Web.7zyz5sfl91.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Fitessa.Web.7zyz5sfl91.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-fFq\u002BhfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1129"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fFq\u002BhfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Jul 2025 11:51:27 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7zyz5sfl91"},{"Name":"integrity","Value":"sha256-0\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts="},{"Name":"label","Value":"_content/Fitessa.Web/Fitessa.Web.bundle.scp.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"935"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Jul 2025 22:10:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/Fitessa.Web.o9utgj66h5.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Fitessa.Web.o9utgj66h5.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/Fitessa.Web.bundle.scp.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Fitessa.Web.7zyz5sfl91.bundle.scp.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o9utgj66h5"},{"Name":"integrity","Value":"sha256-fFq\u002BhfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ="},{"Name":"label","Value":"_content/Fitessa.Web/Fitessa.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1129"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022fFq\u002BhfrBckl1WHqZSYwzCfvD8XMfzsu79mEk2IEUfDQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Jul 2025 11:51:27 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"935"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Jul 2025 22:10:36 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>

@@ -1,0 +1,23 @@
+@model Fitessa.Data.Entities.SubscriptionPlan
+@{
+    ViewData["Title"] = "Plan Details";
+}
+
+<h1>@Model.Name</h1>
+<div class="mb-3">
+    <strong>Price:</strong> @Model.Price.ToString("C")
+</div>
+<div class="mb-3">
+    <strong>Duration:</strong> @Model.DurationDays days
+</div>
+<div class="mb-3">
+    <strong>Status:</strong> @(Model.IsActive ? "Active" : "Inactive")
+</div>
+@if (User.Identity.IsAuthenticated && Model.IsActive)
+{
+    <form asp-action="Purchase" asp-route-id="@Model.Id" method="post">
+        @Html.AntiForgeryToken()
+        <button type="submit" class="btn btn-success">Purchase</button>
+    </form>
+}
+<a asp-action="Index" class="btn btn-secondary mt-2">Back to Plans</a> 
