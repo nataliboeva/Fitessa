@@ -1,0 +1,48 @@
+@model IEnumerable<Fitessa.Data.Entities.ApplicationUser>
+@{
+    ViewData["Title"] = "User Management";
+    var userRoles = ViewBag.UserRoles as Dictionary<string, IList<string>>;
+}
+
+<h1>User Management</h1>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Roles</th>
+            <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var user in Model)
+    {
+        var roles = userRoles != null && userRoles.ContainsKey(user.Id) ? userRoles[user.Id] : new List<string>();
+        <tr>
+            <td>@user.FirstName @user.LastName</td>
+            <td>@user.Email</td>
+            <td>@user.UserName</td>
+            <td>
+                @foreach (var role in roles)
+                {
+                    <span class="badge @(role == "Admin" ? "bg-danger" : "bg-secondary")">@role</span>
+                }
+            </td>
+            <td>
+                @(user.IsBanned ? "Banned" : "Active")
+                @if (user.Email != User.Identity.Name)
+                {
+                    <form asp-action="@(user.IsBanned ? "Unban" : "Ban")" method="post" class="d-inline ms-2">
+                        @Html.AntiForgeryToken()
+                        <input type="hidden" name="id" value="@user.Id" />
+                        <button type="submit" class="btn btn-sm @(user.IsBanned ? "btn-success" : "btn-warning")">
+                            @(user.IsBanned ? "Unban" : "Ban")
+                        </button>
+                    </form>
+                }
+            </td>
+        </tr>
+    }
+    </tbody>
+</table> 

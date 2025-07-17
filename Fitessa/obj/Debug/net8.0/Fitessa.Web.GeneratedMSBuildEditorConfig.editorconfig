@@ -24,6 +24,14 @@ build_property.EnableCodeStyleSeverity =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Admin/Dashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Admin/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVXNlcnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Exercises/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlcmNpc2VzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -38,6 +46,14 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Profile/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Profile/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Shared/Error.cshtml]

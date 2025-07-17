@@ -1,0 +1,35 @@
+@model Fitessa.Data.Entities.ApplicationUser
+@using Microsoft.AspNetCore.Identity
+@inject UserManager<Fitessa.Data.Entities.ApplicationUser> UserManager
+
+@{
+    ViewData["Title"] = "My Profile";
+    var isAdmin = User.IsInRole("Admin");
+}
+
+<h1>My Profile</h1>
+<div class="card" style="max-width: 500px;">
+    <div class="card-body">
+        <div class="d-flex align-items-center mb-3">
+            <img src="@Model.ProfilePictureUrl" alt="Profile Picture" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
+            <div>
+                <h4 class="mb-0">@Model.FirstName @Model.LastName</h4>
+                <span class="badge bg-secondary">@Model.Gender</span>
+                @if (isAdmin)
+                {
+                    <span class="badge bg-danger">Admin</span>
+                }
+            </div>
+        </div>
+        <div class="mb-2">
+            <strong>Email:</strong> @Model.Email
+        </div>
+        <div class="mb-2">
+            <strong>Username:</strong> @Model.UserName
+        </div>
+        <div class="mb-2">
+            <strong>Age:</strong> @Model.Age
+        </div>
+        <a asp-action="Edit" class="btn btn-primary mt-2">Edit Profile</a>
+    </div>
+</div> 
