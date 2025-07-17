@@ -1,0 +1,19 @@
+@model Fitessa.Data.Entities.Exercise
+
+@{
+    ViewData["Title"] = "Exercise Details";
+}
+
+<h1>@Model.Name</h1>
+
+<div class="mb-3">
+    <strong>Description:</strong> @Model.Description
+</div>
+<div class="mb-3">
+    <strong>Muscle Group:</strong> @Model.MuscleGroup
+</div>
+<div class="mb-3">
+    <strong>Difficulty Level:</strong> @Model.DifficultyLevel
+</div>
+
+<a asp-action="Index" class="btn btn-secondary">Back to List</a> 

@@ -5,7 +5,7 @@ using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
 using Fitessa.Services.Services;
 
-namespace Fitessa
+namespace Fitessa.Web
 {
     public class Program
     {

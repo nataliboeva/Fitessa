@@ -158,3 +158,4 @@ C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\refint\Fitessa.W
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.pdb
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.genruntimeconfig.cache
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\ref\Fitessa.Web.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

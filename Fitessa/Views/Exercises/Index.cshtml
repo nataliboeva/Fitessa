@@ -1,0 +1,68 @@
+@model IEnumerable<Fitessa.Data.Entities.Exercise>
+
+@{
+    ViewData["Title"] = "Exercises";
+    var muscleGroups = ViewBag.MuscleGroups as List<string>;
+    var difficulties = ViewBag.Difficulties as List<string>;
+    var query = ViewContext.HttpContext.Request.Query;
+    string selectedMuscleGroup = query["muscleGroup"];
+    string selectedDifficulty = query["difficulty"];
+    string searchValue = query["search"];
+}
+
+<h1>Exercises</h1>
+
+<form method="get" class="row g-3 mb-4">
+    <div class="col-md-4">
+        <input type="text" name="search" value="@searchValue" class="form-control" placeholder="Search by name or description" />
+    </div>
+    <div class="col-md-3">
+        <select name="muscleGroup" class="form-select">
+            <option value="">All Muscle Groups</option>
+            @if (muscleGroups != null)
+            {
+                foreach (var mg in muscleGroups)
+                {
+                    @:<option value="@mg"@(mg == selectedMuscleGroup ? " selected" : "")>@mg</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-3">
+        <select name="difficulty" class="form-select">
+            <option value="">All Difficulties</option>
+            @if (difficulties != null)
+            {
+                foreach (var d in difficulties)
+                {
+                    @:<option value="@d"@(d == selectedDifficulty ? " selected" : "")>@d</option>
+                }
+            }
+        </select>
+    </div>
+    <div class="col-md-2">
+        <button type="submit" class="btn btn-primary w-100">Filter</button>
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Muscle Group</th>
+            <th>Difficulty Level</th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var exercise in Model)
+    {
+        <tr>
+            <td><a asp-action="Details" asp-route-id="@exercise.Id">@exercise.Name</a></td>
+            <td>@exercise.Description</td>
+            <td>@exercise.MuscleGroup</td>
+            <td>@exercise.DifficultyLevel</td>
+        </tr>
+    }
+    </tbody>
+</table> 
