@@ -18,5 +18,44 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background: url('/img/silver-matte-bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+body, .section-title h2, .section-title span, h1, h2, h3, h4, h5, h6, p, li, .ps-item, .ps-item h3, .ps-item ul li {
+    color: #222 !important;
+}
+a, a:visited {
+    color: #222 !important;
+}
+
+.ps-item {
+    background: #fff !important;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.07);
+    border: 1px solid #e5e7eb;
+}
+
+.ps-item h3, .ps-item ul li {
+    color: #222 !important;
+}
+
+/* Hero/Welcome text improvements */
+.hero-section .hi-text, .hero-section h1, .hero-section h2, .hero-section h3, .hero-section span {
+    color: #222 !important;
+    text-shadow: 0 2px 8px rgba(255,255,255,0.7), 0 1px 0 #fff;
+    font-weight: 700;
+    background: rgba(255,255,255,0.7);
+    border-radius: 8px;
+    padding: 0.5em 1em;
+    display: inline-block;
+}
+
+.hero-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-title h2, .section-title span {
+    color: #222 !important;
 }

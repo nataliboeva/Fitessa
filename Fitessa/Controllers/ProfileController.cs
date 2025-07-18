@@ -21,7 +21,7 @@ namespace Fitessa.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
-                return Challenge(); // Not logged in
+                return Challenge();
             }
             return View(user);
         }

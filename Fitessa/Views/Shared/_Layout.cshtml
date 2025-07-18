@@ -1,60 +1,142 @@
-﻿@using Microsoft.AspNetCore.Identity
-@using Fitessa.Data.Entities
-@inject SignInManager<ApplicationUser> SignInManager
-@inject UserManager<ApplicationUser> UserManager
+﻿@{
+    Layout = null;
+}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - Fitessa</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/Fitessa.styles.css" asp-append-version="true" />
+
+    <link href="https://fonts.googleapis.com/css?family=Muli:300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css" />
+    <link rel="stylesheet" href="~/template-bootstrap/gymlife-master/gymlife-master/css/style.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    @RenderSection("Styles", required: false)
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">Fitessa</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Exercises" asp-action="Index">Exercises</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="SubscriptionPlans" asp-action="Index">Subscription Plans</a>
-                        </li>
-                    </ul>
-                    <partial name="_LoginPartial" />
+    <div class="offcanvas-menu-overlay"></div>
+    <div class="offcanvas-menu-wrapper">
+        <div class="canvas-close">
+            <i class="fa fa-close"></i>
+        </div>
+        <div class="canvas-search search-switch">
+            <i class="fa fa-search"></i>
+        </div>
+        <nav class="canvas-menu mobile-menu">
+            <ul>
+                <li><a href="@Url.Action("Index", "Home")">Home</a></li>
+                <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+                <li><a href="@Url.Action("Index", "Exercises")">Exercises</a></li>
+                <li><a href="@Url.Action("Index", "SubscriptionPlans")">Plans</a></li>
+                <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li><a asp-controller="Profile" asp-action="Index">Profile</a></li>
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li><a href="@Url.Action("Index", "Admin")">Admin</a></li>
+                        <li><a asp-controller="AdminSubscriptionPlans" asp-action="Index">Manage Plans</a></li>
+                    }
+                    <li>
+                        <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                            <button type="submit" class="logout-btn nav-link">Logout</button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+                    <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+                }
+            </ul>
+        </nav>
+        <div id="mobile-menu-wrap"></div>
+        <div class="canvas-social">
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-youtube-play"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+        </div>
+    </div>
+    <header class="header-section">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="logo">
+                        
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="nav-menu">
+                        <ul>
+                            <li class="@(ViewContext.RouteData.Values["controller"]?.ToString() == "Home" ? "active" : "")"><a href="@Url.Action("Index", "Home")">Home</a></li>
+                            <li><a href="@Url.Action("About", "Home")">About Us</a></li>
+                            <li><a href="@Url.Action("Index", "Exercises")">Exercises</a></li>
+                            <li><a href="@Url.Action("Index", "SubscriptionPlans")">Plans</a></li>
+                            <li><a href="@Url.Action("Contact", "Home")">Contact</a></li>
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <li><a asp-controller="Profile" asp-action="Index">Profile</a></li>
+                                @if (User.IsInRole("Admin"))
+                                {
+                                    <li><a href="@Url.Action("Index", "Admin")">Admin</a></li>
+                                    <li><a asp-controller="AdminSubscriptionPlans" asp-action="Index">Manage Plans</a></li>
+                                }
+                                <li>
+                                    <form asp-area="Identity" asp-page="/Account/Logout" method="post">
+                                        <button type="submit" class="logout-btn nav-link">Logout</button>
+                                    </form>
+                                </li>
+                            }
+                            else
+                            {
+                                <li><a asp-area="Identity" asp-page="/Account/Login">Login</a></li>
+                                <li><a asp-area="Identity" asp-page="/Account/Register">Register</a></li>
+                            }
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="top-option">
+                        <div class="to-search search-switch">
+                            <i class="fa fa-search"></i>
+                        </div>
+                        <div class="to-social">
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube-play"></i></a>
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - Fitessa - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="canvas-open">
+                <i class="fa fa-bars"></i>
+            </div>
         </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+    </header>
+
+    <main role="main">
+        @RenderBody()
+    </main>
+
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/jquery-3.3.1.min.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/bootstrap.min.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/masonry.pkgd.min.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/jquery.barfiller.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/jquery.slicknav.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/owl.carousel.min.js"></script>
+    <script src="~/template-bootstrap/gymlife-master/gymlife-master/js/main.js"></script>
+    @RenderSection("Scripts", required: false)
 </body>
 </html>

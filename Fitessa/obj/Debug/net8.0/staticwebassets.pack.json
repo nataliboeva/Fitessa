@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\Fitessa.Web.7zyz5sfl91.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\pricing-plans.css",
+      "PackagePath": "staticwebassets\\css\\pricing-plans.css"
+    },
+    {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
@@ -243,6 +247,1290 @@
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\about.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\about.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\blog-home.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\blog-home.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\blog-single.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\blog-single.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\contact.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\courses.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\courses.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\animate.min.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\animate.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\bootstrap.map",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\bootstrap.map"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\bootstrap\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\bootstrap\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\bootstrap\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\bootstrap\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\bootstrap\\bootstrap.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\bootstrap\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\jquery-ui.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\jquery-ui.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\linearicons.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\linearicons.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\main.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\main.map",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\main.map"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\nice-select.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\nice-select.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\css\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\css\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\elements.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\elements.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\Linearicons-Free.eot",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\Linearicons-Free.eot"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\Linearicons-Free.svg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\Linearicons-Free.svg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\Linearicons-Free.ttf",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\Linearicons-Free.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\Linearicons-Free.woff",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\Linearicons-Free.woff"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\Linearicons-Free.woff2",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\Linearicons-Free.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\template-bootstrap\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\404.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\404.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\Magnific-Popup-master.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\Magnific-Popup-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\OwlCarousel2-2.3.4.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\OwlCarousel2-2.3.4.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\SlickNav-master.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\SlickNav-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\barfiller-master.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\barfiller-master.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\bootstrap-4.2.1-dist.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\bootstrap-4.2.1-dist.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\flaticon.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\flaticon.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\font-awesome-4.7.0.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\font-awesome-4.7.0.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\sass.zip",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\Source\\sass.zip"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\about-us.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\about-us.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\blog-details.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\blog-details.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\blog.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\blog.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\bmi-calculator.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\bmi-calculator.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\class-details.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\class-details.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\class-timetable.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\class-timetable.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\contact.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\contact.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\barfiller.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\barfiller.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\flaticon.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\flaticon.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\font-awesome.min.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\font-awesome.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\magnific-popup.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\magnific-popup.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\slicknav.min.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\slicknav.min.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\style.css",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.eot",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.eot"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.svg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.svg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.ttf",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.woff",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.woff"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.woff2",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\FontAwesome.otf",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\FontAwesome.otf"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.eot",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.eot"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.svg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.svg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.ttf",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.ttf"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.woff",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.woff"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.woff2",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\fontawesome-webfont.woff2"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\gallery.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\gallery.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\about-us.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\about-us.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\blog-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\blog-profile.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\blog-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\comment-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\comment-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\comment-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\comment-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\comment-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\comment-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\details-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\details-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\details-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\details-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\details-hero.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\details-hero.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\quote-left.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\blog\\details\\quote-left.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\breadcrumb-bg.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\breadcrumb-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-details\\class-detailsl.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-details\\class-detailsl.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-details\\trainer-profile.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\classes\\class-details\\trainer-profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-6.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-7.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-8.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-9.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\gallery\\gallery-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\hero\\hero-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\hero\\hero-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\hero\\hero-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\hero\\hero-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\letest-blog\\latest-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\logo.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\services\\services-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\sidebar-banner.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\sidebar-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-6.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\team\\team-6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\testimonial\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\testimonial\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\testimonial\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\img\\testimonial\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\index.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery-3.3.1.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery-3.3.1.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery.barfiller.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery.barfiller.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery.slicknav.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\jquery.slicknav.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\main.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\masonry.pkgd.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\masonry.pkgd.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\main.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\main.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\services.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\services.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\team.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\team.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\about-img.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\about-img.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\b1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\b1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\b2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\b2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\b3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\b3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\banner-bg.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\banner-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\banner-img.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\banner-img.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\ads-banner.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\ads-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\blog-home-banner.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\blog-home-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\c1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\c1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\c2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\c2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\c3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\c3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\c4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\c4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\c5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\c5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\c6.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\c6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\cat-widget1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\cat-widget1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\cat-widget2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\cat-widget2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\cat-widget3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\cat-widget3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\feature-img1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\feature-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\feature-img2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\feature-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\feature-img3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\feature-img3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\feature-img4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\feature-img4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\feature-img5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\feature-img5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\next.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\next.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\post-img1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\post-img1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\post-img2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\post-img2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\pp1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\pp1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\pp2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\pp2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\pp3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\pp3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\pp4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\pp4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\prev.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\prev.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\s-img.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\s-img.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\blog\\user-info.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\blog\\user-info.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\cta-bg.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\cta-bg.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\cta-img.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\cta-img.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\a.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\a.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\a2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\a2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\d.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\disabled-check.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\disabled-check.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\disabled-radio.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\disabled-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f6.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f7.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\f8.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\f8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g5.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g5.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g6.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g6.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g7.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g7.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\g8.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\g8.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\primary-check.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\primary-check.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\primary-radio.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\primary-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\success-check.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\success-check.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\success-radio.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\success-radio.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\user1.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\user1.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\elements\\user2.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\elements\\user2.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\fav.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\fav.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\featured-class\\f1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\featured-class\\f1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\featured-class\\f2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\featured-class\\f2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\featured-class\\f3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\featured-class\\f3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\featured-class\\f4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\featured-class\\f4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\featured-class\\feature-img.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\featured-class\\feature-img.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\logo.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t1.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t1.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t1.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t2.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t2.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t2.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t3.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t3.png",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t3.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\t4.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\t4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\img\\top-banner.jpg",
+      "PackagePath": "staticwebassets\\template-bootstrap\\img\\top-banner.jpg"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\index.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\easing.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\hoverIntent.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\hoverIntent.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\jquery-ui.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\jquery-ui.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\jquery.ajaxchimp.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\jquery.ajaxchimp.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\jquery.magnific-popup.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\jquery.magnific-popup.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\jquery.nice-select.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\jquery.nice-select.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\jquery.tabs.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\jquery.tabs.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\mail-script.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\mail-script.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\main.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\superfish.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\superfish.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\vendor\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\vendor\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\js\\vendor\\jquery-2.2.4.min.js",
+      "PackagePath": "staticwebassets\\template-bootstrap\\js\\vendor\\jquery-2.2.4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\mail.php",
+      "PackagePath": "staticwebassets\\template-bootstrap\\mail.php"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\schedule.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\schedule.html"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_alert.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_badge.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_button-group.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_buttons.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_card.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_carousel.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_close.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_code.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_code.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_custom-forms.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_custom-forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_forms.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_functions.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_grid.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_images.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_input-group.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_jumbotron.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_jumbotron.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_list-group.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_media.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_media.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_mixins.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_modal.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_nav.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_navbar.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_pagination.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_popover.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_print.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_print.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_progress.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_reboot.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_root.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_tables.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_transitions.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_type.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_utilities.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\_variables.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_background-variant.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_background-variant.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_badge.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_float.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_grid-framework.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_grid-framework.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_hover.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_hover.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_nav-divider.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_nav-divider.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_navbar-align.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_navbar-align.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_screen-reader.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_screen-reader.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_size.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_size.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_table-row.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_table-row.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_text-emphasis.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_text-emphasis.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_text-hide.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_text-hide.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\mixins\\_visibility.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\mixins\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_align.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_align.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_background.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_background.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_borders.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_borders.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_display.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_display.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_embed.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_embed.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_flex.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_flex.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_float.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_float.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_position.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_screenreaders.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_screenreaders.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_sizing.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_sizing.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_spacing.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_spacing.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_text.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_text.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\bootstrap\\utilities\\_visibility.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\bootstrap\\utilities\\_visibility.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\main.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_blog.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_blog.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_contact.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_elements.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_elements.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_flexbox.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_flexbox.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_footer.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_footer.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_header.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_header.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_home.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_home.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_mixins.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_reset.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_reset.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\scss\\theme\\_variables.scss",
+      "PackagePath": "staticwebassets\\template-bootstrap\\scss\\theme\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\trainers.html",
+      "PackagePath": "staticwebassets\\template-bootstrap\\trainers.html"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fitessa.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

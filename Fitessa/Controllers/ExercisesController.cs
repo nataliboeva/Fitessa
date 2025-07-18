@@ -33,7 +33,6 @@ namespace Fitessa.Controllers
 
             var exercises = await query.ToListAsync();
 
-            // For dropdowns
             ViewBag.MuscleGroups = _context.Exercises.Select(e => e.MuscleGroup).Distinct().ToList();
             ViewBag.Difficulties = _context.Exercises.Select(e => e.DifficultyLevel).Distinct().ToList();
 

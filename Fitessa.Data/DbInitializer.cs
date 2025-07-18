@@ -14,7 +14,6 @@ namespace Fitessa.Data
             using var context = new ApplicationDbContext(
                 serviceProvider.GetRequiredService<DbContextOptions<ApplicationDbContext>>());
 
-            // Seed Subscription Plans
             if (!context.SubscriptionPlans.Any())
             {
                 context.SubscriptionPlans.AddRange(
@@ -24,7 +23,6 @@ namespace Fitessa.Data
                 );
             }
 
-            // Seed Exercises
             if (!context.Exercises.Any())
             {
                 context.Exercises.AddRange(
@@ -43,11 +41,9 @@ namespace Fitessa.Data
 
             context.SaveChanges();
 
-            // Seed Identity Roles and Users
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();
             var userManager = serviceProvider.GetRequiredService<UserManager<ApplicationUser>>();
 
-            // Seed Admin Role
             if (!roleManager.RoleExistsAsync("Admin").Result)
             {
                 roleManager.CreateAsync(new IdentityRole("Admin")).Wait();
@@ -57,7 +53,6 @@ namespace Fitessa.Data
                 roleManager.CreateAsync(new IdentityRole("User")).Wait();
             }
 
-            // Seed Admin User
             var adminEmail = "admin@fitessa.com";
             var adminUser = userManager.FindByEmailAsync(adminEmail).Result;
             if (adminUser == null)
@@ -70,13 +65,11 @@ namespace Fitessa.Data
                     LastName = "User",
                     EmailConfirmed = true,
                     Gender = "Other",
-                    ProfilePictureUrl = "/images/default-profile.png" // Added ProfilePictureUrl
+                    ProfilePictureUrl = "/images/default-profile.png"
                 };
                 userManager.CreateAsync(adminUser, "Admin123!").Wait();
                 userManager.AddToRoleAsync(adminUser, "Admin").Wait();
             }
-
-            // Seed Regular Users
             for (int i = 1; i <= 3; i++)
             {
                 var email = $"user{i}@fitessa.com";
@@ -90,7 +83,7 @@ namespace Fitessa.Data
                         LastName = "Test",
                         EmailConfirmed = true,
                         Gender = "Other",
-                        ProfilePictureUrl = "/images/default-profile.png" // Added ProfilePictureUrl
+                        ProfilePictureUrl = "/images/default-profile.png"
                     };
                     userManager.CreateAsync(user, $"User{i}123!").Wait();
                     userManager.AddToRoleAsync(user, "User").Wait();

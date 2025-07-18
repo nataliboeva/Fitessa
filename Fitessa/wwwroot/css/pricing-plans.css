@@ -1,0 +1,115 @@
+body {
+    /* Silver matte effect: multi-stop gradient and subtle noise overlay */
+    background: linear-gradient(120deg, #e3e4e8 0%, #f7f7f8 40%, #cfd1d4 100%);
+    position: relative;
+}
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.18;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQIW2P4z8DwHwAFgwJ/lw1U6wAAAABJRU5ErkJggg=='); /* tiny noise */
+}
+.pricing-section {
+    background: transparent;
+    padding: 60px 0 60px 0;
+    position: relative;
+    z-index: 1;
+}
+.pricing-section .section-title {
+    margin-bottom: 56px;
+    text-align: center;
+}
+.ps-item {
+    text-align: center;
+    padding: 40px 30px 52px;
+    border: 1px solid #464646;
+    transform: skewY(-4deg);
+    transition: all 0.5s;
+    margin-bottom: 30px;
+    position: relative;
+    background: transparent;
+}
+.ps-item:hover {
+    background: #fff;
+    border-color: #fff;
+}
+.ps-item:hover h3,
+.ps-item:hover ul li {
+    color: #111;
+    font-weight: 600;
+}
+.ps-item:hover .pi-price span {
+    color: #444;
+}
+.ps-item:hover .primary-btn.pricing-btn {
+    background: #f36100;
+    color: #fff;
+}
+.ps-item h3 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 600;
+    margin-bottom: 16px;
+    transform: skewY(4deg);
+}
+.ps-item .pi-price {
+    margin-bottom: 30px;
+    transform: skewY(4deg);
+}
+.ps-item .pi-price h2 {
+    font-size: 60px;
+    color: #f36100;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.ps-item .pi-price span {
+    color: #c4c4c4;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.ps-item ul {
+    margin-bottom: 40px;
+    transform: skewY(4deg);
+    padding-left: 0;
+}
+.ps-item ul li {
+    font-size: 14px;
+    color: #c4c4c4;
+    line-height: 32px;
+    list-style: none;
+}
+.ps-item .primary-btn.pricing-btn {
+    display: block;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+    padding: 17px 30px 16px;
+    border: none;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    transform: skewY(4deg);
+    transition: background 0.3s, color 0.3s;
+    cursor: pointer;
+}
+.ps-item .primary-btn.pricing-btn:hover {
+    background: #f36100;
+    color: #fff;
+}
+@media (max-width: 900px) {
+    .pricing-section .row.justify-content-center {
+        flex-direction: column;
+        align-items: center;
+    }
+    .ps-item {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+} 

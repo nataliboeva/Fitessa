@@ -2,44 +2,45 @@
 @{
     ViewData["Title"] = "Subscription Plans";
 }
-
-<h1>Subscription Plans</h1>
-@if (TempData["SubscriptionPurchased"] != null)
-{
-    <div class="alert alert-success">
-        Successfully purchased: <strong>@TempData["SubscriptionPurchased"]</strong>
-    </div>
+@section Styles {
+    <link rel="stylesheet" href="~/css/pricing-plans.css" />
 }
-<table class="table table-bordered table-striped">
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>Price</th>
-            <th>Duration (days)</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-    @foreach (var plan in Model)
-    {
-        <tr>
-            <td><a asp-action="Details" asp-route-id="@plan.Id">@plan.Name</a></td>
-            <td>@plan.Price.ToString("C")</td>
-            <td>@plan.DurationDays</td>
-            <td>
-                @if (User.Identity.IsAuthenticated)
-                {
-                    <form asp-action="Purchase" asp-route-id="@plan.Id" method="post" class="d-inline">
-                        @Html.AntiForgeryToken()
-                        <button type="submit" class="btn btn-sm btn-success">Purchase</button>
-                    </form>
-                }
-                else
-                {
-                    <span class="text-muted">Login to purchase</span>
-                }
-            </td>
-        </tr>
-    }
-    </tbody>
-</table> 
+<div class="pricing-section">
+    <div class="section-title">
+        <span>Our Plan</span>
+        <h2>Choose your pricing plan</h2>
+    </div>
+    <div class="row justify-content-center">
+        @foreach (var plan in Model)
+        {
+            <div class="col-lg-4 col-md-8">
+                <div class="ps-item">
+                    <h3>@plan.Name</h3>
+                    <div class="pi-price">
+                        <h2>$@plan.Price.ToString("0.##")</h2>
+                        <span>@(plan.DurationDays == 1 ? "SINGLE CLASS" : plan.DurationDays + " DAYS")</span>
+                    </div>
+                    <ul>
+                        <li>Free riding</li>
+                        <li>Unlimited equipments</li>
+                        <li>Personal trainer</li>
+                        <li>Weight losing classes</li>
+                        <li>Month to mouth</li>
+                        <li>No time restriction</li>
+                    </ul>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <form asp-action="Purchase" asp-route-id="@plan.Id" method="post" style="margin-bottom:0;">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="primary-btn pricing-btn">Add to cart</button>
+                        </form>
+                    }
+                    else
+                    {
+                        <span class="text-muted">Login to purchase</span>
+                    }
+                </div>
+            </div>
+        }
+    </div>
+</div> 

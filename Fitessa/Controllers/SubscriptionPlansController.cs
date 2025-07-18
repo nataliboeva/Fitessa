@@ -43,7 +43,6 @@ namespace Fitessa.Controllers
             if (plan == null || !plan.IsActive) return NotFound();
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return Challenge();
-            // Simulate purchase: assign plan to user (overwrite any existing subscription)
             var userSub = _context.UserSubscriptions.FirstOrDefault(us => us.UserId == user.Id);
             if (userSub == null)
             {
