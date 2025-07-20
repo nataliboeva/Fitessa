@@ -1,18 +1,6 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\Fitessa.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets\\Fitessa.Web.7zyz5sfl91.bundle.scp.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\pricing-plans.css",
-      "PackagePath": "staticwebassets\\css\\pricing-plans.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\site.css",
-      "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -439,38 +427,6 @@
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\contact.html",
       "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\contact.html"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\barfiller.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\barfiller.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\bootstrap.min.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\bootstrap.min.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\flaticon.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\flaticon.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\font-awesome.min.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\font-awesome.min.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\magnific-popup.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\magnific-popup.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\owl.carousel.min.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\owl.carousel.min.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\slicknav.min.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\slicknav.min.css"
-    },
-    {
-      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\style.css",
-      "PackagePath": "staticwebassets\\template-bootstrap\\gymlife-master\\gymlife-master\\css\\style.css"
     },
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template-bootstrap\\gymlife-master\\gymlife-master\\fonts\\Flaticon.eot",

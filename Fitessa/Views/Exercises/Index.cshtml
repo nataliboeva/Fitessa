@@ -65,4 +65,56 @@
         </tr>
     }
     </tbody>
-</table> 
+</table>
+
+@{
+    int currentPage = ViewBag.CurrentPage ?? 1;
+    int pageSize = ViewBag.PageSize ?? 10;
+    int totalItems = ViewBag.TotalItems ?? 0;
+    int totalPages = (int)Math.Ceiling((double)totalItems / pageSize);
+}
+@if (totalPages > 1)
+{
+    <nav aria-label="Exercise pagination">
+        <ul class="pagination">
+            <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                <a class="page-link" href="?@queryStringWithPage(1)">First</a>
+            </li>
+            <li class="page-item @(currentPage == 1 ? "disabled" : "")">
+                <a class="page-link" href="?@queryStringWithPage(currentPage - 1)">Previous</a>
+            </li>
+            @for (int i = 1; i <= totalPages; i++)
+            {
+                <li class="page-item @(i == currentPage ? "active" : "")">
+                    <a class="page-link" href="?@queryStringWithPage(i)">@i</a>
+                </li>
+            }
+            <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                <a class="page-link" href="?@queryStringWithPage(currentPage + 1)">Next</a>
+            </li>
+            <li class="page-item @(currentPage == totalPages ? "disabled" : "")">
+                <a class="page-link" href="?@queryStringWithPage(totalPages)">Last</a>
+            </li>
+        </ul>
+    </nav>
+}
+
+@functions {
+    private string queryStringWithPage(int page)
+    {
+        var query = new System.Text.StringBuilder();
+        var request = ViewContext.HttpContext.Request;
+        foreach (var key in request.Query.Keys)
+        {
+            if (key != "page")
+            {
+                foreach (var value in request.Query[key])
+                {
+                    query.Append($"{key}={System.Net.WebUtility.UrlEncode(value)}&");
+                }
+            }
+        }
+        query.Append($"page={page}");
+        return query.ToString();
+    }
+} 

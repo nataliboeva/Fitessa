@@ -24,6 +24,10 @@ namespace Fitessa.Web
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
             builder.Services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
+            builder.Services.AddScoped<IWorkoutProgramService, WorkoutProgramService>();
+            builder.Services.AddScoped<IExerciseService, ExerciseService>();
+            builder.Services.AddScoped<IMeasurementLogService, MeasurementLogService>();
+            builder.Services.AddSignalR();
 
             var app = builder.Build();
 
@@ -55,6 +59,7 @@ namespace Fitessa.Web
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
+            app.MapHub<Fitessa.Hubs.NotificationHub>("/notificationHub");
 
             app.Run();
         }

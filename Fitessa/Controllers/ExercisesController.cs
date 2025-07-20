@@ -14,7 +14,7 @@ namespace Fitessa.Controllers
             _context = context;
         }
 
-        public async Task<IActionResult> Index(string search, string muscleGroup, string difficulty)
+        public async Task<IActionResult> Index(string search, string muscleGroup, string difficulty, int page = 1, int pageSize = 10)
         {
             var query = _context.Exercises.AsQueryable();
 
@@ -31,10 +31,14 @@ namespace Fitessa.Controllers
                 query = query.Where(e => e.DifficultyLevel == difficulty);
             }
 
-            var exercises = await query.ToListAsync();
+            int totalItems = await query.CountAsync();
+            var exercises = await query.Skip((page - 1) * pageSize).Take(pageSize).ToListAsync();
 
             ViewBag.MuscleGroups = _context.Exercises.Select(e => e.MuscleGroup).Distinct().ToList();
             ViewBag.Difficulties = _context.Exercises.Select(e => e.DifficultyLevel).Distinct().ToList();
+            ViewBag.CurrentPage = page;
+            ViewBag.PageSize = pageSize;
+            ViewBag.TotalItems = totalItems;
 
             return View(exercises);
         }
@@ -47,6 +51,53 @@ namespace Fitessa.Controllers
                 return NotFound();
             }
             return View(exercise);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Create(Fitessa.Data.Entities.Exercise exercise)
+        {
+            if (!ModelState.IsValid) return View(exercise);
+            _context.Exercises.Add(exercise);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Edit(int id)
+        {
+            var exercise = await _context.Exercises.FindAsync(id);
+            if (exercise == null) return NotFound();
+            return View(exercise);
+        }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(Fitessa.Data.Entities.Exercise exercise)
+        {
+            if (!ModelState.IsValid) return View(exercise);
+            _context.Exercises.Update(exercise);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index");
+        }
+        public async Task<IActionResult> Delete(int id)
+        {
+            var exercise = await _context.Exercises.FindAsync(id);
+            if (exercise == null) return NotFound();
+            return View(exercise);
+        }
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var exercise = await _context.Exercises.FindAsync(id);
+            if (exercise != null)
+            {
+                _context.Exercises.Remove(exercise);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction("Index");
         }
     }
 } 

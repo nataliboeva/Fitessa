@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using Microsoft.AspNetCore.Http;
 
 namespace Fitessa.Models
 {
@@ -19,8 +20,7 @@ namespace Fitessa.Models
         [Required]
         public string Gender { get; set; }
 
-        [Display(Name = "Profile Picture URL")]
-        [Url]
-        public string? ProfilePictureUrl { get; set; }
+        [Display(Name = "Profile Picture")]
+        public IFormFile? ProfileImage { get; set; }
     }
 } 

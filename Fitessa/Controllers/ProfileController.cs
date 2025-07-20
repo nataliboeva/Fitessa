@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Fitessa.Data.Entities;
 using System.Threading.Tasks;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Fitessa.Controllers
 {
@@ -10,10 +12,12 @@ namespace Fitessa.Controllers
     public class ProfileController : Controller
     {
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly IWebHostEnvironment _env;
 
-        public ProfileController(UserManager<ApplicationUser> userManager)
+        public ProfileController(UserManager<ApplicationUser> userManager, IWebHostEnvironment env)
         {
             _userManager = userManager;
+            _env = env;
         }
 
         public async Task<IActionResult> Index()
@@ -39,9 +43,10 @@ namespace Fitessa.Controllers
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Age = user.Age,
-                Gender = user.Gender,
-                ProfilePictureUrl = user.ProfilePictureUrl
+                Gender = user.Gender
+                // Removed ProfilePictureUrl assignment
             };
+            ViewBag.ProfilePictureUrl = user.ProfilePictureUrl;
             return View(model);
         }
 
@@ -62,7 +67,18 @@ namespace Fitessa.Controllers
             user.LastName = model.LastName;
             user.Age = model.Age;
             user.Gender = model.Gender;
-            user.ProfilePictureUrl = model.ProfilePictureUrl;
+            if (model.ProfileImage != null && model.ProfileImage.Length > 0)
+            {
+                var uploadsFolder = Path.Combine(_env.WebRootPath, "images/profiles");
+                Directory.CreateDirectory(uploadsFolder);
+                var fileName = $"{user.Id}_{Path.GetFileName(model.ProfileImage.FileName)}";
+                var filePath = Path.Combine(uploadsFolder, fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await model.ProfileImage.CopyToAsync(stream);
+                }
+                user.ProfilePictureUrl = $"/images/profiles/{fileName}";
+            }
             await _userManager.UpdateAsync(user);
             TempData["ProfileUpdated"] = true;
             return RedirectToAction("Index");

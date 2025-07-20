@@ -1,0 +1,79 @@
+@model Fitessa.Data.Entities.WorkoutProgram
+@using Fitessa.Data.Entities
+@{
+    ViewData["Title"] = "Workout Program Details";
+}
+<h2>@Model.Name</h2>
+<div><strong>Description:</strong> @Model.Description</div>
+<div><strong>Difficulty:</strong> @Model.Difficulty</div>
+<div><strong>Duration (days):</strong> @Model.DurationDays</div>
+<hr />
+<h3>Assigned Exercises</h3>
+@if (Model.WorkoutProgramExercises != null && Model.WorkoutProgramExercises.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Exercise</th>
+                <th>Order</th>
+                <th>Reps</th>
+                <th>Sets</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        @foreach (var assignment in Model.WorkoutProgramExercises)
+        {
+            <tr>
+                <td>@assignment.Exercise?.Name</td>
+                <td>@assignment.OrderIndex</td>
+                <td>@assignment.Reps</td>
+                <td>@assignment.Sets</td>
+                <td>
+                    <form asp-action="RemoveExercise" method="post" style="display:inline;">
+                        <input type="hidden" name="programId" value="@Model.Id" />
+                        <input type="hidden" name="exerciseId" value="@assignment.ExerciseId" />
+                        <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                        @Html.AntiForgeryToken()
+                    </form>
+                </td>
+            </tr>
+        }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No exercises assigned yet.</p>
+}
+<hr />
+<h3>Assign New Exercise</h3>
+<form asp-action="AssignExercise" method="post">
+    <input type="hidden" name="programId" value="@Model.Id" />
+    <div class="form-group">
+        <label for="exerciseId">Exercise</label>
+        <select name="exerciseId" class="form-control" required>
+            @foreach (var exercise in (IEnumerable<Fitessa.Data.Entities.Exercise>)ViewBag.Exercises)
+            {
+                <option value="@exercise.Id">@exercise.Name</option>
+            }
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="orderIndex">Order</label>
+        <input type="number" name="orderIndex" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="reps">Reps</label>
+        <input type="number" name="reps" class="form-control" required />
+    </div>
+    <div class="form-group">
+        <label for="sets">Sets</label>
+        <input type="number" name="sets" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-primary">Assign Exercise</button>
+    @Html.AntiForgeryToken()
+</form>
+<p>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</p> 

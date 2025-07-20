@@ -1,3 +1,12 @@
 ﻿@{
     ViewData["Title"] = "Home";
 }
+<h1>Welcome to Fitessa!</h1>
+<p>
+    <a href="@Url.Action("Create", "WorkoutPrograms")">Create Workout Program</a>
+</p>
+<div>
+    <h4>Your Workout Programs</h4>
+    <p>View and manage your workout plans.</p>
+    <a href="@Url.Action("Index", "WorkoutPrograms")">View Workout Programs</a>
+</div>

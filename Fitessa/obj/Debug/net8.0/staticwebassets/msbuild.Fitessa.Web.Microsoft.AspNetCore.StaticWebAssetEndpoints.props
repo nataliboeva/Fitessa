@@ -1,29 +1,5 @@
 ﻿<Project>
   <ItemGroup>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/pricing-plans.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\pricing-plans.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2693"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 12:28:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/pricing-plans.ywrvi8surx.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\pricing-plans.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ywrvi8surx"},{"Name":"integrity","Value":"sha256-ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0="},{"Name":"label","Value":"_content/Fitessa.Web/css/pricing-plans.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2693"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 12:28:18 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/site.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1394"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 13:50:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/site.ongoy1xahd.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\site.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ongoy1xahd"},{"Name":"integrity","Value":"sha256-VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM="},{"Name":"label","Value":"_content/Fitessa.Web/css/site.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1394"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 13:50:48 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/favicon.61n19gt1b8.ico">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\favicon.ico'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -36,29 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 10:23:47 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/Fitessa.Web.7zyz5sfl91.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Fitessa.Web.7zyz5sfl91.bundle.scp.css'))</AssetFile>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.h27o5lwr2w.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7zyz5sfl91"},{"Name":"integrity","Value":"sha256-0\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts="},{"Name":"label","Value":"_content/Fitessa.Web/Fitessa.Web.bundle.scp.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"935"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Jul 2025 22:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/Fitessa.Web.bundle.scp.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Fitessa.Web.7zyz5sfl91.bundle.scp.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-0\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"935"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00220\u002BDN8XQzROdDGWUgvx3Zss8W4xKJ\u002B4MhNaAkMDbWLts=\u0022"},{"Name":"Last-Modified","Value":"Thu, 17 Jul 2025 22:10:36 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h27o5lwr2w"},{"Name":"integrity","Value":"sha256-yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM="},{"Name":"label","Value":"_content/Fitessa.Web/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"963"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Jul 2025 18:35:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 10:23:47 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.xtxxf3hu2r.js">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"xtxxf3hu2r"},{"Name":"integrity","Value":"sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="},{"Name":"label","Value":"_content/Fitessa.Web/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"231"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\u0022"},{"Name":"Last-Modified","Value":"Wed, 25 Jun 2025 10:23:47 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"963"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=\u0022"},{"Name":"Last-Modified","Value":"Sun, 20 Jul 2025 18:35:44 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
@@ -1224,102 +1188,6 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-f/t/jRIQ/knb7fYopdjb/xfEBMtkUF3/j6o\u002BJsQ\u002B5pU="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13705"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022f/t/jRIQ/knb7fYopdjb/xfEBMtkUF3/j6o\u002BJsQ\u002B5pU=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 14:49:55 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\barfiller.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"870"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/barfiller.u14v1qlh6n.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\barfiller.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"u14v1qlh6n"},{"Name":"integrity","Value":"sha256-vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"870"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\bootstrap.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"159515"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.v8f0c76h7q.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\bootstrap.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v8f0c76h7q"},{"Name":"integrity","Value":"sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"159515"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\flaticon.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-3IPNcYP\u002BNg7m6I8u003CsDfc\u002BO0sRWVR9cqArq6fdIc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3472"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223IPNcYP\u002BNg7m6I8u003CsDfc\u002BO0sRWVR9cqArq6fdIc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/flaticon.wdvt0a1r7z.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\flaticon.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"wdvt0a1r7z"},{"Name":"integrity","Value":"sha256-3IPNcYP\u002BNg7m6I8u003CsDfc\u002BO0sRWVR9cqArq6fdIc="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3472"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u00223IPNcYP\u002BNg7m6I8u003CsDfc\u002BO0sRWVR9cqArq6fdIc=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:35 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\font-awesome.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"31000"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.rf9f4pws8w.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\font-awesome.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rf9f4pws8w"},{"Name":"integrity","Value":"sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"31000"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\magnific-popup.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-yuXFeW52oZQPxpIi\u002BgDWWX1/fqC4WJGvM/4KQHFLA7Y="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6948"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yuXFeW52oZQPxpIi\u002BgDWWX1/fqC4WJGvM/4KQHFLA7Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.qgva8kti35.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\magnific-popup.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qgva8kti35"},{"Name":"integrity","Value":"sha256-yuXFeW52oZQPxpIi\u002BgDWWX1/fqC4WJGvM/4KQHFLA7Y="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6948"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022yuXFeW52oZQPxpIi\u002BgDWWX1/fqC4WJGvM/4KQHFLA7Y=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.a28q16vo32.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\owl.carousel.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"a28q16vo32"},{"Name":"integrity","Value":"sha256-UhQQ4fxEeABh4JrcmAJ1\u002B16id/1dnlOEVCFOxDef9Lw="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"3351"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022UhQQ4fxEeABh4JrcmAJ1\u002B16id/1dnlOEVCFOxDef9Lw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\owl.carousel.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UhQQ4fxEeABh4JrcmAJ1\u002B16id/1dnlOEVCFOxDef9Lw="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"3351"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022UhQQ4fxEeABh4JrcmAJ1\u002B16id/1dnlOEVCFOxDef9Lw=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:36 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\slicknav.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"2505"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:37 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.g5put84p4p.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\slicknav.min.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"g5put84p4p"},{"Name":"integrity","Value":"sha256-LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"2505"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:37 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/style.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\style.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-XlRZl0zc9eV93MoPWsA40\u002BOoLVY7CJ\u002BD1RwdyONa/aY="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"55441"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XlRZl0zc9eV93MoPWsA40\u002BOoLVY7CJ\u002BD1RwdyONa/aY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:37 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/style.qdr3bztmaw.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\css\style.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"qdr3bztmaw"},{"Name":"integrity","Value":"sha256-XlRZl0zc9eV93MoPWsA40\u002BOoLVY7CJ\u002BD1RwdyONa/aY="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/css/style.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"55441"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022XlRZl0zc9eV93MoPWsA40\u002BOoLVY7CJ\u002BD1RwdyONa/aY=\u0022"},{"Name":"Last-Modified","Value":"Thu, 26 Jun 2025 09:10:37 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/fonts/Flaticon.58xznfrv2p.woff">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\fonts\Flaticon.woff'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -2104,13 +1972,13 @@
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-dFKTk\u002BZGXSBI8UQwmREN58TbimMt4okTnyMiaYJCBt0="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"25819"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022dFKTk\u002BZGXSBI8UQwmREN58TbimMt4okTnyMiaYJCBt0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 14:51:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"25819"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022dFKTk\u002BZGXSBI8UQwmREN58TbimMt4okTnyMiaYJCBt0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 14:52:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/index.ksnsvrywtw.html">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\index.html'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"ksnsvrywtw"},{"Name":"integrity","Value":"sha256-dFKTk\u002BZGXSBI8UQwmREN58TbimMt4okTnyMiaYJCBt0="},{"Name":"label","Value":"_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/index.html"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25819"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022dFKTk\u002BZGXSBI8UQwmREN58TbimMt4okTnyMiaYJCBt0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 14:51:13 GMT"}]]]></ResponseHeaders>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"25819"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022dFKTk\u002BZGXSBI8UQwmREN58TbimMt4okTnyMiaYJCBt0=\u0022"},{"Name":"Last-Modified","Value":"Fri, 18 Jul 2025 14:52:28 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template-bootstrap/gymlife-master/gymlife-master/js/bootstrap.min.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template-bootstrap\gymlife-master\gymlife-master\js\bootstrap.min.js'))</AssetFile>

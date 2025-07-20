@@ -39,6 +39,29 @@ namespace Fitessa.Data
                 );
             }
 
+            if (!context.WorkoutPrograms.Any())
+            {
+                var user = context.Users.FirstOrDefault();
+                var program = new WorkoutProgram
+                {
+                    Name = "Full Body Starter",
+                    Description = "A beginner-friendly full body workout plan.",
+                    UserId = user?.Id,
+                    Difficulty = "Beginner",
+                    DurationDays = 30
+                };
+                context.WorkoutPrograms.Add(program);
+                context.SaveChanges();
+                var pushUp = context.Exercises.FirstOrDefault(e => e.Name == "Push Up");
+                var squat = context.Exercises.FirstOrDefault(e => e.Name == "Squat");
+                if (pushUp != null && squat != null)
+                {
+                    context.WorkoutProgramExercises.Add(new WorkoutProgramExercise { WorkoutProgramId = program.Id, ExerciseId = pushUp.Id, OrderIndex = 1, Reps = 10, Sets = 3 });
+                    context.WorkoutProgramExercises.Add(new WorkoutProgramExercise { WorkoutProgramId = program.Id, ExerciseId = squat.Id, OrderIndex = 2, Reps = 15, Sets = 3 });
+                }
+                context.SaveChanges();
+            }
+
             context.SaveChanges();
 
             var roleManager = serviceProvider.GetRequiredService<RoleManager<IdentityRole>>();

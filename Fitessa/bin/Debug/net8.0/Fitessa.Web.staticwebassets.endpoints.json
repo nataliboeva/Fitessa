@@ -3,88 +3,6 @@
   "ManifestType": "Build",
   "Endpoints": [
     {
-      "Route": "Fitessa.Web.7zyz5sfl91.styles.css",
-      "AssetFile": "Fitessa.Web.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "935"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 22:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "7zyz5sfl91"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts="
-        },
-        {
-          "Name": "label",
-          "Value": "Fitessa.Web.styles.css"
-        }
-      ]
-    },
-    {
-      "Route": "Fitessa.Web.styles.css",
-      "AssetFile": "Fitessa.Web.styles.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "935"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 17 Jul 2025 22:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-0+DN8XQzROdDGWUgvx3Zss8W4xKJ+4MhNaAkMDbWLts="
-        }
-      ]
-    },
-    {
       "Route": "Identity/css/site.css",
       "AssetFile": "Identity/css/site.css",
       "Selectors": [],
@@ -2305,170 +2223,6 @@
       ]
     },
     {
-      "Route": "css/pricing-plans.css",
-      "AssetFile": "css/pricing-plans.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2693"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 12:28:18 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0="
-        }
-      ]
-    },
-    {
-      "Route": "css/pricing-plans.ywrvi8surx.css",
-      "AssetFile": "css/pricing-plans.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2693"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 12:28:18 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ywrvi8surx"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ElH5JHwJAaB/uA1aa/SOevSp5pcGe6IUsM4Y9crTCG0="
-        },
-        {
-          "Name": "label",
-          "Value": "css/pricing-plans.css"
-        }
-      ]
-    },
-    {
-      "Route": "css/site.css",
-      "AssetFile": "css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1394"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 13:50:48 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM="
-        }
-      ]
-    },
-    {
-      "Route": "css/site.ongoy1xahd.css",
-      "AssetFile": "css/site.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "1394"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 13:50:48 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ongoy1xahd"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-VADIao20ddMmJVlD2E4vn/60bHchpmteA5uPw0t00VM="
-        },
-        {
-          "Name": "label",
-          "Value": "css/site.css"
-        }
-      ]
-    },
-    {
       "Route": "favicon.61n19gt1b8.ico",
       "AssetFile": "favicon.ico",
       "Selectors": [],
@@ -2551,6 +2305,51 @@
       ]
     },
     {
+      "Route": "js/site.h27o5lwr2w.js",
+      "AssetFile": "js/site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "963"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 20 Jul 2025 18:35:44 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h27o5lwr2w"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM="
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],
@@ -2565,7 +2364,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "231"
+          "Value": "963"
         },
         {
           "Name": "Content-Type",
@@ -2573,62 +2372,17 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
+          "Value": "\"yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 10:23:47 GMT"
+          "Value": "Sun, 20 Jul 2025 18:35:44 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        }
-      ]
-    },
-    {
-      "Route": "js/site.xtxxf3hu2r.js",
-      "AssetFile": "js/site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "231"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Wed, 25 Jun 2025 10:23:47 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "xtxxf3hu2r"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-hRQyftXiu1lLX2P9Ly9xa4gHJgLeR1uGN5qegUobtGo="
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
+          "Value": "sha256-yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM="
         }
       ]
     },
@@ -11243,662 +10997,6 @@
       ]
     },
     {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "870"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:35 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/barfiller.u14v1qlh6n.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "870"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:35 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "u14v1qlh6n"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-vgD7Xw33VETWlKYRbjcQS1chjEIVodeaTgosqxGetQQ="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/barfiller.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "159515"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:35 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.v8f0c76h7q.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "159515"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:35 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "v8f0c76h7q"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-L/W5Wfqfa0sdBNIKN9cG6QA5F2qx4qICmU2VgLruv9Y="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/bootstrap.min.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3IPNcYP+Ng7m6I8u003CsDfc+O0sRWVR9cqArq6fdIc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:35 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-3IPNcYP+Ng7m6I8u003CsDfc+O0sRWVR9cqArq6fdIc="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/flaticon.wdvt0a1r7z.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3472"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"3IPNcYP+Ng7m6I8u003CsDfc+O0sRWVR9cqArq6fdIc=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:35 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "wdvt0a1r7z"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-3IPNcYP+Ng7m6I8u003CsDfc+O0sRWVR9cqArq6fdIc="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/flaticon.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31000"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.rf9f4pws8w.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "31000"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "rf9f4pws8w"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/font-awesome.min.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6948"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yuXFeW52oZQPxpIi+gDWWX1/fqC4WJGvM/4KQHFLA7Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-yuXFeW52oZQPxpIi+gDWWX1/fqC4WJGvM/4KQHFLA7Y="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.qgva8kti35.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "6948"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yuXFeW52oZQPxpIi+gDWWX1/fqC4WJGvM/4KQHFLA7Y=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qgva8kti35"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yuXFeW52oZQPxpIi+gDWWX1/fqC4WJGvM/4KQHFLA7Y="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/magnific-popup.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.a28q16vo32.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3351"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "a28q16vo32"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/owl.carousel.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3351"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:36 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-UhQQ4fxEeABh4JrcmAJ1+16id/1dnlOEVCFOxDef9Lw="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2505"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:37 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.g5put84p4p.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2505"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:37 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "g5put84p4p"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-LEgFChKAs47ma0Ei3DD3uNDYl3bID3byE9ypWOcB9F0="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/slicknav.min.css"
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/style.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55441"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"XlRZl0zc9eV93MoPWsA40+OoLVY7CJ+D1RwdyONa/aY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:37 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-XlRZl0zc9eV93MoPWsA40+OoLVY7CJ+D1RwdyONa/aY="
-        }
-      ]
-    },
-    {
-      "Route": "template-bootstrap/gymlife-master/gymlife-master/css/style.qdr3bztmaw.css",
-      "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/css/style.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55441"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"XlRZl0zc9eV93MoPWsA40+OoLVY7CJ+D1RwdyONa/aY=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Thu, 26 Jun 2025 09:10:37 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qdr3bztmaw"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-XlRZl0zc9eV93MoPWsA40+OoLVY7CJ+D1RwdyONa/aY="
-        },
-        {
-          "Name": "label",
-          "Value": "template-bootstrap/gymlife-master/gymlife-master/css/style.css"
-        }
-      ]
-    },
-    {
       "Route": "template-bootstrap/gymlife-master/gymlife-master/fonts/Flaticon.58xznfrv2p.woff",
       "AssetFile": "template-bootstrap/gymlife-master/gymlife-master/fonts/Flaticon.woff",
       "Selectors": [],
@@ -17255,7 +16353,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 14:51:13 GMT"
+          "Value": "Fri, 18 Jul 2025 14:52:28 GMT"
         }
       ],
       "EndpointProperties": [
@@ -17292,7 +16390,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 18 Jul 2025 14:51:13 GMT"
+          "Value": "Fri, 18 Jul 2025 14:52:28 GMT"
         }
       ],
       "EndpointProperties": [

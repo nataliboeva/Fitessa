@@ -1,5 +1,3 @@
-wwwroot\css\pricing-plans.css
-wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
@@ -99,14 +97,6 @@ wwwroot\template-bootstrap\gymlife-master\gymlife-master\bmi-calculator.html
 wwwroot\template-bootstrap\gymlife-master\gymlife-master\class-details.html
 wwwroot\template-bootstrap\gymlife-master\gymlife-master\class-timetable.html
 wwwroot\template-bootstrap\gymlife-master\gymlife-master\contact.html
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\barfiller.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\bootstrap.min.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\flaticon.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\font-awesome.min.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\magnific-popup.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\owl.carousel.min.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\slicknav.min.css
-wwwroot\template-bootstrap\gymlife-master\gymlife-master\css\style.css
 wwwroot\template-bootstrap\gymlife-master\gymlife-master\fonts\Flaticon.eot
 wwwroot\template-bootstrap\gymlife-master\gymlife-master\fonts\Flaticon.svg
 wwwroot\template-bootstrap\gymlife-master\gymlife-master\fonts\Flaticon.ttf

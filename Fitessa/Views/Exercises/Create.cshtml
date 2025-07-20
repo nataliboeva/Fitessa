@@ -1,0 +1,32 @@
+@model Fitessa.Data.Entities.Exercise
+@{
+    ViewData["Title"] = "Create Exercise";
+}
+<h2>Create Exercise</h2>
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="MuscleGroup"></label>
+        <input asp-for="MuscleGroup" class="form-control" />
+        <span asp-validation-for="MuscleGroup" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="DifficultyLevel"></label>
+        <input asp-for="DifficultyLevel" class="form-control" />
+        <span asp-validation-for="DifficultyLevel" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Create</button>
+    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+</form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+} 

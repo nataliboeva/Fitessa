@@ -140,9 +140,7 @@ C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.MvcA
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.RazorAssemblyInfo.cache
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.RazorAssemblyInfo.cs
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.sourcelink.json
-C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\scopedcss\bundle\Fitessa.Web.styles.css
-C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\scopedcss\projectbundle\Fitessa.Web.bundle.scp.css
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.build.endpoints.json
@@ -159,3 +157,8 @@ C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.pdb
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.genruntimeconfig.cache
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\ref\Fitessa.Web.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
