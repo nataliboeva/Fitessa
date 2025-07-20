@@ -64,5 +64,14 @@ namespace Fitessa.Services.Services
                 _context.SaveChanges();
             }
         }
+        public IEnumerable<WorkoutProgram> GetRecommended(string goal)
+        {
+            if (string.IsNullOrEmpty(goal))
+                return _context.WorkoutPrograms.Take(1).ToList();
+            return _context.WorkoutPrograms
+                .Where(wp => wp.Difficulty.Contains(goal) || wp.Name.Contains(goal) || wp.Description.Contains(goal))
+                .Take(2)
+                .ToList();
+        }
     }
 } 

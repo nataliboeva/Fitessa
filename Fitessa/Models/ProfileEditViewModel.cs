@@ -20,6 +20,14 @@ namespace Fitessa.Models
         [Required]
         public string Gender { get; set; }
 
+        [Display(Name = "Fitness Goal")]
+        public string? Goal { get; set; }
+
+        [Display(Name = "Goal Type")]
+        public string? GoalType { get; set; }
+        [Display(Name = "Goal Value")]
+        public decimal? GoalValue { get; set; }
+
         [Display(Name = "Profile Picture")]
         public IFormFile? ProfileImage { get; set; }
     }

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR;
 using Fitessa.Hubs;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class AdminController : Controller

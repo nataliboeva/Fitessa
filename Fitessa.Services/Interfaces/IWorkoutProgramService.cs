@@ -12,5 +12,6 @@ namespace Fitessa.Services.Interfaces
         void Delete(int id);
         void AssignExercise(int programId, int exerciseId, int orderIndex, int reps, int sets);
         void RemoveExercise(int programId, int exerciseId);
+        IEnumerable<WorkoutProgram> GetRecommended(string goal);
     }
 } 

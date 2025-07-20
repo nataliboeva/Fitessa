@@ -14,6 +14,9 @@ namespace Fitessa.Data.Entities
         public bool IsPremium { get; set; }
         public bool IsBanned { get; set; }
         public DateTime LastLogin { get; set; }
+        public string Goal { get; set; }
+        public string? GoalType { get; set; }
+        public decimal? GoalValue { get; set; }
         public ICollection<MeasurementLog> MeasurementLogs { get; set; }
         public ICollection<WorkoutSession> WorkoutSessions { get; set; }
         public ICollection<UserSubscription> UserSubscriptions { get; set; }

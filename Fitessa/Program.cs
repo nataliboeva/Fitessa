@@ -4,6 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
 using Fitessa.Services.Services;
+using DinkToPdf;
+using DinkToPdf.Contracts;
 
 namespace Fitessa.Web
 {
@@ -15,7 +17,7 @@ namespace Fitessa.Web
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlServer(connectionString));
+                options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Fitessa.Data")));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
@@ -27,7 +29,10 @@ namespace Fitessa.Web
             builder.Services.AddScoped<IWorkoutProgramService, WorkoutProgramService>();
             builder.Services.AddScoped<IExerciseService, ExerciseService>();
             builder.Services.AddScoped<IMeasurementLogService, MeasurementLogService>();
+            builder.Services.AddScoped<IMealPlanService, MealPlanService>();
+            builder.Services.AddScoped<IProgressInsightsService, ProgressInsightsService>();
             builder.Services.AddSignalR();
+            builder.Services.AddSingleton<IConverter, SynchronizedConverter>(_ => new SynchronizedConverter(new PdfTools()));
 
             var app = builder.Build();
 

@@ -5,7 +5,7 @@ using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
 using System.Threading.Tasks;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize]
     public class ProgressLogController : Controller

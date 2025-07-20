@@ -23,6 +23,7 @@ namespace Fitessa.Data
         public DbSet<FitnessCenter> FitnessCenters { get; set; }
         public DbSet<City> Cities { get; set; }
         public DbSet<Country> Countries { get; set; }
+        public DbSet<MealPlan> MealPlans { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -41,6 +42,10 @@ namespace Fitessa.Data
 
             modelBuilder.Entity<SubscriptionPlan>()
                 .Property(s => s.Price)
+                .HasPrecision(10, 2);
+
+            modelBuilder.Entity<ApplicationUser>()
+                .Property(u => u.GoalValue)
                 .HasPrecision(10, 2);
         }
     }

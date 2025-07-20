@@ -3,7 +3,7 @@ using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     public class ExercisesController : Controller
     {

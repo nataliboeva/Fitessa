@@ -156,9 +156,10 @@ C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\refint\Fitessa.W
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.pdb
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\Fitessa.Web.genruntimeconfig.cache
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\ref\Fitessa.Web.dll
-C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\DinkToPdf.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -52,6 +52,17 @@ namespace Fitessa.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Goal")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("GoalType")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal?>("GoalValue")
+                        .HasPrecision(10, 2)
+                        .HasColumnType("decimal(10,2)");
+
                     b.Property<bool>("IsBanned")
                         .HasColumnType("bit");
 
@@ -210,6 +221,33 @@ namespace Fitessa.Data.Migrations
                     b.HasIndex("CityId");
 
                     b.ToTable("FitnessCenters");
+                });
+
+            modelBuilder.Entity("Fitessa.Data.Entities.MealPlan", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("MealPlans");
                 });
 
             modelBuilder.Entity("Fitessa.Data.Entities.MeasurementLog", b =>
@@ -640,6 +678,17 @@ namespace Fitessa.Data.Migrations
                         .IsRequired();
 
                     b.Navigation("City");
+                });
+
+            modelBuilder.Entity("Fitessa.Data.Entities.MealPlan", b =>
+                {
+                    b.HasOne("Fitessa.Data.Entities.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("Fitessa.Data.Entities.MeasurementLog", b =>

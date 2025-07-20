@@ -1,7 +1,94 @@
-﻿@{
+﻿@using Microsoft.AspNetCore.Identity
+@using Fitessa.Data.Entities
+@inject UserManager<ApplicationUser> UserManager
+@inject Fitessa.Services.Interfaces.IWorkoutProgramService WorkoutProgramService
+@using Fitessa.Services.Interfaces
+@inject IMealPlanService MealPlanService
+@inject IMeasurementLogService MeasurementLogService
+@inject Fitessa.Services.Interfaces.IProgressInsightsService ProgressInsightsService
+@{
     ViewData["Title"] = "Home";
+    ApplicationUser user = null;
+    IEnumerable<Fitessa.Data.Entities.WorkoutProgram> recommended = null;
+    IEnumerable<Fitessa.Data.Entities.MealPlan> mealRecommended = null;
+    decimal? latestWeight = null;
+    decimal? goalValue = null;
+    double progressPercent = 0;
+    bool goalAchieved = false;
+    int streak = 0;
+    List<Fitessa.Services.Interfaces.ProgressInsight> insights = null;
+    if (User.Identity.IsAuthenticated)
+    {
+        user = await UserManager.GetUserAsync(User);
+        recommended = WorkoutProgramService.GetRecommended(user.Goal);
+        mealRecommended = MealPlanService.GetRecommended(user.Goal);
+        insights = ProgressInsightsService.GetInsights(user.Id);
+        if (user.GoalType == "Weight" && user.GoalValue.HasValue)
+        {
+            var logs = MeasurementLogService.GetByUser(user.Id).OrderByDescending(l => l.LoggedAt).ToList();
+            if (logs.Any())
+            {
+                latestWeight = logs.First().WeightKg;
+                goalValue = user.GoalValue;
+                if (latestWeight.HasValue && goalValue.HasValue)
+                {
+                    if (goalValue < latestWeight)
+                        progressPercent = (double)((latestWeight - goalValue) / (latestWeight - goalValue + 0.01m)) * 100;
+                    else
+                        progressPercent = (double)((goalValue - latestWeight) / (goalValue - latestWeight + 0.01m)) * 100;
+                    if ((goalValue < latestWeight && latestWeight <= goalValue) || (goalValue > latestWeight && latestWeight >= goalValue))
+                        goalAchieved = true;
+                }
+            }
+        }
+        // Streak calculation
+        var streakLogs = MeasurementLogService.GetByUser(user.Id).OrderByDescending(l => l.LoggedAt.Date).ToList();
+        if (streakLogs.Any())
+        {
+            var today = DateTime.UtcNow.Date;
+            streak = 0;
+            foreach (var log in streakLogs)
+            {
+                if ((today - log.LoggedAt.Date).TotalDays == streak)
+                    streak++;
+                else
+                    break;
+            }
+        }
+    }
 }
 <h1>Welcome to Fitessa!</h1>
+@if (User.Identity.IsAuthenticated && user != null)
+{
+    <h3>Recommended Workout Programs for @user.FirstName (@user.Goal ?? "No goal set")</h3>
+    @if (recommended != null && recommended.Any())
+    {
+        <ul>
+        @foreach (var plan in recommended)
+        {
+            <li><a href="@Url.Action("Details", "WorkoutPrograms", new { id = plan.Id })">@plan.Name</a> - @plan.Description</li>
+        }
+        </ul>
+    }
+    else
+    {
+        <p>No recommendations available. Set your goal in your <a href="@Url.Action("Edit", "Profile")">profile</a>.</p>
+    }
+    <h3>Recommended Meal Plans</h3>
+    @if (mealRecommended != null && mealRecommended.Any())
+    {
+        <ul>
+        @foreach (var plan in mealRecommended)
+        {
+            <li><a href="@Url.Action("Edit", "MealPlans", new { id = plan.Id })">@plan.Name</a> - @plan.Description</li>
+        }
+        </ul>
+    }
+    else
+    {
+        <p>No meal plan recommendations available.</p>
+    }
+}
 <p>
     <a href="@Url.Action("Create", "WorkoutPrograms")">Create Workout Program</a>
 </p>
@@ -10,3 +97,50 @@
     <p>View and manage your workout plans.</p>
     <a href="@Url.Action("Index", "WorkoutPrograms")">View Workout Programs</a>
 </div>
+@if (User.Identity.IsAuthenticated && user != null && user.GoalType == "Weight" && user.GoalValue.HasValue)
+{
+    <h3>Goal Progress: Weight</h3>
+    @if (latestWeight.HasValue)
+    {
+        <p>Current: @latestWeight.Value kg | Target: @user.GoalValue.Value kg</p>
+        <div style="background:#e5e7eb;border-radius:6px;width:100%;max-width:400px;height:24px;overflow:hidden;margin-bottom:8px;">
+            <div style="background:#4f8cff;height:100%;width:@progressPercent%;min-width:8px;"></div>
+        </div>
+        <p>Progress: @progressPercent.ToString("0")%</p>
+        @if (goalAchieved)
+        {
+            <div style="color:green;font-weight:bold;">Congratulations! You reached your goal! 🏆</div>
+        }
+    }
+    else
+    {
+        <p>No weight logs yet. <a href="@Url.Action("Create", "ProgressLog")">Add your first log</a>.</p>
+    }
+}
+@if (User.Identity.IsAuthenticated && user != null)
+{
+    <h3>Achievements & Streaks</h3>
+    <p>Current workout streak: <b>@streak</b> day(s)</p>
+    @if (streak >= 7)
+    {
+        <div style="color:gold;font-weight:bold;">🏅 7-Day Streak! Legend!</div>
+    }
+    else if (streak >= 5)
+    {
+        <div style="color:orange;font-weight:bold;">🏅 5-Day Streak! Amazing!</div>
+    }
+    else if (streak >= 3)
+    {
+        <div style="color:green;font-weight:bold;">🏅 3-Day Streak! Keep it up!</div>
+    }
+}
+@if (User.Identity.IsAuthenticated && user != null && insights != null && insights.Any())
+{
+    <h3>Smart Progress Insights</h3>
+    <ul>
+    @foreach (var insight in insights)
+    {
+        <li style="color:@(insight.Type == "success" ? "green" : insight.Type == "warning" ? "orange" : "#222")">@insight.Message</li>
+    }
+    </ul>
+}

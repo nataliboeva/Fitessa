@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize]
     public class ProfileController : Controller
@@ -43,8 +43,10 @@ namespace Fitessa.Controllers
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Age = user.Age,
-                Gender = user.Gender
-                // Removed ProfilePictureUrl assignment
+                Gender = user.Gender,
+                Goal = user.Goal,
+                GoalType = user.GoalType,
+                GoalValue = user.GoalValue
             };
             ViewBag.ProfilePictureUrl = user.ProfilePictureUrl;
             return View(model);
@@ -67,6 +69,9 @@ namespace Fitessa.Controllers
             user.LastName = model.LastName;
             user.Age = model.Age;
             user.Gender = model.Gender;
+            user.Goal = model.Goal;
+            user.GoalType = model.GoalType;
+            user.GoalValue = model.GoalValue;
             if (model.ProfileImage != null && model.ProfileImage.Length > 0)
             {
                 var uploadsFolder = Path.Combine(_env.WebRootPath, "images/profiles");
