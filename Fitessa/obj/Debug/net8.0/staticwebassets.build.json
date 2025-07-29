@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EMR0kbXU5ZsBkUlG0EMH4f0BdoAMNkII4jARaY57z3c=",
+  "Hash": "dhInmHNHlFS1AnuxcfbxK9BiUC7hxKGuhhfmPNOZfmY=",
   "Source": "Fitessa.Web",
   "BasePath": "_content/Fitessa.Web",
   "Mode": "Default",
@@ -1298,6 +1298,48 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\fitessa-logo.png",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "images/logo/fitessa-logo#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mgf5nwjze2",
+      "Integrity": "hsQ88M1dKQ4X49IAvV+hMujdsUUf3zGJhHfiTW6Wj7s=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo\\fitessa-logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\README.md",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "images/logo/README#[.{fingerprint}]?.md",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "f1ip6350j9",
+      "Integrity": "bdaRMuAZSsOZRMEse/ghbLemFV60KAhgmppAyR281rU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\logo\\README.md"
+    },
+    {
       "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
       "SourceId": "Fitessa.Web",
       "SourceType": "Discovered",
@@ -2514,6 +2556,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\css\\fitness-theme.css",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "template/css/fitness-theme#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "v73apflja6",
+      "Integrity": "y5OE6x3O33NbJFdZarBanepckC3klxenGuTo+qJCq4I=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\css\\fitness-theme.css"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\js\\fitness-theme.js",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "template/js/fitness-theme#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "iz8o92siwc",
+      "Integrity": "fnSzt256UGwjtfazyQKddxuOcPKe9M0DZSS2AVQyO+o=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\template\\js\\fitness-theme.js"
     }
   ],
   "Endpoints": [
@@ -4816,6 +4900,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo/fitessa-logo.mgf5nwjze2.png",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\fitessa-logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hsQ88M1dKQ4X49IAvV+hMujdsUUf3zGJhHfiTW6Wj7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 19:49:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mgf5nwjze2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo/fitessa-logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hsQ88M1dKQ4X49IAvV+hMujdsUUf3zGJhHfiTW6Wj7s="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo/fitessa-logo.png",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\fitessa-logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "38770"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hsQ88M1dKQ4X49IAvV+hMujdsUUf3zGJhHfiTW6Wj7s=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 19:49:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hsQ88M1dKQ4X49IAvV+hMujdsUUf3zGJhHfiTW6Wj7s="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo/README.f1ip6350j9.md",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bdaRMuAZSsOZRMEse/ghbLemFV60KAhgmppAyR281rU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 19:34:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "f1ip6350j9"
+        },
+        {
+          "Name": "label",
+          "Value": "images/logo/README.md"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bdaRMuAZSsOZRMEse/ghbLemFV60KAhgmppAyR281rU="
+        }
+      ]
+    },
+    {
+      "Route": "images/logo/README.md",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\README.md",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1403"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/markdown"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bdaRMuAZSsOZRMEse/ghbLemFV60KAhgmppAyR281rU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 19:34:09 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bdaRMuAZSsOZRMEse/ghbLemFV60KAhgmppAyR281rU="
         }
       ]
     },
@@ -9572,6 +9820,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "template/css/fitness-theme.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\css\\fitness-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y5OE6x3O33NbJFdZarBanepckC3klxenGuTo+qJCq4I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:20:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-y5OE6x3O33NbJFdZarBanepckC3klxenGuTo+qJCq4I="
+        }
+      ]
+    },
+    {
+      "Route": "template/css/fitness-theme.v73apflja6.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\css\\fitness-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "13945"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"y5OE6x3O33NbJFdZarBanepckC3klxenGuTo+qJCq4I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:20:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v73apflja6"
+        },
+        {
+          "Name": "label",
+          "Value": "template/css/fitness-theme.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-y5OE6x3O33NbJFdZarBanepckC3klxenGuTo+qJCq4I="
+        }
+      ]
+    },
+    {
+      "Route": "template/js/fitness-theme.iz8o92siwc.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\js\\fitness-theme.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fnSzt256UGwjtfazyQKddxuOcPKe9M0DZSS2AVQyO+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:20:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iz8o92siwc"
+        },
+        {
+          "Name": "label",
+          "Value": "template/js/fitness-theme.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fnSzt256UGwjtfazyQKddxuOcPKe9M0DZSS2AVQyO+o="
+        }
+      ]
+    },
+    {
+      "Route": "template/js/fitness-theme.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\js\\fitness-theme.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6782"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fnSzt256UGwjtfazyQKddxuOcPKe9M0DZSS2AVQyO+o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 29 Jul 2025 20:20:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fnSzt256UGwjtfazyQKddxuOcPKe9M0DZSS2AVQyO+o="
         }
       ]
     }

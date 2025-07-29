@@ -8,139 +8,304 @@
 @inject Fitessa.Services.Interfaces.IProgressInsightsService ProgressInsightsService
 @{
     ViewData["Title"] = "Home";
-    ApplicationUser user = null;
-    IEnumerable<Fitessa.Data.Entities.WorkoutProgram> recommended = null;
-    IEnumerable<Fitessa.Data.Entities.MealPlan> mealRecommended = null;
-    decimal? latestWeight = null;
-    decimal? goalValue = null;
-    double progressPercent = 0;
-    bool goalAchieved = false;
-    int streak = 0;
-    List<Fitessa.Services.Interfaces.ProgressInsight> insights = null;
-    if (User.Identity.IsAuthenticated)
-    {
-        user = await UserManager.GetUserAsync(User);
-        recommended = WorkoutProgramService.GetRecommended(user.Goal);
-        mealRecommended = MealPlanService.GetRecommended(user.Goal);
-        insights = ProgressInsightsService.GetInsights(user.Id);
-        if (user.GoalType == "Weight" && user.GoalValue.HasValue)
-        {
-            var logs = MeasurementLogService.GetByUser(user.Id).OrderByDescending(l => l.LoggedAt).ToList();
-            if (logs.Any())
-            {
-                latestWeight = logs.First().WeightKg;
-                goalValue = user.GoalValue;
-                if (latestWeight.HasValue && goalValue.HasValue)
-                {
-                    if (goalValue < latestWeight)
-                        progressPercent = (double)((latestWeight - goalValue) / (latestWeight - goalValue + 0.01m)) * 100;
+}
+
+<section class="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-6 hero-content">
+                <h1 class="hero-title">Transform Your Fitness Journey</h1>
+                <p class="hero-subtitle">Track workouts, manage meal plans, and achieve your fitness goals with Fitessa - your personal fitness companion.</p>
+                <div class="d-flex gap-3">
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <a href="/Identity/Account/Register" class="btn btn-primary btn-lg">
+                            <i class="fas fa-user-plus me-2"></i>Get Started
+                        </a>
+                        <a href="/Identity/Account/Login" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-sign-in-alt me-2"></i>Sign In
+                        </a>
+                    }
                     else
-                        progressPercent = (double)((goalValue - latestWeight) / (goalValue - latestWeight + 0.01m)) * 100;
-                    if ((goalValue < latestWeight && latestWeight <= goalValue) || (goalValue > latestWeight && latestWeight >= goalValue))
-                        goalAchieved = true;
-                }
-            }
-        }
-        // Streak calculation
-        var streakLogs = MeasurementLogService.GetByUser(user.Id).OrderByDescending(l => l.LoggedAt.Date).ToList();
-        if (streakLogs.Any())
-        {
-            var today = DateTime.UtcNow.Date;
-            streak = 0;
-            foreach (var log in streakLogs)
-            {
-                if ((today - log.LoggedAt.Date).TotalDays == streak)
-                    streak++;
-                else
-                    break;
-            }
-        }
-    }
-}
-<h1>Welcome to Fitessa!</h1>
-@if (User.Identity.IsAuthenticated && user != null)
-{
-    <h3>Recommended Workout Programs for @user.FirstName (@user.Goal ?? "No goal set")</h3>
-    @if (recommended != null && recommended.Any())
-    {
-        <ul>
-        @foreach (var plan in recommended)
-        {
-            <li><a href="@Url.Action("Details", "WorkoutPrograms", new { id = plan.Id })">@plan.Name</a> - @plan.Description</li>
-        }
-        </ul>
-    }
-    else
-    {
-        <p>No recommendations available. Set your goal in your <a href="@Url.Action("Edit", "Profile")">profile</a>.</p>
-    }
-    <h3>Recommended Meal Plans</h3>
-    @if (mealRecommended != null && mealRecommended.Any())
-    {
-        <ul>
-        @foreach (var plan in mealRecommended)
-        {
-            <li><a href="@Url.Action("Edit", "MealPlans", new { id = plan.Id })">@plan.Name</a> - @plan.Description</li>
-        }
-        </ul>
-    }
-    else
-    {
-        <p>No meal plan recommendations available.</p>
-    }
-}
-<p>
-    <a href="@Url.Action("Create", "WorkoutPrograms")">Create Workout Program</a>
-</p>
-<div>
-    <h4>Your Workout Programs</h4>
-    <p>View and manage your workout plans.</p>
-    <a href="@Url.Action("Index", "WorkoutPrograms")">View Workout Programs</a>
-</div>
-@if (User.Identity.IsAuthenticated && user != null && user.GoalType == "Weight" && user.GoalValue.HasValue)
-{
-    <h3>Goal Progress: Weight</h3>
-    @if (latestWeight.HasValue)
-    {
-        <p>Current: @latestWeight.Value kg | Target: @user.GoalValue.Value kg</p>
-        <div style="background:#e5e7eb;border-radius:6px;width:100%;max-width:400px;height:24px;overflow:hidden;margin-bottom:8px;">
-            <div style="background:#4f8cff;height:100%;width:@progressPercent%;min-width:8px;"></div>
+                    {
+                        <a href="@Url.Action("Create", "WorkoutPrograms")" class="btn btn-primary btn-lg">
+                            <i class="fas fa-plus me-2"></i>Create Workout
+                        </a>
+                        <a href="@Url.Action("Index", "WorkoutPrograms")" class="btn btn-outline-primary btn-lg">
+                            <i class="fas fa-dumbbell me-2"></i>View Programs
+                        </a>
+                    }
+                </div>
+            </div>
+            <div class="col-lg-6 text-center">
+                <div class="hero-image">
+                    <i class="fas fa-dumbbell" style="font-size: 8rem; color: rgba(255,255,255,0.3);"></i>
+                </div>
+            </div>
         </div>
-        <p>Progress: @progressPercent.ToString("0")%</p>
-        @if (goalAchieved)
+    </div>
+</section>
+
+<div class="container mt-5">
+    @if (User.Identity.IsAuthenticated && ViewBag.User != null)
+    {
+        var user = ViewBag.User as Fitessa.Data.Entities.ApplicationUser;
+        var progressData = ViewBag.ProgressData as dynamic;
+        
+        <div class="row mb-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4 class="mb-0">
+                            <i class="fas fa-user me-2"></i>Welcome back, @user.FirstName!
+                        </h4>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-8">
+                                <p class="text-muted mb-3">
+                                    <strong>Current Goal:</strong> @(user.Goal ?? "No goal set")
+                                    @if (!string.IsNullOrEmpty(user.GoalType))
+                                    {
+                                        <span class="badge bg-primary ms-2">@user.GoalType</span>
+                                    }
+                                </p>
+                                
+                                @if (user.GoalType == "Weight" && user.GoalValue.HasValue)
+                                {
+                                    <div class="mb-3">
+                                        <h6>Weight Progress</h6>
+                                        @if (progressData.LatestWeight != null)
+                                        {
+                                            <div class="d-flex justify-content-between mb-2">
+                                                <span>Current: @progressData.LatestWeight kg</span>
+                                                <span>Target: @user.GoalValue.Value kg</span>
+                                            </div>
+                                            <div class="progress mb-2">
+                                                <div class="progress-bar" role="progressbar" 
+                                                     style="width: @progressData.ProgressPercent%" 
+                                                     aria-valuenow="@progressData.ProgressPercent" 
+                                                     aria-valuemin="0" aria-valuemax="100">
+                                                    @progressData.ProgressPercent.ToString("0")%
+                                                </div>
+                                            </div>
+                                            @if (progressData.GoalAchieved)
+                                            {
+                                                <div class="alert alert-success d-flex align-items-center" role="alert">
+                                                    <i class="fas fa-trophy me-2"></i>
+                                                    <strong>Congratulations! You reached your goal! 🏆</strong>
+                                                </div>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <p class="text-muted">No weight logs yet. 
+                                                <a href="@Url.Action("Create", "ProgressLog")" class="btn btn-sm btn-primary">Add your first log</a>
+                                            </p>
+                                        }
+                                    </div>
+                                }
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <div class="achievement-section">
+                                    <h3 class="text-primary">@progressData.Streak</h3>
+                                    <p class="text-muted">Day Streak</p>
+                                    
+                                    @if (progressData.Streak >= 7)
+                                    {
+                                        <span class="achievement-badge achievement-gold">
+                                            <i class="fas fa-crown me-1"></i>7-Day Legend!
+                                        </span>
+                                    }
+                                    else if (progressData.Streak >= 5)
+                                    {
+                                        <span class="achievement-badge achievement-silver">
+                                            <i class="fas fa-star me-1"></i>5-Day Amazing!
+                                        </span>
+                                    }
+                                    else if (progressData.Streak >= 3)
+                                    {
+                                        <span class="achievement-badge achievement-bronze">
+                                            <i class="fas fa-thumbs-up me-1"></i>3-Day Keep it up!
+                                        </span>
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="fas fa-dumbbell me-2"></i>Recommended Workout Programs
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        @if (ViewBag.RecommendedWorkouts != null && ((IEnumerable<Fitessa.Data.Entities.WorkoutProgram>)ViewBag.RecommendedWorkouts).Any())
+                        {
+                            <div class="list-group list-group-flush">
+                                @foreach (var plan in (IEnumerable<Fitessa.Data.Entities.WorkoutProgram>)ViewBag.RecommendedWorkouts)
+                                {
+                                    <a href="@Url.Action("Details", "WorkoutPrograms", new { id = plan.Id })" 
+                                       class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">@plan.Name</h6>
+                                            <small class="text-muted">@plan.Description</small>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-muted"></i>
+                                    </a>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p class="text-muted">No recommendations available. 
+                                <a href="@Url.Action("Edit", "Profile")">Set your goal in your profile</a>.
+                            </p>
+                        }
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-header">
+                        <h5 class="mb-0">
+                            <i class="fas fa-utensils me-2"></i>Recommended Meal Plans
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        @if (ViewBag.RecommendedMeals != null && ((IEnumerable<Fitessa.Data.Entities.MealPlan>)ViewBag.RecommendedMeals).Any())
+                        {
+                            <div class="list-group list-group-flush">
+                                @foreach (var plan in (IEnumerable<Fitessa.Data.Entities.MealPlan>)ViewBag.RecommendedMeals)
+                                {
+                                    <a href="@Url.Action("Edit", "MealPlans", new { id = plan.Id })" 
+                                       class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                        <div>
+                                            <h6 class="mb-1">@plan.Name</h6>
+                                            <small class="text-muted">@plan.Description</small>
+                                        </div>
+                                        <i class="fas fa-chevron-right text-muted"></i>
+                                    </a>
+                                }
+                            </div>
+                        }
+                        else
+                        {
+                            <p class="text-muted">No meal plan recommendations available.</p>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @if (ViewBag.ProgressInsights != null && ((List<Fitessa.Services.Interfaces.ProgressInsight>)ViewBag.ProgressInsights).Any())
         {
-            <div style="color:green;font-weight:bold;">Congratulations! You reached your goal! 🏆</div>
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">
+                                <i class="fas fa-lightbulb me-2"></i>Smart Progress Insights
+                            </h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                @foreach (var insight in (List<Fitessa.Services.Interfaces.ProgressInsight>)ViewBag.ProgressInsights)
+                                {
+                                    <div class="col-md-6 mb-3">
+                                        <div class="alert alert-@(insight.Type == "success" ? "success" : insight.Type == "warning" ? "warning" : "info") d-flex align-items-center" role="alert">
+                                            <i class="fas fa-@(insight.Type == "success" ? "check-circle" : insight.Type == "warning" ? "exclamation-triangle" : "info-circle") me-2"></i>
+                                            @insight.Message
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         }
     }
     else
     {
-        <p>No weight logs yet. <a href="@Url.Action("Create", "ProgressLog")">Add your first log</a>.</p>
+        <div class="row mb-5">
+            <div class="col-12 text-center">
+                <h2 class="display-4 mb-4">Why Choose Fitessa?</h2>
+                <p class="lead mb-5">Discover the features that make Fitessa your perfect fitness companion</p>
+            </div>
+        </div>
+        
+        <div class="row mb-5">
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-dumbbell text-primary" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h5 class="card-title">Workout Programs</h5>
+                        <p class="card-text">Create and follow personalized workout programs designed for your fitness level and goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-utensils text-primary" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h5 class="card-title">Meal Plans</h5>
+                        <p class="card-text">Access nutritionally balanced meal plans that complement your fitness journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card text-center h-100">
+                    <div class="card-body">
+                        <i class="fas fa-chart-line text-primary" style="font-size: 3rem; margin-bottom: 1rem;"></i>
+                        <h5 class="card-title">Progress Tracking</h5>
+                        <p class="card-text">Monitor your progress with detailed analytics and visual progress indicators.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     }
-}
-@if (User.Identity.IsAuthenticated && user != null)
-{
-    <h3>Achievements & Streaks</h3>
-    <p>Current workout streak: <b>@streak</b> day(s)</p>
-    @if (streak >= 7)
-    {
-        <div style="color:gold;font-weight:bold;">🏅 7-Day Streak! Legend!</div>
-    }
-    else if (streak >= 5)
-    {
-        <div style="color:orange;font-weight:bold;">🏅 5-Day Streak! Amazing!</div>
-    }
-    else if (streak >= 3)
-    {
-        <div style="color:green;font-weight:bold;">🏅 3-Day Streak! Keep it up!</div>
-    }
-}
-@if (User.Identity.IsAuthenticated && user != null && insights != null && insights.Any())
-{
-    <h3>Smart Progress Insights</h3>
-    <ul>
-    @foreach (var insight in insights)
-    {
-        <li style="color:@(insight.Type == "success" ? "green" : insight.Type == "warning" ? "orange" : "#222")">@insight.Message</li>
-    }
-    </ul>
-}
+
+    <div class="row mb-5">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0">
+                        <i class="fas fa-cogs me-2"></i>Quick Actions
+                    </h5>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("Create", "WorkoutPrograms")" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-plus me-2"></i>Create Workout
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("Index", "WorkoutPrograms")" class="btn btn-outline-secondary w-100">
+                                <i class="fas fa-list me-2"></i>View Programs
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("Index", "Exercises")" class="btn btn-outline-info w-100">
+                                <i class="fas fa-running me-2"></i>Browse Exercises
+                            </a>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <a href="@Url.Action("Index", "SubscriptionPlans")" class="btn btn-outline-warning w-100">
+                                <i class="fas fa-crown me-2"></i>Premium Plans
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

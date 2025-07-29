@@ -5,6 +5,14 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\README.md",
+      "PackagePath": "staticwebassets\\images\\logo\\README.md"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\fitessa-logo.png",
+      "PackagePath": "staticwebassets\\images\\logo\\fitessa-logo.png"
+    },
+    {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
@@ -235,6 +243,14 @@
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\css\\fitness-theme.css",
+      "PackagePath": "staticwebassets\\template\\css\\fitness-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\js\\fitness-theme.js",
+      "PackagePath": "staticwebassets\\template\\js\\fitness-theme.js"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Fitessa.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

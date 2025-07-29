@@ -15,32 +15,39 @@ namespace Fitessa.Web
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") 
+                ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+            
             builder.Services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(connectionString, b => b.MigrationsAssembly("Fitessa.Data")));
             builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
-            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultUI();
+            builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => 
+            {
+                options.SignIn.RequireConfirmedAccount = true;
+                options.Password.RequireDigit = true;
+                options.Password.RequireLowercase = true;
+                options.Password.RequireUppercase = true;
+                options.Password.RequireNonAlphanumeric = true;
+                options.Password.RequiredLength = 8;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultUI();
+
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
+            
             builder.Services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
             builder.Services.AddScoped<IWorkoutProgramService, WorkoutProgramService>();
             builder.Services.AddScoped<IExerciseService, ExerciseService>();
             builder.Services.AddScoped<IMeasurementLogService, MeasurementLogService>();
             builder.Services.AddScoped<IMealPlanService, MealPlanService>();
             builder.Services.AddScoped<IProgressInsightsService, ProgressInsightsService>();
+            
             builder.Services.AddSignalR();
             builder.Services.AddSingleton<IConverter, SynchronizedConverter>(_ => new SynchronizedConverter(new PdfTools()));
 
             var app = builder.Build();
-
-            using (var scope = app.Services.CreateScope())
-            {
-                var services = scope.ServiceProvider;
-                DbInitializer.Seed(services);
-            }
 
             if (app.Environment.IsDevelopment())
             {
@@ -65,6 +72,20 @@ namespace Fitessa.Web
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapRazorPages();
             app.MapHub<Fitessa.Hubs.NotificationHub>("/notificationHub");
+
+            try
+            {
+                using (var scope = app.Services.CreateScope())
+                {
+                    var services = scope.ServiceProvider;
+                    DbInitializer.Seed(services);
+                }
+            }
+            catch (Exception ex)
+            {
+                var logger = app.Services.GetRequiredService<ILogger<Program>>();
+                logger.LogError(ex, "An error occurred while seeding the database.");
+            }
 
             app.Run();
         }

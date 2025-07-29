@@ -1,46 +1,354 @@
 @model IEnumerable<Fitessa.Data.Entities.SubscriptionPlan>
+
 @{
     ViewData["Title"] = "Subscription Plans";
 }
-@section Styles {
-    <link rel="stylesheet" href="~/css/pricing-plans.css" />
-}
-<div class="pricing-section">
-    <div class="section-title">
-        <span>Our Plan</span>
-        <h2>Choose your pricing plan</h2>
+
+<section class="pricing-hero">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 text-center">
+                <h1 class="pricing-title">Choose Your Fitness Journey</h1>
+                <p class="pricing-subtitle">Unlock premium features and transform your fitness experience</p>
+            </div>
+        </div>
     </div>
+</section>
+
+<div class="container mt-5">
     <div class="row justify-content-center">
         @foreach (var plan in Model)
         {
-            <div class="col-lg-4 col-md-8">
-                <div class="ps-item">
-                    <h3>@plan.Name</h3>
-                    <div class="pi-price">
-                        <h2>$@plan.Price.ToString("0.##")</h2>
-                        <span>@(plan.DurationDays == 1 ? "SINGLE CLASS" : plan.DurationDays + " DAYS")</span>
+            <div class="col-lg-4 col-md-6 mb-5">
+                <div class="pricing-card @(plan.Id == 2 ? "popular" : "")">
+                    @if (plan.Id == 2)
+                    {
+                        <div class="popular-badge">
+                            <i class="fas fa-star"></i> MOST POPULAR
+                        </div>
+                    }
+                    
+                    <div class="pricing-header">
+                        <h3 class="plan-name">@plan.Name</h3>
+                        <div class="price-container">
+                            <span class="currency">$</span>
+                            <span class="price">@plan.Price.ToString("0")</span>
+                            <span class="period">/@(plan.DurationDays == 1 ? "CLASS" : plan.DurationDays + " DAYS")</span>
+                        </div>
+                        <p class="plan-description">Premium fitness plan with exclusive features</p>
                     </div>
-                    <ul>
-                        <li>Free riding</li>
-                        <li>Unlimited equipments</li>
-                        <li>Personal trainer</li>
-                        <li>Weight losing classes</li>
-                        <li>Month to mouth</li>
-                        <li>No time restriction</li>
-                    </ul>
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <form asp-action="Purchase" asp-route-id="@plan.Id" method="post" style="margin-bottom:0;">
-                            @Html.AntiForgeryToken()
-                            <button type="submit" class="primary-btn pricing-btn">Add to cart</button>
-                        </form>
-                    }
-                    else
-                    {
-                        <span class="text-muted">Login to purchase</span>
-                    }
+                    
+                    <div class="pricing-features">
+                        <ul class="feature-list">
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Access to all workout programs</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalized meal plans</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Progress tracking & analytics</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24/7 customer support</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>No time restrictions</span>
+                            </li>
+                            <li class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personal trainer guidance</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="pricing-action">
+                        <a href="@Url.Action("Details", "SubscriptionPlans", new { id = plan.Id })" 
+                           class="btn btn-primary btn-lg w-100">
+                            <i class="fas fa-crown me-2"></i>ENROLL NOW
+                        </a>
+                    </div>
                 </div>
             </div>
         }
     </div>
-</div> 
+    
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="features-highlight">
+                <h2 class="text-center mb-5">Why Choose Fitessa Premium?</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-dumbbell"></i>
+                            </div>
+                            <h4>Advanced Workouts</h4>
+                            <p>Access to exclusive workout programs designed by fitness experts</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h4>Detailed Analytics</h4>
+                            <p>Track your progress with advanced analytics and insights</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h4>Community Support</h4>
+                            <p>Join our fitness community and get motivated by others</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.pricing-hero {
+    background: var(--gradient-hero);
+    color: var(--white);
+    padding: var(--spacing-xxl) 0;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.pricing-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.pricing-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.pricing-subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    font-weight: 500;
+}
+
+.pricing-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.pricing-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.popular {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.02);
+    box-shadow: var(--shadow-lg);
+}
+
+.pricing-card.popular:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: var(--shadow-xl);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: var(--gradient-primary);
+    color: var(--white);
+    padding: var(--spacing-sm) var(--spacing-md);
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    box-shadow: var(--shadow-sm);
+    z-index: 10;
+}
+
+.pricing-header {
+    padding: var(--spacing-xl);
+    text-align: center;
+    background: var(--gradient-primary);
+    color: var(--white);
+    position: relative;
+}
+
+.pricing-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(255,255,255,0.1) 50%, transparent 70%);
+    animation: shimmer 4s infinite;
+}
+
+.plan-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.price-container {
+    margin-bottom: var(--spacing-md);
+}
+
+.currency {
+    font-size: 1.3rem;
+    font-weight: 600;
+    vertical-align: top;
+}
+
+.price {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.period {
+    font-size: 0.9rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+.plan-description {
+    font-size: 0.95rem;
+    opacity: 0.9;
+    margin-bottom: 0;
+}
+
+.pricing-features {
+    padding: var(--spacing-xl);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--spacing-md);
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.feature-item i {
+    color: var(--accent-success);
+    margin-right: var(--spacing-sm);
+    font-size: 1rem;
+    flex-shrink: 0;
+}
+
+.pricing-action {
+    padding: var(--spacing-xl);
+    padding-top: 0;
+}
+
+.features-highlight {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xxl);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0,0,0,0.1);
+}
+
+.feature-card {
+    text-align: center;
+    padding: var(--spacing-xl);
+    background: var(--light-gray);
+    border-radius: var(--radius-md);
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid rgba(0,0,0,0.05);
+}
+
+.feature-card:hover {
+    transform: translateY(-3px);
+    background: var(--white);
+    box-shadow: var(--shadow-md);
+}
+
+.feature-icon {
+    width: 70px;
+    height: 70px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto var(--spacing-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.feature-icon i {
+    font-size: 1.8rem;
+    color: var(--white);
+}
+
+.feature-card h4 {
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--secondary-dark);
+}
+
+.feature-card p {
+    color: var(--gray);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+@@media (max-width: 768px) {
+    .pricing-title {
+        font-size: 2.5rem;
+    }
+    
+    .pricing-card.popular {
+        transform: none;
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .pricing-card.popular:hover {
+        transform: translateY(-5px);
+    }
+}
+</style> 

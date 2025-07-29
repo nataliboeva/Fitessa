@@ -1,4 +1,6 @@
 wwwroot\favicon.ico
+wwwroot\images\logo\fitessa-logo.png
+wwwroot\images\logo\README.md
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -57,3 +59,5 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\template\css\fitness-theme.css
+wwwroot\template\js\fitness-theme.js
