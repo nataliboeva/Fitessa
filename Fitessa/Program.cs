@@ -7,6 +7,7 @@ using Fitessa.Services.Services;
 using Fitessa.Middleware;
 using DinkToPdf;
 using DinkToPdf.Contracts;
+using Microsoft.Extensions.Logging;
 
 namespace Fitessa.Web
 {
@@ -46,6 +47,7 @@ namespace Fitessa.Web
             builder.Services.AddScoped<IProgressInsightsService, ProgressInsightsService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<INutritionApiService, NutritionApiService>();
+            builder.Services.AddScoped<IFitnessAnalyticsService, FitnessAnalyticsService>();
             
             builder.Services.AddAutoMapper(typeof(Program));
             
@@ -76,6 +78,10 @@ namespace Fitessa.Web
             
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
+            app.MapControllerRoute(
+                name: "areas",
+                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
+            
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

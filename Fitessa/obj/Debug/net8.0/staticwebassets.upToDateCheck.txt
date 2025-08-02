@@ -1,6 +1,11 @@
+wwwroot\css\admin-theme.css
+wwwroot\css\dark-mode.css
+wwwroot\css\mobile-responsive.css
 wwwroot\favicon.ico
 wwwroot\images\logo\fitessa-logo.png
 wwwroot\images\logo\README.md
+wwwroot\js\admin-scripts.js
+wwwroot\js\dark-mode.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

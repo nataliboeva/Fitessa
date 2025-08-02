@@ -72,14 +72,55 @@ namespace Fitessa.Web.Controllers
         {
             var plan = _service.GetById(id);
             if (plan == null) return NotFound();
-            var html = $@"<h1>{plan.Name}</h1><p>{plan.Description}</p>";
+            
+            var html = $@"
+                <html>
+                <head>
+                    <style>
+                        body {{ font-family: Arial, sans-serif; margin: 20px; }}
+                        h1 {{ color: #333; }}
+                        .info {{ margin: 10px 0; }}
+                        .details {{ margin-top: 20px; }}
+                    </style>
+                </head>
+                <body>
+                    <h1>{plan.Name}</h1>
+                    <div class='info'>
+                        <p><strong>Description:</strong> {plan.Description}</p>
+                        <p><strong>Created for:</strong> {plan.User?.FirstName} {plan.User?.LastName}</p>
+                    </div>
+                    <div class='details'>
+                        <h2>Meal Plan Details</h2>
+                        <p>This meal plan is designed to help you achieve your fitness goals. It includes balanced nutrition and healthy food choices.</p>
+                        <p><strong>Plan ID:</strong> {plan.Id}</p>
+                    </div>
+                </body>
+                </html>";
+            
             var doc = new HtmlToPdfDocument()
             {
-                GlobalSettings = { PaperSize = PaperKind.A4, Orientation = Orientation.Portrait },
-                Objects = { new ObjectSettings { HtmlContent = html } }
+                GlobalSettings = { 
+                    PaperSize = PaperKind.A4, 
+                    Orientation = Orientation.Portrait,
+                    Margins = new MarginSettings { Top = 20, Bottom = 20, Left = 20, Right = 20 }
+                },
+                Objects = { 
+                    new ObjectSettings { 
+                        HtmlContent = html,
+                        WebSettings = { DefaultEncoding = "utf-8" }
+                    } 
+                }
             };
-            var pdf = _pdfConverter.Convert(doc);
-            return File(pdf, "application/pdf", $"MealPlan_{plan.Name}.pdf");
+            
+            try
+            {
+                var pdf = _pdfConverter.Convert(doc);
+                return File(pdf, "application/pdf", $"MealPlan_{plan.Name.Replace(" ", "_")}.pdf");
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Index");
+            }
         }
     }
 } 

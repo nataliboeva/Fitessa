@@ -1,5 +1,6 @@
 using Fitessa.Services.Interfaces;
 using System.Text.Json;
+using Microsoft.Extensions.Logging;
 
 namespace Fitessa.Services.Services
 {

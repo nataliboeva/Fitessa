@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
+using Microsoft.Extensions.Logging;
 
 namespace Fitessa.Controllers
 {

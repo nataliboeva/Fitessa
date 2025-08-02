@@ -162,4 +162,7 @@ C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.Extens
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\DinkToPdf.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

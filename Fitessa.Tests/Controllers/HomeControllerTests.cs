@@ -1,17 +1,46 @@
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 using Fitessa.Controllers;
+using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.Identity;
+using Fitessa.Data.Entities;
+using Fitessa.Services.Interfaces;
+using Moq;
 
 namespace Fitessa.Tests.Controllers
 {
     public class HomeControllerTests
     {
-        [Fact]
-        public void Index_ReturnsViewResult()
-        {
-            var controller = new HomeController();
+        private readonly Mock<ILogger<HomeController>> _mockLogger;
+        private readonly Mock<UserManager<ApplicationUser>> _mockUserManager;
+        private readonly Mock<IWorkoutProgramService> _mockWorkoutProgramService;
+        private readonly Mock<IMealPlanService> _mockMealPlanService;
+        private readonly Mock<IMeasurementLogService> _mockMeasurementLogService;
+        private readonly Mock<IProgressInsightsService> _mockProgressInsightsService;
 
-            var result = controller.Index();
+        public HomeControllerTests()
+        {
+            _mockLogger = new Mock<ILogger<HomeController>>();
+            _mockUserManager = new Mock<UserManager<ApplicationUser>>(
+                Mock.Of<IUserStore<ApplicationUser>>(), null, null, null, null, null, null, null, null);
+            _mockWorkoutProgramService = new Mock<IWorkoutProgramService>();
+            _mockMealPlanService = new Mock<IMealPlanService>();
+            _mockMeasurementLogService = new Mock<IMeasurementLogService>();
+            _mockProgressInsightsService = new Mock<IProgressInsightsService>();
+        }
+
+        [Fact]
+        public async Task Index_ReturnsViewResult()
+        {
+            var controller = new HomeController(
+                _mockLogger.Object,
+                _mockUserManager.Object,
+                _mockWorkoutProgramService.Object,
+                _mockMealPlanService.Object,
+                _mockMeasurementLogService.Object,
+                _mockProgressInsightsService.Object);
+
+            var result = await controller.Index();
 
             Assert.IsType<ViewResult>(result);
         }
@@ -19,7 +48,13 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Privacy_ReturnsViewResult()
         {
-            var controller = new HomeController();
+            var controller = new HomeController(
+                _mockLogger.Object,
+                _mockUserManager.Object,
+                _mockWorkoutProgramService.Object,
+                _mockMealPlanService.Object,
+                _mockMeasurementLogService.Object,
+                _mockProgressInsightsService.Object);
 
             var result = controller.Privacy();
 
@@ -29,7 +64,13 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Error_ReturnsViewResult()
         {
-            var controller = new HomeController();
+            var controller = new HomeController(
+                _mockLogger.Object,
+                _mockUserManager.Object,
+                _mockWorkoutProgramService.Object,
+                _mockMealPlanService.Object,
+                _mockMeasurementLogService.Object,
+                _mockProgressInsightsService.Object);
 
             var result = controller.Error();
 

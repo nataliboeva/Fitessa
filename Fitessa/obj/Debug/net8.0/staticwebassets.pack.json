@@ -1,6 +1,18 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\admin-theme.css",
+      "PackagePath": "staticwebassets\\css\\admin-theme.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\dark-mode.css",
+      "PackagePath": "staticwebassets\\css\\dark-mode.css"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\mobile-responsive.css",
+      "PackagePath": "staticwebassets\\css\\mobile-responsive.css"
+    },
+    {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -11,6 +23,14 @@
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\images\\logo\\fitessa-logo.png",
       "PackagePath": "staticwebassets\\images\\logo\\fitessa-logo.png"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\admin-scripts.js",
+      "PackagePath": "staticwebassets\\js\\admin-scripts.js"
+    },
+    {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
+      "PackagePath": "staticwebassets\\js\\dark-mode.js"
     },
     {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",

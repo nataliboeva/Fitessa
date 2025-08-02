@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dhInmHNHlFS1AnuxcfbxK9BiUC7hxKGuhhfmPNOZfmY=",
+  "Hash": "wq/3onUD44Q5CQXNxmT9/6p4dyj6C0ApbyY4qWiLeRM=",
   "Source": "Fitessa.Web",
   "BasePath": "_content/Fitessa.Web",
   "Mode": "Default",
@@ -1277,6 +1277,69 @@
       "OriginalItemSpec": "C:\\Users\\User69\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.15\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\admin-theme.css",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "css/admin-theme#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "mgk2w83544",
+      "Integrity": "FoSj+5axtQRYiL/9GHrOTcbrL4eI7+ZqzuVhYu+A7ks=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\admin-theme.css"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\dark-mode.css",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "css/dark-mode#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x0ygjukl47",
+      "Integrity": "QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\dark-mode.css"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\mobile-responsive.css",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "css/mobile-responsive#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ezcswc5hy7",
+      "Integrity": "upDT2aZOOS8JgA6JPGZkBeEmb4KTVFzr9ZVtkR78+Ic=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\mobile-responsive.css"
+    },
+    {
       "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\favicon.ico",
       "SourceId": "Fitessa.Web",
       "SourceType": "Discovered",
@@ -1338,6 +1401,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\logo\\README.md"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\admin-scripts.js",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "js/admin-scripts#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r2surlgg63",
+      "Integrity": "o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\admin-scripts.js"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "js/dark-mode#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qrvrju2zr6",
+      "Integrity": "ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\dark-mode.js"
     },
     {
       "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
@@ -2601,6 +2706,252 @@
     }
   ],
   "Endpoints": [
+    {
+      "Route": "css/admin-theme.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\admin-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FoSj+5axtQRYiL/9GHrOTcbrL4eI7+ZqzuVhYu+A7ks=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:45:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoSj+5axtQRYiL/9GHrOTcbrL4eI7+ZqzuVhYu+A7ks="
+        }
+      ]
+    },
+    {
+      "Route": "css/admin-theme.mgk2w83544.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\admin-theme.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "5790"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FoSj+5axtQRYiL/9GHrOTcbrL4eI7+ZqzuVhYu+A7ks=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:45:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "mgk2w83544"
+        },
+        {
+          "Name": "label",
+          "Value": "css/admin-theme.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FoSj+5axtQRYiL/9GHrOTcbrL4eI7+ZqzuVhYu+A7ks="
+        }
+      ]
+    },
+    {
+      "Route": "css/dark-mode.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\dark-mode.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es="
+        }
+      ]
+    },
+    {
+      "Route": "css/dark-mode.x0ygjukl47.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\dark-mode.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7408"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x0ygjukl47"
+        },
+        {
+          "Name": "label",
+          "Value": "css/dark-mode.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es="
+        }
+      ]
+    },
+    {
+      "Route": "css/mobile-responsive.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\mobile-responsive.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"upDT2aZOOS8JgA6JPGZkBeEmb4KTVFzr9ZVtkR78+Ic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 10:29:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-upDT2aZOOS8JgA6JPGZkBeEmb4KTVFzr9ZVtkR78+Ic="
+        }
+      ]
+    },
+    {
+      "Route": "css/mobile-responsive.ezcswc5hy7.css",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\mobile-responsive.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2958"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"upDT2aZOOS8JgA6JPGZkBeEmb4KTVFzr9ZVtkR78+Ic=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 10:29:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ezcswc5hy7"
+        },
+        {
+          "Name": "label",
+          "Value": "css/mobile-responsive.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-upDT2aZOOS8JgA6JPGZkBeEmb4KTVFzr9ZVtkR78+Ic="
+        }
+      ]
+    },
     {
       "Route": "favicon.61n19gt1b8.ico",
       "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\favicon.ico",
@@ -5064,6 +5415,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-bdaRMuAZSsOZRMEse/ghbLemFV60KAhgmppAyR281rU="
+        }
+      ]
+    },
+    {
+      "Route": "js/admin-scripts.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\admin-scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:48:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE="
+        }
+      ]
+    },
+    {
+      "Route": "js/admin-scripts.r2surlgg63.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\admin-scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "9115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:48:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r2surlgg63"
+        },
+        {
+          "Name": "label",
+          "Value": "js/admin-scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE="
+        }
+      ]
+    },
+    {
+      "Route": "js/dark-mode.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4="
+        }
+      ]
+    },
+    {
+      "Route": "js/dark-mode.qrvrju2zr6.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3443"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qrvrju2zr6"
+        },
+        {
+          "Name": "label",
+          "Value": "js/dark-mode.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4="
         }
       ]
     },

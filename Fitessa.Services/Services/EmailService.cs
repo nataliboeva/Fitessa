@@ -1,6 +1,8 @@
 using Fitessa.Services.Interfaces;
 using System.Net.Mail;
 using System.Net;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 
 namespace Fitessa.Services.Services
 {

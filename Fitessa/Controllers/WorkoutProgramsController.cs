@@ -88,14 +88,55 @@ namespace Fitessa.Web.Controllers
         {
             var program = _service.GetById(id);
             if (program == null) return NotFound();
-            var html = $@"<h1>{program.Name}</h1><p>{program.Description}</p><p><b>Difficulty:</b> {program.Difficulty}</p><p><b>Duration:</b> {program.DurationDays} days</p>";
+            
+            var html = $@"
+                <html>
+                <head>
+                    <style>
+                        body {{ font-family: Arial, sans-serif; margin: 20px; }}
+                        h1 {{ color: #333; }}
+                        .info {{ margin: 10px 0; }}
+                        .exercises {{ margin-top: 20px; }}
+                    </style>
+                </head>
+                <body>
+                    <h1>{program.Name}</h1>
+                    <div class='info'>
+                        <p><strong>Description:</strong> {program.Description}</p>
+                        <p><strong>Difficulty:</strong> {program.Difficulty}</p>
+                        <p><strong>Duration:</strong> {program.DurationDays} days</p>
+                    </div>
+                    <div class='exercises'>
+                        <h2>Exercises</h2>
+                        <p>This workout program includes various exercises to help you achieve your fitness goals.</p>
+                    </div>
+                </body>
+                </html>";
+            
             var doc = new HtmlToPdfDocument()
             {
-                GlobalSettings = { PaperSize = PaperKind.A4, Orientation = Orientation.Portrait },
-                Objects = { new ObjectSettings { HtmlContent = html } }
+                GlobalSettings = { 
+                    PaperSize = PaperKind.A4, 
+                    Orientation = Orientation.Portrait,
+                    Margins = new MarginSettings { Top = 20, Bottom = 20, Left = 20, Right = 20 }
+                },
+                Objects = { 
+                    new ObjectSettings { 
+                        HtmlContent = html,
+                        WebSettings = { DefaultEncoding = "utf-8" }
+                    } 
+                }
             };
-            var pdf = _pdfConverter.Convert(doc);
-            return File(pdf, "application/pdf", $"WorkoutProgram_{program.Name}.pdf");
+            
+            try
+            {
+                var pdf = _pdfConverter.Convert(doc);
+                return File(pdf, "application/pdf", $"WorkoutProgram_{program.Name.Replace(" ", "_")}.pdf");
+            }
+            catch (Exception ex)
+            {
+                return RedirectToAction("Details", new { id = id });
+            }
         }
     }
 } 

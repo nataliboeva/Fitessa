@@ -5,23 +5,36 @@ namespace Fitessa.Models
     public class MeasurementLogViewModel
     {
         public int Id { get; set; }
-
-        [Required]
-        [Range(30, 300)]
-        public decimal WeightKg { get; set; }
-
-        [Required]
-        [Range(100, 250)]
-        public decimal HeightCm { get; set; }
-
-        [Range(0, 100)]
-        public decimal? BodyFatPercentage { get; set; }
-
-        [Range(0, 200)]
-        public decimal? MuscleMassKg { get; set; }
-
-        public DateTime LoggedAt { get; set; } = DateTime.Now;
-
+        
         public string UserId { get; set; } = string.Empty;
+        
+        [Required]
+        public DateTime LoggedAt { get; set; }
+        
+        public decimal? WeightKg { get; set; }
+        
+        public decimal? BodyFatPercentage { get; set; }
+        
+        public decimal? MuscleMass { get; set; }
+        
+        public decimal? ChestCircumference { get; set; }
+        
+        public decimal? WaistCircumference { get; set; }
+        
+        public decimal? HipCircumference { get; set; }
+        
+        public decimal? BicepCircumference { get; set; }
+        
+        public decimal? ThighCircumference { get; set; }
+        
+        public decimal? CalfCircumference { get; set; }
+        
+        public string Notes { get; set; } = string.Empty;
+        
+        public string ImageUrl { get; set; } = string.Empty;
+        
+        public DateTime CreatedAt { get; set; }
+        
+        public DateTime? UpdatedAt { get; set; }
     }
 } 
