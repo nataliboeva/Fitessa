@@ -4,6 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
 using Fitessa.Services.Services;
+using Fitessa.Middleware;
 using DinkToPdf;
 using DinkToPdf.Contracts;
 
@@ -44,8 +45,11 @@ namespace Fitessa.Web
             builder.Services.AddScoped<IMealPlanService, MealPlanService>();
             builder.Services.AddScoped<IProgressInsightsService, ProgressInsightsService>();
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<INutritionApiService, NutritionApiService>();
             
             builder.Services.AddAutoMapper(typeof(Program));
+            
+            builder.Services.AddHttpClient();
             
             builder.Services.AddSignalR();
             builder.Services.AddSingleton<IConverter, SynchronizedConverter>(_ => new SynchronizedConverter(new PdfTools()));
@@ -69,6 +73,8 @@ namespace Fitessa.Web
 
             app.UseAuthentication();
             app.UseAuthorization();
+            
+            app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.MapControllerRoute(
                 name: "default",
