@@ -43,6 +43,9 @@ namespace Fitessa.Web
             builder.Services.AddScoped<IMeasurementLogService, MeasurementLogService>();
             builder.Services.AddScoped<IMealPlanService, MealPlanService>();
             builder.Services.AddScoped<IProgressInsightsService, ProgressInsightsService>();
+            builder.Services.AddScoped<IEmailService, EmailService>();
+            
+            builder.Services.AddAutoMapper(typeof(Program));
             
             builder.Services.AddSignalR();
             builder.Services.AddSingleton<IConverter, SynchronizedConverter>(_ => new SynchronizedConverter(new PdfTools()));
