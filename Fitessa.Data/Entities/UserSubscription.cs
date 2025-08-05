@@ -11,6 +11,8 @@ namespace Fitessa.Data.Entities
         public DateTime EndDate { get; set; }
         public string Status { get; set; }
         public string RenewalType { get; set; }
+        public bool IsActive { get; set; }
+        public string PaymentId { get; set; }
         public ApplicationUser User { get; set; }
         public SubscriptionPlan SubscriptionPlan { get; set; }
     }

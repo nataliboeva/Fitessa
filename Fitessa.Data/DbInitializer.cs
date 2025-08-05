@@ -17,9 +17,9 @@ namespace Fitessa.Data
             if (!context.SubscriptionPlans.Any())
             {
                 context.SubscriptionPlans.AddRange(
-                    new SubscriptionPlan { Name = "Free", Price = 0, DurationDays = 0, IsActive = true },
-                    new SubscriptionPlan { Name = "Monthly", Price = 19.99m, DurationDays = 30, IsActive = true },
-                    new SubscriptionPlan { Name = "Yearly", Price = 199.99m, DurationDays = 365, IsActive = true }
+                    new SubscriptionPlan { Name = "Free", Description = "Basic access to workout programs and meal plans", Price = 0, DurationDays = 0, IsActive = true },
+                    new SubscriptionPlan { Name = "Monthly", Description = "Premium access with personalized recommendations and progress tracking", Price = 19.99m, DurationDays = 30, IsActive = true },
+                    new SubscriptionPlan { Name = "Yearly", Description = "Complete premium access with all features and priority support", Price = 199.99m, DurationDays = 365, IsActive = true }
                 );
             }
 

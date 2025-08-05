@@ -265,6 +265,10 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\lib\\microsoft-signalr\\signalr.min.js",
+      "PackagePath": "staticwebassets\\lib\\microsoft-signalr\\signalr.min.js"
+    },
+    {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\css\\fitness-theme.css",
       "PackagePath": "staticwebassets\\template\\css\\fitness-theme.css"
     },

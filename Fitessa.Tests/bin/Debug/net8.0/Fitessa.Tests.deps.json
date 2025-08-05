@@ -1870,6 +1870,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {}
         }
       },
       "Mono.TextTemplating/2.2.1": {
@@ -1992,6 +1995,21 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "Stripe.net/43.20.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "43.20.0.0",
+            "fileVersion": "43.20.0.0"
+          }
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {}
         }
       },
       "System.AppContext/4.1.0": {
@@ -2137,6 +2155,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.922.41905"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
       "System.Console/4.0.0": {
@@ -2198,6 +2219,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.Drawing.Common.dll": {}
         }
       },
       "System.Formats.Asn1/8.0.2": {},
@@ -2685,6 +2709,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.Security.Permissions.dll": {}
         }
       },
       "System.Security.Principal.Windows/5.0.0": {},
@@ -2768,6 +2795,9 @@
             "assemblyVersion": "6.0.0.0",
             "fileVersion": "6.0.21.52210"
           }
+        },
+        "compile": {
+          "lib/net6.0/System.Windows.Extensions.dll": {}
         }
       },
       "System.Xml.ReaderWriter/4.0.11": {
@@ -2914,7 +2944,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.15",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.15",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.15"
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.15",
+          "Stripe.net": "43.20.0"
         },
         "runtime": {
           "Fitessa.Web.dll": {
@@ -5530,6 +5561,13 @@
       "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
+    },
+    "Stripe.net/43.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ct3jKGFUfrz5+f68B8bwHPZItybIZuRhu1JHVM+VThRy/cB6OaJbANSwoV52rUYB0cDZ+yQ9rmXgBv4/LddOHA==",
+      "path": "stripe.net/43.20.0",
+      "hashPath": "stripe.net.43.20.0.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",

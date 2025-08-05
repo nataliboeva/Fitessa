@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "wq/3onUD44Q5CQXNxmT9/6p4dyj6C0ApbyY4qWiLeRM=",
+  "Hash": "XxvBu76nolKsbmmWnfcbo5MyK8/ZJkNx0uCIWV/BR/c=",
   "Source": "Fitessa.Web",
   "BasePath": "_content/Fitessa.Web",
   "Mode": "Default",
@@ -1459,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "h27o5lwr2w",
-      "Integrity": "yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=",
+      "Fingerprint": "l5848fz0bh",
+      "Integrity": "SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\site.js"
@@ -2661,6 +2661,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\lib\\microsoft-signalr\\signalr.min.js",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "lib/microsoft-signalr/signalr.min#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "da7ghfh60h",
+      "Integrity": "5WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\lib\\microsoft-signalr\\signalr.min.js"
     },
     {
       "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\template\\css\\fitness-theme.css",
@@ -5583,51 +5604,6 @@
       ]
     },
     {
-      "Route": "js/site.h27o5lwr2w.js",
-      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "963"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 18:35:44 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "h27o5lwr2w"
-        },
-        {
-          "Name": "label",
-          "Value": "js/site.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM="
-        }
-      ]
-    },
-    {
       "Route": "js/site.js",
       "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
       "Selectors": [],
@@ -5638,7 +5614,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "963"
+          "Value": "6392"
         },
         {
           "Name": "Content-Type",
@@ -5646,11 +5622,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM=\""
+          "Value": "\"SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 20 Jul 2025 18:35:44 GMT"
+          "Value": "Tue, 05 Aug 2025 12:06:59 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5660,7 +5636,52 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-yZKl6uLYZx97zmGWXxZag2yyxKx5XUy92ufeVCJZuPM="
+          "Value": "sha256-SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g="
+        }
+      ]
+    },
+    {
+      "Route": "js/site.l5848fz0bh.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6392"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 Aug 2025 12:06:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "l5848fz0bh"
+        },
+        {
+          "Name": "label",
+          "Value": "js/site.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g="
         }
       ]
     },
@@ -10335,6 +10356,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-16aFlqtpsG9RyieKZUUUjkJpqTgcJtWXwT312I4Iz1s="
+        }
+      ]
+    },
+    {
+      "Route": "lib/microsoft-signalr/signalr.min.da7ghfh60h.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\lib\\microsoft-signalr\\signalr.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 Aug 2025 12:04:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "da7ghfh60h"
+        },
+        {
+          "Name": "label",
+          "Value": "lib/microsoft-signalr/signalr.min.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY="
+        }
+      ]
+    },
+    {
+      "Route": "lib/microsoft-signalr/signalr.min.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\lib\\microsoft-signalr\\signalr.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "46"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 05 Aug 2025 12:04:23 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY="
         }
       ]
     },

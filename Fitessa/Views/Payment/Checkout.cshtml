@@ -1,0 +1,183 @@
+@{
+    ViewData["Title"] = "Checkout";
+    var plan = ViewBag.Plan as Fitessa.Data.Entities.SubscriptionPlan;
+    var user = ViewBag.User as Fitessa.Data.Entities.ApplicationUser;
+    var stripeKey = ViewBag.StripePublishableKey;
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-8">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0"><i class="fas fa-credit-card me-2"></i>Complete Your Purchase</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Order Summary</h5>
+                            <div class="card mb-3">
+                                <div class="card-body">
+                                    <h6 class="card-title">@plan.Name</h6>
+                                    <p class="card-text">@plan.Description</p>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Duration:</span>
+                                        <span>@plan.DurationDays days</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <span>Price:</span>
+                                        <span class="fw-bold">$@plan.Price</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="alert alert-info">
+                                <i class="fas fa-info-circle me-2"></i>
+                                <strong>Secure Payment:</strong> Your payment information is encrypted and secure.
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h5>Payment Information</h5>
+                            <form id="payment-form">
+                                @Html.AntiForgeryToken()
+                                <input type="hidden" id="planId" value="@plan.Id" />
+                                
+                                <div class="mb-3">
+                                    <label for="card-element" class="form-label">Credit or Debit Card</label>
+                                    <div id="card-element" class="form-control">
+                                        <!-- Stripe Elements will create input elements here -->
+                                    </div>
+                                    <div id="card-errors" class="text-danger mt-2" role="alert"></div>
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Email Address</label>
+                                    <input type="email" id="email" class="form-control" value="@user.Email" readonly />
+                                </div>
+
+                                <div class="mb-3">
+                                    <label for="name" class="form-label">Full Name</label>
+                                    <input type="text" id="name" class="form-control" value="@user.FirstName @user.LastName" readonly />
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-lg w-100" id="submit-button">
+                                    <i class="fas fa-lock me-2"></i>Pay $@plan.Price
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <a href="@Url.Action("Index", "Payment")" class="btn btn-outline-secondary">
+                    <i class="fas fa-arrow-left me-2"></i>Back to Plans
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="https://js.stripe.com/v3/"></script>
+    <script>
+        // Initialize Stripe
+        const stripe = Stripe('@stripeKey');
+        const elements = stripe.elements();
+
+        // Create card element
+        const card = elements.create('card', {
+            style: {
+                base: {
+                    fontSize: '16px',
+                    color: '#424770',
+                    '::placeholder': {
+                        color: '#aab7c4',
+                    },
+                },
+                invalid: {
+                    color: '#9e2146',
+                },
+            },
+        });
+
+        card.mount('#card-element');
+
+        const form = document.getElementById('payment-form');
+        const submitButton = document.getElementById('submit-button');
+
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            submitButton.disabled = true;
+            submitButton.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Processing...';
+
+            try {
+                const planId = document.getElementById('planId').value;
+                
+                const response = await fetch('/Payment/CreatePaymentIntent', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                    },
+                    body: JSON.stringify({ planId: parseInt(planId) })
+                });
+
+                const data = await response.json();
+
+                if (data.error) {
+                    throw new Error(data.error);
+                }
+
+                const { error, paymentIntent } = await stripe.confirmCardPayment(data.clientSecret, {
+                    payment_method: {
+                        card: card,
+                        billing_details: {
+                            name: document.getElementById('name').value,
+                            email: document.getElementById('email').value
+                        }
+                    }
+                });
+
+                if (error) {
+                    throw new Error(error.message);
+                }
+
+                showNotification('Payment processed successfully!', 'success');
+                setTimeout(() => {
+                    window.location.href = '/Payment/Success';
+                }, 2000);
+
+            } catch (error) {
+                showNotification('Payment failed: ' + error.message, 'danger');
+                submitButton.disabled = false;
+                submitButton.innerHTML = '<i class="fas fa-lock me-2"></i>Pay $@plan.Price';
+            }
+        });
+
+        card.addEventListener('change', ({error}) => {
+            const displayError = document.getElementById('card-errors');
+            if (error) {
+                displayError.textContent = error.message;
+            } else {
+                displayError.textContent = '';
+            }
+        });
+
+        function showNotification(message, type) {
+            const notification = document.createElement('div');
+            notification.className = `alert alert-${type} alert-dismissible fade show position-fixed`;
+            notification.style.cssText = 'top: 20px; right: 20px; z-index: 9999; min-width: 300px;';
+            notification.innerHTML = `
+                ${message}
+                <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+            `;
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.remove();
+            }, 5000);
+        }
+    </script>
+} 

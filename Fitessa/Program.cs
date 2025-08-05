@@ -26,15 +26,14 @@ namespace Fitessa.Web
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => 
             {
-                options.SignIn.RequireConfirmedAccount = true;
+                options.SignIn.RequireConfirmedAccount = false;
                 options.Password.RequireDigit = true;
                 options.Password.RequireLowercase = true;
                 options.Password.RequireUppercase = true;
                 options.Password.RequireNonAlphanumeric = true;
                 options.Password.RequiredLength = 8;
             })
-            .AddEntityFrameworkStores<ApplicationDbContext>()
-            .AddDefaultUI();
+            .AddEntityFrameworkStores<ApplicationDbContext>();
 
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
@@ -48,6 +47,7 @@ namespace Fitessa.Web
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<INutritionApiService, NutritionApiService>();
             builder.Services.AddScoped<IFitnessAnalyticsService, FitnessAnalyticsService>();
+            builder.Services.AddScoped<Fitessa.Services.NotificationService>();
             
             builder.Services.AddAutoMapper(typeof(Program));
             
@@ -79,13 +79,8 @@ namespace Fitessa.Web
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.MapControllerRoute(
-                name: "areas",
-                pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}");
-            
-            app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
-            app.MapRazorPages();
             app.MapHub<Fitessa.Hubs.NotificationHub>("/notificationHub");
 
             try

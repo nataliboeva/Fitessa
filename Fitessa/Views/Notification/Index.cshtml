@@ -1,0 +1,202 @@
+@{
+    ViewData["Title"] = "Notification Test";
+}
+
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8 mx-auto">
+            <div class="card shadow">
+                <div class="card-header bg-primary text-white">
+                    <h3 class="mb-0"><i class="fas fa-bell me-2"></i>Notification Test Center</h3>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>Personal Notifications</h5>
+                            <div class="mb-3">
+                                <label for="personalMessage" class="form-label">Message</label>
+                                <input type="text" id="personalMessage" class="form-control" value="This is a test notification!" />
+                            </div>
+                            <div class="mb-3">
+                                <label for="personalType" class="form-label">Type</label>
+                                <select id="personalType" class="form-select">
+                                    <option value="info">Info</option>
+                                    <option value="success">Success</option>
+                                    <option value="warning">Warning</option>
+                                    <option value="danger">Error</option>
+                                </select>
+                            </div>
+                            <button class="btn btn-primary" onclick="sendPersonalNotification()">
+                                <i class="fas fa-paper-plane me-2"></i>Send Personal Notification
+                            </button>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h5>Quick Notifications</h5>
+                            <div class="d-grid gap-2">
+                                <button class="btn btn-success" onclick="sendWorkoutReminder()">
+                                    <i class="fas fa-dumbbell me-2"></i>Workout Reminder
+                                </button>
+                                <button class="btn btn-warning" onclick="sendGoalAchievement()">
+                                    <i class="fas fa-trophy me-2"></i>Goal Achievement
+                                </button>
+                                <button class="btn btn-info" onclick="sendProgressUpdate()">
+                                    <i class="fas fa-chart-line me-2"></i>Progress Update
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <hr class="my-4">
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Global Notifications (Admin Only)</h5>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="mb-3">
+                                            <label for="globalMessage" class="form-label">Message</label>
+                                            <input type="text" id="globalMessage" class="form-control" value="System maintenance scheduled for tonight." />
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="globalType" class="form-label">Type</label>
+                                            <select id="globalType" class="form-select">
+                                                <option value="info">Info</option>
+                                                <option value="warning">Warning</option>
+                                                <option value="success">Success</option>
+                                                <option value="danger">Error</option>
+                                            </select>
+                                        </div>
+                                        <button class="btn btn-danger" onclick="sendGlobalNotification()">
+                                            <i class="fas fa-broadcast-tower me-2"></i>Send Global Notification
+                                        </button>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="alert alert-warning">
+                                            <i class="fas fa-exclamation-triangle me-2"></i>
+                                            <strong>Warning:</strong> Global notifications will be sent to all users currently online.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+
+                    <hr class="my-4">
+                    <div class="row">
+                        <div class="col-12">
+                            <h5>Notification History</h5>
+                            <div id="notificationHistory" class="border rounded p-3" style="max-height: 200px; overflow-y: auto;">
+                                <p class="text-muted">Notification history will appear here...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        function sendPersonalNotification() {
+            const message = document.getElementById('personalMessage').value;
+            const type = document.getElementById('personalType').value;
+            
+            fetch('/Notification/SendTestNotification', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ message, type })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addToHistory(`Personal: ${message}`, type);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function sendWorkoutReminder() {
+            fetch('/Notification/SendWorkoutReminder', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ workoutName: 'Morning Cardio' })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addToHistory('Workout Reminder: Morning Cardio', 'info');
+                }
+            });
+        }
+
+        function sendGoalAchievement() {
+            fetch('/Notification/SendGoalAchievement', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ goalType: 'Weight Loss', achievement: 'Lost 10 pounds!' })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addToHistory('Goal Achievement: Weight Loss - Lost 10 pounds!', 'success');
+                }
+            });
+        }
+
+        function sendProgressUpdate() {
+            showNotification('Your weight has been updated: 75.5 kg', 'info');
+            addToHistory('Progress Update: Weight - 75.5 kg', 'info');
+        }
+
+        function sendGlobalNotification() {
+            const message = document.getElementById('globalMessage').value;
+            const type = document.getElementById('globalType').value;
+            
+            fetch('/Notification/SendGlobalNotification', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'RequestVerificationToken': document.querySelector('input[name="__RequestVerificationToken"]').value
+                },
+                body: JSON.stringify({ message, type })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    addToHistory(`Global: ${message}`, type);
+                }
+            });
+        }
+
+        function addToHistory(message, type) {
+            const history = document.getElementById('notificationHistory');
+            const timestamp = new Date().toLocaleTimeString();
+            const entry = document.createElement('div');
+            entry.className = `mb-2 p-2 border-start border-${type} bg-light`;
+            entry.innerHTML = `
+                <small class="text-muted">${timestamp}</small><br>
+                <span class="text-${type}">${message}</span>
+            `;
+            history.appendChild(entry);
+            
+            const entries = history.querySelectorAll('div');
+            if (entries.length > 10) {
+                entries[0].remove();
+            }
+        }
+    </script>
+} 

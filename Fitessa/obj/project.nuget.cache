@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AlK4c6msk50=",
+  "dgSpecHash": "kANEdUu5JoM=",
   "success": true,
   "projectFilePath": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\Fitessa.Web.csproj",
   "expectedPackageFiles": [
@@ -85,11 +85,12 @@
     "C:\\Users\\User69\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\netstandard.library\\1.6.0\\netstandard.library.1.6.0.nupkg.sha512",
-    "C:\\Users\\User69\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\User69\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system\\4.0.0\\runtime.native.system.4.0.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
+    "C:\\Users\\User69\\.nuget\\packages\\stripe.net\\43.20.0\\stripe.net.43.20.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",

@@ -19,5 +19,21 @@ namespace Fitessa.Services.Services
         {
             return _context.SubscriptionPlans.Where(p => p.IsActive).ToList();
         }
+
+        public IEnumerable<SubscriptionPlan> GetAll()
+        {
+            return _context.SubscriptionPlans.ToList();
+        }
+
+        public SubscriptionPlan GetById(int id)
+        {
+            return _context.SubscriptionPlans.FirstOrDefault(p => p.Id == id);
+        }
+
+        public void CreateUserSubscription(UserSubscription userSubscription)
+        {
+            _context.UserSubscriptions.Add(userSubscription);
+            _context.SaveChanges();
+        }
     }
 }

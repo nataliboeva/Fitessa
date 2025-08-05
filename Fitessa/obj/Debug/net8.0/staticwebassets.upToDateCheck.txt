@@ -64,5 +64,6 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\microsoft-signalr\signalr.min.js
 wwwroot\template\css\fitness-theme.css
 wwwroot\template\js\fitness-theme.js

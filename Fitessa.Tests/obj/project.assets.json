@@ -2281,7 +2281,7 @@
       "Microsoft.Win32.SystemEvents/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Win32.SystemEvents.dll": {
             "related": ".xml"
           }
         },
@@ -2449,6 +2449,23 @@
         },
         "runtime": {
           "lib/netstandard1.0/_._": {}
+        }
+      },
+      "Stripe.net/43.20.0": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.AppContext/4.1.0": {
@@ -2668,7 +2685,7 @@
           "System.Security.Permissions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
             "related": ".xml"
           }
         },
@@ -2786,7 +2803,7 @@
           "Microsoft.Win32.SystemEvents": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Drawing.Common.dll": {
             "related": ".xml"
           }
         },
@@ -3478,7 +3495,7 @@
       "System.Security.AccessControl/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Security.AccessControl.dll": {
             "related": ".xml"
           }
         },
@@ -3735,7 +3752,7 @@
           "System.Windows.Extensions": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Security.Permissions.dll": {
             "related": ".xml"
           }
         },
@@ -3969,7 +3986,7 @@
           "System.Drawing.Common": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Windows.Extensions.dll": {
             "related": ".xml"
           }
         },
@@ -4178,7 +4195,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.15",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.15",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.15"
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.15",
+          "Stripe.net": "43.20.0"
         },
         "compile": {
           "bin/placeholder/Fitessa.Web.dll": {}
@@ -7341,6 +7359,30 @@
         "lib/netstandard1.0/_._",
         "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
         "runtime.native.system.security.cryptography.nuspec"
+      ]
+    },
+    "Stripe.net/43.20.0": {
+      "sha512": "ct3jKGFUfrz5+f68B8bwHPZItybIZuRhu1JHVM+VThRy/cB6OaJbANSwoV52rUYB0cDZ+yQ9rmXgBv4/LddOHA==",
+      "type": "package",
+      "path": "stripe.net/43.20.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "README.md",
+        "icon.png",
+        "lib/net461/Stripe.net.dll",
+        "lib/net461/Stripe.net.xml",
+        "lib/net5.0/Stripe.net.dll",
+        "lib/net5.0/Stripe.net.xml",
+        "lib/net6.0/Stripe.net.dll",
+        "lib/net6.0/Stripe.net.xml",
+        "lib/netcoreapp3.1/Stripe.net.dll",
+        "lib/netcoreapp3.1/Stripe.net.xml",
+        "lib/netstandard2.0/Stripe.net.dll",
+        "lib/netstandard2.0/Stripe.net.xml",
+        "stripe.net.43.20.0.nupkg.sha512",
+        "stripe.net.nuspec"
       ]
     },
     "System.AppContext/4.1.0": {

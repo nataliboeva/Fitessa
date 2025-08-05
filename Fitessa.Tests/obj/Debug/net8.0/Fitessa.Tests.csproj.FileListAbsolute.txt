@@ -546,3 +546,4 @@ C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\bin\Debug\net8.0\Fitessa.Se
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\bin\Debug\net8.0\Fitessa.Data.pdb
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa..EE0B1EE2.Up2Date
 C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\obj\Debug\net8.0\Fitessa.Tests.genruntimeconfig.cache
+C:\Users\User69\Desktop\nattie\Fitessa\Fitessa.Tests\bin\Debug\net8.0\Stripe.net.dll

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "WhlWZADkCRs=",
+  "dgSpecHash": "OB+dpLq7WUo=",
   "success": true,
   "projectFilePath": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa.Tests\\Fitessa.Tests.csproj",
   "expectedPackageFiles": [
@@ -117,6 +117,7 @@
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system.io.compression\\4.1.0\\runtime.native.system.io.compression.4.1.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system.net.http\\4.0.1\\runtime.native.system.net.http.4.0.1.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\runtime.native.system.security.cryptography\\4.0.0\\runtime.native.system.security.cryptography.4.0.0.nupkg.sha512",
+    "C:\\Users\\User69\\.nuget\\packages\\stripe.net\\43.20.0\\stripe.net.43.20.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\system.buffers\\4.6.0\\system.buffers.4.6.0.nupkg.sha512",
     "C:\\Users\\User69\\.nuget\\packages\\system.clientmodel\\1.0.0\\system.clientmodel.1.0.0.nupkg.sha512",

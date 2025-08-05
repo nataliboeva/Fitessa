@@ -88,6 +88,11 @@ namespace Fitessa.Controllers
             return View();
         }
 
+        public IActionResult Test()
+        {
+            return Content("Routing is working! All controllers should be accessible.");
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

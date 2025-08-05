@@ -19,7 +19,8 @@
           "Microsoft.EntityFrameworkCore": "8.0.15",
           "Microsoft.EntityFrameworkCore.InMemory": "8.0.15",
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.15",
-          "Microsoft.EntityFrameworkCore.Tools": "8.0.15"
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.15",
+          "Stripe.net": "43.20.0"
         },
         "runtime": {
           "Fitessa.Web.dll": {}
@@ -199,14 +200,14 @@
           "Microsoft.AspNetCore.Http.Connections.Common": "1.2.0",
           "Microsoft.AspNetCore.Routing": "2.3.0",
           "Microsoft.AspNetCore.WebSockets": "2.3.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Net.WebSockets.WebSocketProtocol": "5.1.0"
         }
       },
       "Microsoft.AspNetCore.Http.Connections.Common/1.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.3.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Buffers": "4.6.0",
           "System.IO.Pipelines": "8.0.0"
         }
@@ -274,7 +275,7 @@
         "dependencies": {
           "Microsoft.AspNetCore.Connections.Abstractions": "2.3.0",
           "Microsoft.Extensions.Options": "8.0.2",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.Buffers": "4.6.0"
         }
       },
@@ -293,7 +294,7 @@
       "Microsoft.AspNetCore.SignalR.Protocols.Json/1.2.0": {
         "dependencies": {
           "Microsoft.AspNetCore.SignalR.Common": "1.2.0",
-          "Newtonsoft.Json": "11.0.2",
+          "Newtonsoft.Json": "12.0.3",
           "System.IO.Pipelines": "8.0.0"
         }
       },
@@ -1038,11 +1039,11 @@
           "System.Xml.XDocument": "4.0.11"
         }
       },
-      "Newtonsoft.Json/11.0.2": {
+      "Newtonsoft.Json/12.0.3": {
         "runtime": {
           "lib/netstandard2.0/Newtonsoft.Json.dll": {
-            "assemblyVersion": "11.0.0.0",
-            "fileVersion": "11.0.2.21924"
+            "assemblyVersion": "12.0.0.0",
+            "fileVersion": "12.0.3.23909"
           }
         }
       },
@@ -1068,6 +1069,18 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "1.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "Stripe.net/43.20.0": {
+        "dependencies": {
+          "Newtonsoft.Json": "12.0.3",
+          "System.Configuration.ConfigurationManager": "6.0.1"
+        },
+        "runtime": {
+          "lib/net6.0/Stripe.net.dll": {
+            "assemblyVersion": "43.20.0.0",
+            "fileVersion": "43.20.0.0"
+          }
         }
       },
       "System.AppContext/4.1.0": {
@@ -2443,12 +2456,12 @@
       "path": "netstandard.library/1.6.0",
       "hashPath": "netstandard.library.1.6.0.nupkg.sha512"
     },
-    "Newtonsoft.Json/11.0.2": {
+    "Newtonsoft.Json/12.0.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-IvJe1pj7JHEsP8B8J8DwlMEx8UInrs/x+9oVY+oCD13jpLu4JbJU2WCIsMRn5C4yW9+DgkaO8uiVE5VHKjpmdQ==",
-      "path": "newtonsoft.json/11.0.2",
-      "hashPath": "newtonsoft.json.11.0.2.nupkg.sha512"
+      "sha512": "sha512-6mgjfnRB4jKMlzHSl+VD+oUc1IebOZabkbyWj2RiTgWwYPPuaK1H97G1sHqGwPlS5npiF5Q0OrxN1wni2n5QWg==",
+      "path": "newtonsoft.json/12.0.3",
+      "hashPath": "newtonsoft.json.12.0.3.nupkg.sha512"
     },
     "runtime.native.System/4.0.0": {
       "type": "package",
@@ -2477,6 +2490,13 @@
       "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
+    },
+    "Stripe.net/43.20.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ct3jKGFUfrz5+f68B8bwHPZItybIZuRhu1JHVM+VThRy/cB6OaJbANSwoV52rUYB0cDZ+yQ9rmXgBv4/LddOHA==",
+      "path": "stripe.net/43.20.0",
+      "hashPath": "stripe.net.43.20.0.nupkg.sha512"
     },
     "System.AppContext/4.1.0": {
       "type": "package",
