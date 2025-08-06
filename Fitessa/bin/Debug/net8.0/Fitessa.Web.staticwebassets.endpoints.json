@@ -2319,7 +2319,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7408"
+          "Value": "7949"
         },
         {
           "Name": "Content-Type",
@@ -2327,22 +2327,22 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=\""
+          "Value": "\"HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+          "Value": "Tue, 05 Aug 2025 13:31:03 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es="
+          "Value": "sha256-HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc="
         }
       ]
     },
     {
-      "Route": "css/dark-mode.x0ygjukl47.css",
+      "Route": "css/dark-mode.hzqugljh5k.css",
       "AssetFile": "css/dark-mode.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2356,7 +2356,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7408"
+          "Value": "7949"
         },
         {
           "Name": "Content-Type",
@@ -2364,21 +2364,21 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=\""
+          "Value": "\"HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+          "Value": "Tue, 05 Aug 2025 13:31:03 GMT"
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0ygjukl47"
+          "Value": "hzqugljh5k"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es="
+          "Value": "sha256-HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc="
         },
         {
           "Name": "label",
@@ -2793,88 +2793,6 @@
         {
           "Name": "label",
           "Value": "js/admin-scripts.js"
-        }
-      ]
-    },
-    {
-      "Route": "js/dark-mode.js",
-      "AssetFile": "js/dark-mode.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3443"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4="
-        }
-      ]
-    },
-    {
-      "Route": "js/dark-mode.qrvrju2zr6.js",
-      "AssetFile": "js/dark-mode.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3443"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qrvrju2zr6"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4="
-        },
-        {
-          "Name": "label",
-          "Value": "js/dark-mode.js"
         }
       ]
     },

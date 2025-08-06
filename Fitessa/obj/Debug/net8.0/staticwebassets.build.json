@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XxvBu76nolKsbmmWnfcbo5MyK8/ZJkNx0uCIWV/BR/c=",
+  "Hash": "iKuZrWVzzlMGJtHGTRHsJegs3FlObWfa5vcYLPg8LaE=",
   "Source": "Fitessa.Web",
   "BasePath": "_content/Fitessa.Web",
   "Mode": "Default",
@@ -1312,8 +1312,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "x0ygjukl47",
-      "Integrity": "QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=",
+      "Fingerprint": "hzqugljh5k",
+      "Integrity": "HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\dark-mode.css"
@@ -1422,27 +1422,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\admin-scripts.js"
-    },
-    {
-      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
-      "SourceId": "Fitessa.Web",
-      "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
-      "BasePath": "_content/Fitessa.Web",
-      "RelativePath": "js/dark-mode#[.{fingerprint}]?.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "qrvrju2zr6",
-      "Integrity": "ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\dark-mode.js"
     },
     {
       "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
@@ -2820,7 +2799,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7408"
+          "Value": "7949"
         },
         {
           "Name": "Content-Type",
@@ -2828,11 +2807,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=\""
+          "Value": "\"HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+          "Value": "Tue, 05 Aug 2025 13:31:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2842,12 +2821,12 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es="
+          "Value": "sha256-HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc="
         }
       ]
     },
     {
-      "Route": "css/dark-mode.x0ygjukl47.css",
+      "Route": "css/dark-mode.hzqugljh5k.css",
       "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\css\\dark-mode.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -2857,7 +2836,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "7408"
+          "Value": "7949"
         },
         {
           "Name": "Content-Type",
@@ -2865,11 +2844,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es=\""
+          "Value": "\"HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
+          "Value": "Tue, 05 Aug 2025 13:31:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2879,7 +2858,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "x0ygjukl47"
+          "Value": "hzqugljh5k"
         },
         {
           "Name": "label",
@@ -2887,7 +2866,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-QbsaUtyyAGBVIVPVAo1gNmVOsCp2l98Tn3P6VwGT/Es="
+          "Value": "sha256-HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc="
         }
       ]
     },
@@ -5518,88 +5497,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE="
-        }
-      ]
-    },
-    {
-      "Route": "js/dark-mode.js",
-      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3443"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4="
-        }
-      ]
-    },
-    {
-      "Route": "js/dark-mode.qrvrju2zr6.js",
-      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\dark-mode.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "3443"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sat, 02 Aug 2025 15:53:57 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "qrvrju2zr6"
-        },
-        {
-          "Name": "label",
-          "Value": "js/dark-mode.js"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ahsS/+E5QxyM85D6Hy9l1Gp1BbwDKBztv6BHxNHffC4="
         }
       ]
     },

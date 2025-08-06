@@ -43,6 +43,34 @@ namespace Fitessa.Web.Controllers
             return View(exercises);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Search(string search, string muscleGroup, string difficulty)
+        {
+            var query = _context.Exercises.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                query = query.Where(e => e.Name.Contains(search) || e.Description.Contains(search));
+            }
+            if (!string.IsNullOrWhiteSpace(muscleGroup))
+            {
+                query = query.Where(e => e.MuscleGroup == muscleGroup);
+            }
+            if (!string.IsNullOrWhiteSpace(difficulty))
+            {
+                query = query.Where(e => e.DifficultyLevel == difficulty);
+            }
+
+            var exercises = await query.ToListAsync();
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_ExercisesList", exercises);
+            }
+
+            return View("Index", exercises);
+        }
+
         public async Task<IActionResult> Details(int id)
         {
             var exercise = await _context.Exercises.FindAsync(id);

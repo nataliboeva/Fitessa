@@ -7,29 +7,124 @@
     var isAdmin = User.IsInRole("Admin");
 }
 
-<h1>My Profile</h1>
-<div class="card" style="max-width: 500px;">
-    <div class="card-body">
-        <div class="d-flex align-items-center mb-3">
-            <img src="@Model.ProfilePictureUrl" alt="Profile Picture" class="rounded-circle me-3" style="width: 80px; height: 80px; object-fit: cover;">
-            <div>
-                <h4 class="mb-0">@Model.FirstName @Model.LastName</h4>
-                <span class="badge bg-secondary">@Model.Gender</span>
-                @if (isAdmin)
-                {
-                    <span class="badge bg-danger">Admin</span>
-                }
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">
+                    <h4 class="mb-0"><i class="fas fa-user me-2"></i>My Profile</h4>
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-4 text-center">
+                            <img src="@Model.ProfilePictureUrl" alt="Profile Picture" class="rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover; border: 3px solid #007bff;">
+                            <h5 class="mb-1">@Model.FirstName @Model.LastName</h5>
+                            <span class="badge bg-secondary me-1">@Model.Gender</span>
+                            @if (isAdmin)
+                            {
+                                <span class="badge bg-danger">Admin</span>
+                            }
+                        </div>
+                        <div class="col-md-8">
+                            <div class="row mb-3">
+                                <div class="col-sm-4"><strong>Email:</strong></div>
+                                <div class="col-sm-8">@Model.Email</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-4"><strong>Username:</strong></div>
+                                <div class="col-sm-8">@Model.UserName</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-4"><strong>Age:</strong></div>
+                                <div class="col-sm-8">@Model.Age</div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-4"><strong>Goal:</strong></div>
+                                <div class="col-sm-8">@(Model.Goal ?? "Not set")</div>
+                            </div>
+                            <a asp-action="Edit" class="btn btn-primary">
+                                <i class="fas fa-edit me-2"></i>Edit Profile
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="mb-2">
-            <strong>Email:</strong> @Model.Email
+        
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h5 class="mb-0"><i class="fas fa-cog me-2"></i>Settings</h5>
+                </div>
+                <div class="card-body">
+                                         <div class="mb-3">
+                         <label class="form-label"><i class="fas fa-palette me-2"></i>Theme</label>
+                         <div class="d-flex gap-2">
+                             <button class="btn btn-outline-primary btn-sm theme-btn" data-theme="light" onclick="setTheme('light')">
+                                 <i class="fas fa-sun me-1"></i>Light
+                             </button>
+                             <button class="btn btn-outline-primary btn-sm theme-btn" data-theme="dark" onclick="setTheme('dark')">
+                                 <i class="fas fa-moon me-1"></i>Dark
+                             </button>
+                         </div>
+                     </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label"><i class="fas fa-bell me-2"></i>Notifications</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="emailNotifications" checked>
+                            <label class="form-check-label" for="emailNotifications">
+                                Email Notifications
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="pushNotifications" checked>
+                            <label class="form-check-label" for="pushNotifications">
+                                Push Notifications
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label class="form-label"><i class="fas fa-shield-alt me-2"></i>Privacy</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="profileVisibility" checked>
+                            <label class="form-check-label" for="profileVisibility">
+                                Public Profile
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="mb-2">
-            <strong>Username:</strong> @Model.UserName
-        </div>
-        <div class="mb-2">
-            <strong>Age:</strong> @Model.Age
-        </div>
-        <a asp-action="Edit" class="btn btn-primary mt-2">Edit Profile</a>
     </div>
-</div> 
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    updateThemeButtons(savedTheme);
+});
+
+function updateThemeButtons(currentTheme) {
+    const themeButtons = document.querySelectorAll('.theme-btn');
+    themeButtons.forEach(btn => {
+        if (btn.getAttribute('data-theme') === currentTheme) {
+            btn.classList.add('active');
+        } else {
+            btn.classList.remove('active');
+        }
+    });
+}
+
+function setTheme(theme) {
+    if (theme === 'dark') {
+        document.body.classList.add('dark-mode');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        document.body.classList.remove('dark-mode');
+        localStorage.setItem('theme', 'light');
+    }
+    updateThemeButtons(theme);
+}
+</script> 
