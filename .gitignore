@@ -170,3 +170,7 @@ temp/
 .Trashes
 ehthumbs.db
 Thumbs.db 
+
+.vs
+/obj
+/bin
