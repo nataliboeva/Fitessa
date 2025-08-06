@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fitessa.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d2216a4b51a61f5d46af4b84cbdf36719d8d44f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3a2282681430088f75fff784167b0b1c2808b880")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fitessa.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fitessa.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

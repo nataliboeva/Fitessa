@@ -1,7 +1,30 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
-// Write your JavaScript code.
+function initializeDarkMode() {
+    const darkModeToggle = document.getElementById('darkModeToggle');
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    
+    const currentTheme = localStorage.getItem('theme') || 'light';
+    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+    updateDarkModeIcon(currentTheme === 'dark');
+    
+    if (darkModeToggle) {
+        darkModeToggle.addEventListener('click', function() {
+            const isDark = document.body.classList.toggle('dark-mode');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+            updateDarkModeIcon(isDark);
+        });
+    }
+}
+
+function updateDarkModeIcon(isDark) {
+    const darkModeIcon = document.getElementById('darkModeIcon');
+    if (darkModeIcon) {
+        darkModeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
+        darkModeIcon.title = isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
+    }
+}
 
 if (window.signalR === undefined) {
     var script = document.createElement('script');
@@ -28,6 +51,9 @@ function setupSignalR() {
 }
 
 $(document).ready(function() {
+
+    initializeDarkMode();
+    
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
         return new bootstrap.Tooltip(tooltipTriggerEl);
@@ -47,7 +73,7 @@ $(document).ready(function() {
         if (target.length) {
             event.preventDefault();
             $('html, body').stop().animate({
-                scrollTop: target.offset().top - 70
+                scrollTop: target.offset().top - 60
             }, 1000);
         }
     });
@@ -106,8 +132,7 @@ function showNotification(message, type = 'info') {
     `;
     
     document.body.appendChild(notification);
-    
-    // Auto-remove after 5 seconds
+
     setTimeout(() => {
         if (notification.parentNode) {
             notification.remove();

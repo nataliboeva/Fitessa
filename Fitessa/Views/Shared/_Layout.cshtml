@@ -44,18 +44,27 @@
                         </li>
                     }
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Index", "Exercises")">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Exercises" ? "active" : "")" 
+                           href="@Url.Action("Index", "Exercises")">
                             <i class="fas fa-running me-1"></i>Exercises
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Index", "WorkoutPrograms")">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "WorkoutPrograms" ? "active" : "")" 
+                           href="@Url.Action("Index", "WorkoutPrograms")">
                             <i class="fas fa-dumbbell me-1"></i>Workouts
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="@Url.Action("Index", "MealPlans")">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "MealPlans" ? "active" : "")" 
+                           href="@Url.Action("Index", "MealPlans")">
                             <i class="fas fa-utensils me-1"></i>Meal Plans
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link @(ViewContext.RouteData.Values["controller"]?.ToString() == "Payment" ? "active" : "")" 
+                           href="@Url.Action("Index", "Payment")">
+                            <i class="fas fa-crown me-1"></i>Plans & Pricing
                         </a>
                     </li>
 
@@ -63,14 +72,11 @@
                     {
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                <i class="fas fa-user me-1"></i>My Account
+                                <i class="fas fa-user me-1"></i>@User.Identity.Name
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" href="@Url.Action("Index", "ProgressLog")">
                                     <i class="fas fa-chart-line me-2"></i>Progress Log
-                                </a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("Index", "Payment")">
-                                    <i class="fas fa-credit-card me-2"></i>Payment
                                 </a></li>
                                 <li><a class="dropdown-item" href="@Url.Action("Index", "Notification")">
                                     <i class="fas fa-bell me-2"></i>Notifications
@@ -80,7 +86,7 @@
                                 </a></li>
                                 <li><hr class="dropdown-divider"></li>
                                 <li><a class="dropdown-item" href="@Url.Action("Index", "Profile")">
-                                    <i class="fas fa-user-cog me-2"></i>Profile
+                                    <i class="fas fa-user-cog me-2"></i>Settings
                                 </a></li>
                                 @if (User.IsInRole("Admin"))
                                 {

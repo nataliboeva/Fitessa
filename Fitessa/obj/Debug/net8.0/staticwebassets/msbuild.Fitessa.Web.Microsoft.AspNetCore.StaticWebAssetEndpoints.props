@@ -12,17 +12,17 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"mgk2w83544"},{"Name":"integrity","Value":"sha256-FoSj\u002B5axtQRYiL/9GHrOTcbrL4eI7\u002BZqzuVhYu\u002BA7ks="},{"Name":"label","Value":"_content/Fitessa.Web/css/admin-theme.css"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"5790"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022FoSj\u002B5axtQRYiL/9GHrOTcbrL4eI7\u002BZqzuVhYu\u002BA7ks=\u0022"},{"Name":"Last-Modified","Value":"Sat, 02 Aug 2025 15:45:39 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/dark-mode.5572iyd47q.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dark-mode.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"5572iyd47q"},{"Name":"integrity","Value":"sha256-qXrkUMBFaTposaWB4yjRN85EQHy441zsxNKmRUdFvQs="},{"Name":"label","Value":"_content/Fitessa.Web/css/dark-mode.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"11663"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qXrkUMBFaTposaWB4yjRN85EQHy441zsxNKmRUdFvQs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 15:17:51 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/dark-mode.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dark-mode.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-HdgkL5cR5NhSm4rzaKnYdei6q0\u002Bh\u002BB2\u002B5hBTKPSeihc="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7949"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HdgkL5cR5NhSm4rzaKnYdei6q0\u002Bh\u002BB2\u002B5hBTKPSeihc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 05 Aug 2025 13:31:03 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/dark-mode.hzqugljh5k.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dark-mode.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hzqugljh5k"},{"Name":"integrity","Value":"sha256-HdgkL5cR5NhSm4rzaKnYdei6q0\u002Bh\u002BB2\u002B5hBTKPSeihc="},{"Name":"label","Value":"_content/Fitessa.Web/css/dark-mode.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7949"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022HdgkL5cR5NhSm4rzaKnYdei6q0\u002Bh\u002BB2\u002B5hBTKPSeihc=\u0022"},{"Name":"Last-Modified","Value":"Tue, 05 Aug 2025 13:31:03 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qXrkUMBFaTposaWB4yjRN85EQHy441zsxNKmRUdFvQs="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"11663"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022qXrkUMBFaTposaWB4yjRN85EQHy441zsxNKmRUdFvQs=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 15:17:51 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/css/mobile-responsive.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\mobile-responsive.css'))</AssetFile>
@@ -99,14 +99,14 @@
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"6392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g=\u0022"},{"Name":"Last-Modified","Value":"Tue, 05 Aug 2025 12:06:59 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-89wrJZiqkJwA9Unzrh7Jel7XsO4Q2p\u002BIx2Cl8K4BrnQ="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7332"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002289wrJZiqkJwA9Unzrh7Jel7XsO4Q2p\u002BIx2Cl8K4BrnQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 15:02:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.l5848fz0bh.js">
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.vhr33nxi6o.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"l5848fz0bh"},{"Name":"integrity","Value":"sha256-SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g="},{"Name":"label","Value":"_content/Fitessa.Web/js/site.js"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"6392"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g=\u0022"},{"Name":"Last-Modified","Value":"Tue, 05 Aug 2025 12:06:59 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"vhr33nxi6o"},{"Name":"integrity","Value":"sha256-89wrJZiqkJwA9Unzrh7Jel7XsO4Q2p\u002BIx2Cl8K4BrnQ="},{"Name":"label","Value":"_content/Fitessa.Web/js/site.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7332"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002289wrJZiqkJwA9Unzrh7Jel7XsO4Q2p\u002BIx2Cl8K4BrnQ=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 15:02:19 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/lib/bootstrap/dist/css/bootstrap-grid.agp80tu62r.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\bootstrap\dist\css\bootstrap-grid.css'))</AssetFile>
@@ -804,17 +804,17 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-5WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"46"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u00225WVY1iwvz41MRy5hvrcZujG/mpQhm9KIHoXBblNEWNY=\u0022"},{"Name":"Last-Modified","Value":"Tue, 05 Aug 2025 12:04:23 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template/css/fitness-theme.0a47it5ph8.css">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template\css\fitness-theme.css'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"0a47it5ph8"},{"Name":"integrity","Value":"sha256-aIeHyRcoAjYms\u002BiBgb70TIpfAEvM8X5F/RBdGOoT7EI="},{"Name":"label","Value":"_content/Fitessa.Web/template/css/fitness-theme.css"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"16354"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aIeHyRcoAjYms\u002BiBgb70TIpfAEvM8X5F/RBdGOoT7EI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 15:15:54 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template/css/fitness-theme.css">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template\css\fitness-theme.css'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-y5OE6x3O33NbJFdZarBanepckC3klxenGuTo\u002BqJCq4I="}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"13945"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y5OE6x3O33NbJFdZarBanepckC3klxenGuTo\u002BqJCq4I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 20:20:02 GMT"}]]]></ResponseHeaders>
-    </StaticWebAssetEndpoint>
-    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template/css/fitness-theme.v73apflja6.css">
-      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template\css\fitness-theme.css'))</AssetFile>
-      <Selectors><![CDATA[[]]]></Selectors>
-      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"v73apflja6"},{"Name":"integrity","Value":"sha256-y5OE6x3O33NbJFdZarBanepckC3klxenGuTo\u002BqJCq4I="},{"Name":"label","Value":"_content/Fitessa.Web/template/css/fitness-theme.css"}]]]></EndpointProperties>
-      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"13945"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022y5OE6x3O33NbJFdZarBanepckC3klxenGuTo\u002BqJCq4I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 29 Jul 2025 20:20:02 GMT"}]]]></ResponseHeaders>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-aIeHyRcoAjYms\u002BiBgb70TIpfAEvM8X5F/RBdGOoT7EI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"16354"},{"Name":"Content-Type","Value":"text/css"},{"Name":"ETag","Value":"\u0022aIeHyRcoAjYms\u002BiBgb70TIpfAEvM8X5F/RBdGOoT7EI=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 15:15:54 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/template/js/fitness-theme.iz8o92siwc.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template\js\fitness-theme.js'))</AssetFile>

@@ -1,100 +1,148 @@
 @model IEnumerable<Fitessa.Data.Entities.SubscriptionPlan>
 @{
-    ViewData["Title"] = "Payment Plans";
-    var user = ViewBag.User as Fitessa.Data.Entities.ApplicationUser;
+    ViewData["Title"] = "Choose Your Premium Plan";
 }
 
-<div class="container mt-5">
+<div class="container-fluid">
     <div class="row justify-content-center">
-        <div class="col-lg-10">
+        <div class="col-12">
             <div class="text-center mb-5">
-                <h1 class="display-4">Choose Your Premium Plan</h1>
-                <p class="lead">Unlock advanced features and transform your fitness journey</p>
+                <h1 class="display-4 text-primary mb-3">Choose Your Premium Plan</h1>
+                <p class="lead text-muted">Unlock advanced features and transform your fitness journey</p>
             </div>
+        </div>
+    </div>
 
-            <div class="row">
-                @foreach (var plan in Model)
-                {
-                    <div class="col-lg-4 col-md-6 mb-4">
-                        <div class="card h-100 shadow @(plan.Id == 2 ? "border-primary" : "")">
-                            @if (plan.Id == 2)
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            <i class="fas fa-check-circle me-2"></i>
+            @TempData["SuccessMessage"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+        </div>
+    }
+
+    <div class="row justify-content-center">
+        @foreach (var plan in Model)
+        {
+            <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card h-100 shadow-lg border-0">
+                    @if (plan.Name == "Monthly")
+                    {
+                        <div class="card-header bg-warning text-white text-center">
+                            <span class="badge bg-danger position-absolute top-0 start-50 translate-middle-x mt-2">MOST POPULAR</span>
+                            <h4 class="mb-0">@plan.Name</h4>
+                        </div>
+                    }
+                    else
+                    {
+                        <div class="card-header bg-primary text-white text-center">
+                            <h4 class="mb-0">@plan.Name</h4>
+                        </div>
+                    }
+                    
+                    <div class="card-body text-center">
+                        <div class="pricing-header mb-4">
+                            <h2 class="display-6 text-primary mb-1">$@plan.Price</h2>
+                            @if (plan.Name == "Daily")
                             {
-                                <div class="card-header bg-primary text-white text-center">
-                                    <span class="badge bg-warning">MOST POPULAR</span>
-                                </div>
+                                <p class="text-muted">/CLASS</p>
                             }
-                            <div class="card-body d-flex flex-column">
-                                <h5 class="card-title text-center">@plan.Name</h5>
-                                <div class="text-center mb-3">
-                                    <span class="display-6 text-primary">$@plan.Price</span>
-                                    <span class="text-muted">/@(plan.DurationDays == 1 ? "CLASS" : plan.DurationDays + " DAYS")</span>
-                                </div>
-                                <p class="card-text text-center mb-4">@plan.Description</p>
-                                
-                                <ul class="list-unstyled mb-4">
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        Access to all workout programs
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        Personalized meal plans
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        Progress tracking & analytics
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        24/7 customer support
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        No time restrictions
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        Personal trainer guidance
-                                    </li>
-                                </ul>
-                                
-                                <div class="mt-auto">
-                                    <a href="@Url.Action("Checkout", "Payment", new { planId = plan.Id })" 
-                                       class="btn btn-primary w-100">
-                                        <i class="fas fa-credit-card me-2"></i>Subscribe Now
-                                    </a>
-                                </div>
-                            </div>
+                            else if (plan.Name == "Weekly")
+                            {
+                                <p class="text-muted">/7 DAYS</p>
+                            }
+                            else if (plan.Name == "Monthly")
+                            {
+                                <p class="text-muted">/30 DAYS</p>
+                            }
+                            else if (plan.Name == "Yearly")
+                            {
+                                <p class="text-muted">/365 DAYS</p>
+                            }
                         </div>
+                        
+                        <ul class="list-unstyled mb-4">
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Access to all workout programs
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Personalized meal plans
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Progress tracking & analytics
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                24/7 customer support
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                No time restrictions
+                            </li>
+                            <li class="mb-2">
+                                <i class="fas fa-check text-success me-2"></i>
+                                Personal trainer guidance
+                            </li>
+                        </ul>
+                        
+                        <form asp-action="Subscribe" method="post" class="d-inline">
+                            @Html.AntiForgeryToken()
+                            <input type="hidden" name="planId" value="@plan.Id" />
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-credit-card me-2"></i>Subscribe Now
+                            </button>
+                        </form>
                     </div>
-                }
+                </div>
             </div>
+        }
+    </div>
 
-            <div class="row mt-5">
-                <div class="col-12">
-                    <div class="card">
-                        <div class="card-header">
-                            <h5 class="mb-0"><i class="fas fa-shield-alt me-2"></i>Secure Payment</h5>
+    <div class="row mt-5">
+        <div class="col-12">
+            <div class="card border-0 shadow-lg">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">
+                                <i class="fas fa-shield-alt me-2"></i>Secure Payment
+                            </h5>
+                            <ul class="list-unstyled">
+                                <li class="mb-2">
+                                    <i class="fas fa-lock text-success me-2"></i>
+                                    SSL Encrypted Transactions
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-shield-alt text-success me-2"></i>
+                                    PCI DSS Compliant
+                                </li>
+                                <li class="mb-2">
+                                    <i class="fas fa-database text-success me-2"></i>
+                                    Data Protection
+                                </li>
+                            </ul>
                         </div>
-                        <div class="card-body">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <h6>Payment Security</h6>
-                                    <ul class="list-unstyled">
-                                        <li><i class="fas fa-lock text-success me-2"></i>SSL Encrypted Transactions</li>
-                                        <li><i class="fas fa-shield-alt text-success me-2"></i>PCI DSS Compliant</li>
-                                        <li><i class="fas fa-user-shield text-success me-2"></i>Data Protection</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h6>Accepted Payment Methods</h6>
-                                    <div class="d-flex align-items-center">
-                                        <i class="fab fa-cc-visa text-primary me-2" style="font-size: 2rem;"></i>
-                                        <i class="fab fa-cc-mastercard text-warning me-2" style="font-size: 2rem;"></i>
-                                        <i class="fab fa-cc-amex text-info me-2" style="font-size: 2rem;"></i>
-                                        <i class="fab fa-cc-discover text-success me-2" style="font-size: 2rem;"></i>
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <h5 class="text-primary mb-3">
+                                <i class="fas fa-credit-card me-2"></i>Accepted Payment Methods
+                            </h5>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="badge bg-light text-dark p-2">
+                                    <i class="fab fa-cc-visa me-1"></i>Visa
+                                </span>
+                                <span class="badge bg-light text-dark p-2">
+                                    <i class="fab fa-cc-mastercard me-1"></i>Mastercard
+                                </span>
+                                <span class="badge bg-light text-dark p-2">
+                                    <i class="fab fa-cc-amex me-1"></i>American Express
+                                </span>
+                                <span class="badge bg-light text-dark p-2">
+                                    <i class="fab fa-paypal me-1"></i>PayPal
+                                </span>
                             </div>
                         </div>
                     </div>
@@ -102,4 +150,54 @@
             </div>
         </div>
     </div>
+
+    @if (ViewBag.UserSubscriptions != null && ((List<Fitessa.Data.Entities.UserSubscription>)ViewBag.UserSubscriptions).Any())
+    {
+        <div class="row mt-5">
+            <div class="col-12">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0">
+                            <i class="fas fa-history me-2"></i>Your Subscription History
+                        </h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>Plan</th>
+                                        <th>Status</th>
+                                        <th>Start Date</th>
+                                        <th>End Date</th>
+                                        <th>Renewal Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @foreach (var subscription in (List<Fitessa.Data.Entities.UserSubscription>)ViewBag.UserSubscriptions)
+                                    {
+                                        <tr>
+                                            <td>
+                                                <strong>@subscription.SubscriptionPlan.Name</strong>
+                                                <br>
+                                                <small class="text-muted">$@subscription.SubscriptionPlan.Price</small>
+                                            </td>
+                                            <td>
+                                                <span class="badge bg-@(subscription.Status == "Active" ? "success" : "secondary")">
+                                                    @subscription.Status
+                                                </span>
+                                            </td>
+                                            <td>@subscription.StartDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@subscription.EndDate.ToString("MMM dd, yyyy")</td>
+                                            <td>@subscription.RenewalType</td>
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
 </div> 

@@ -30,8 +30,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>hzqugljh5k</Fingerprint>
-      <Integrity>HdgkL5cR5NhSm4rzaKnYdei6q0+h+B2+5hBTKPSeihc=</Integrity>
+      <Fingerprint>5572iyd47q</Fingerprint>
+      <Integrity>qXrkUMBFaTposaWB4yjRN85EQHy441zsxNKmRUdFvQs=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\css\dark-mode.css'))</OriginalItemSpec>
@@ -156,8 +156,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>l5848fz0bh</Fingerprint>
-      <Integrity>SdbNBiI9Ls1HpevXD90oHM4LoiFeG6CL7OFv6e5L76g=</Integrity>
+      <Fingerprint>vhr33nxi6o</Fingerprint>
+      <Integrity>89wrJZiqkJwA9Unzrh7Jel7XsO4Q2p+Ix2Cl8K4BrnQ=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</OriginalItemSpec>
@@ -1218,8 +1218,8 @@
       <RelatedAsset></RelatedAsset>
       <AssetTraitName></AssetTraitName>
       <AssetTraitValue></AssetTraitValue>
-      <Fingerprint>v73apflja6</Fingerprint>
-      <Integrity>y5OE6x3O33NbJFdZarBanepckC3klxenGuTo+qJCq4I=</Integrity>
+      <Fingerprint>0a47it5ph8</Fingerprint>
+      <Integrity>aIeHyRcoAjYms+iBgb70TIpfAEvM8X5F/RBdGOoT7EI=</Integrity>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\template\css\fitness-theme.css'))</OriginalItemSpec>
