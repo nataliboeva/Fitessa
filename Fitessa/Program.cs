@@ -81,6 +81,10 @@ namespace Fitessa.Web
             app.UseMiddleware<ErrorHandlingMiddleware>();
 
             app.MapControllerRoute(
+                name: "areas",
+                pattern: "{area:exists}/{controller=Admin}/{action=Index}/{id?}");
+
+            app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
             app.MapHub<Fitessa.Hubs.NotificationHub>("/notificationHub");
