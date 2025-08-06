@@ -8,6 +8,8 @@ using Fitessa.Middleware;
 using DinkToPdf;
 using DinkToPdf.Contracts;
 using Microsoft.Extensions.Logging;
+using Microsoft.AspNetCore.SignalR;
+using Fitessa.Hubs;
 
 namespace Fitessa.Web
 {
@@ -38,16 +40,16 @@ namespace Fitessa.Web
             builder.Services.AddControllersWithViews();
             builder.Services.AddRazorPages();
             
-            builder.Services.AddScoped<ISubscriptionPlanService, SubscriptionPlanService>();
-            builder.Services.AddScoped<IWorkoutProgramService, WorkoutProgramService>();
-            builder.Services.AddScoped<IExerciseService, ExerciseService>();
-            builder.Services.AddScoped<IMeasurementLogService, MeasurementLogService>();
-            builder.Services.AddScoped<IMealPlanService, MealPlanService>();
-            builder.Services.AddScoped<IProgressInsightsService, ProgressInsightsService>();
-            builder.Services.AddScoped<IEmailService, EmailService>();
-            builder.Services.AddScoped<INutritionApiService, NutritionApiService>();
-            builder.Services.AddScoped<IFitnessAnalyticsService, FitnessAnalyticsService>();
-            builder.Services.AddScoped<INotificationService, NotificationService>();
+            builder.Services.AddScoped<ISubscriptionPlanService, Fitessa.Services.Services.SubscriptionPlanService>();
+            builder.Services.AddScoped<IWorkoutProgramService, Fitessa.Services.Services.WorkoutProgramService>();
+            builder.Services.AddScoped<IExerciseService, Fitessa.Services.Services.ExerciseService>();
+            builder.Services.AddScoped<IMeasurementLogService, Fitessa.Services.Services.MeasurementLogService>();
+            builder.Services.AddScoped<IMealPlanService, Fitessa.Services.Services.MealPlanService>();
+            builder.Services.AddScoped<IProgressInsightsService, Fitessa.Services.Services.ProgressInsightsService>();
+            builder.Services.AddScoped<IEmailService, Fitessa.Services.Services.EmailService>();
+            builder.Services.AddScoped<INutritionApiService, Fitessa.Services.Services.NutritionApiService>();
+            builder.Services.AddScoped<IFitnessAnalyticsService, Fitessa.Services.Services.FitnessAnalyticsService>();
+            builder.Services.AddScoped<INotificationService, Fitessa.Services.Services.NotificationService>();
             
             builder.Services.AddAutoMapper(typeof(Program));
             

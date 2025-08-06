@@ -1,9 +1,10 @@
 using Microsoft.AspNetCore.SignalR;
 using System.Threading.Tasks;
+using Fitessa.Services.Interfaces;
 
 namespace Fitessa.Hubs
 {
-    public class NotificationHub : Hub
+    public class NotificationHub : Hub, INotificationHub
     {
         public async Task SendNotification(string message, string type = "info")
         {

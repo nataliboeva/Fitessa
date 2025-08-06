@@ -5,7 +5,7 @@ using Fitessa.Data.Entities;
 using System.Threading.Tasks;
 using System.Linq;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize(Roles = "Admin")]
     public class AdminSubscriptionPlansController : Controller

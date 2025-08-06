@@ -5,8 +5,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
-using Microsoft.EntityFrameworkCore.InMemory;
-using Microsoft.EntityFrameworkCore;
+using System.Collections.Generic;
 
 namespace Fitessa.Tests.Services
 {
@@ -28,10 +27,11 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void GetAll_ReturnsAllPrograms()
         {
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var programs = new List<WorkoutProgram>
             {
-                new WorkoutProgram { Id = 1, Name = "Beginner Program", Difficulty = "Beginner", DurationDays = 30 },
-                new WorkoutProgram { Id = 2, Name = "Advanced Program", Difficulty = "Advanced", DurationDays = 60 }
+                new WorkoutProgram { Id = 1, Name = "Beginner Program", Difficulty = "Beginner", DurationDays = 30, Description = "Test", UserId = "test", User = testUser },
+                new WorkoutProgram { Id = 2, Name = "Advanced Program", Difficulty = "Advanced", DurationDays = 60, Description = "Test", UserId = "test", User = testUser }
             };
 
             _context.WorkoutPrograms.AddRange(programs);
@@ -46,7 +46,8 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void GetById_WithValidId_ReturnsProgram()
         {
-            var program = new WorkoutProgram { Id = 1, Name = "Test Program", DurationDays = 30 };
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var program = new WorkoutProgram { Id = 1, Name = "Test Program", DurationDays = 30, Description = "Test", UserId = "test", User = testUser, Difficulty = "Beginner" };
             _context.WorkoutPrograms.Add(program);
             _context.SaveChanges();
 

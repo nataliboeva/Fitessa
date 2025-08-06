@@ -5,6 +5,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
+using System.Collections.Generic;
 
 namespace Fitessa.Tests.Services
 {
@@ -28,9 +29,9 @@ namespace Fitessa.Tests.Services
         {
             var plans = new List<SubscriptionPlan>
             {
-                new SubscriptionPlan { Id = 1, Name = "Free", Price = 0, IsActive = true },
-                new SubscriptionPlan { Id = 2, Name = "Monthly", Price = 19.99m, IsActive = true },
-                new SubscriptionPlan { Id = 3, Name = "Yearly", Price = 199.99m, IsActive = true }
+                new SubscriptionPlan { Id = 1, Name = "Free", Price = 0, IsActive = true, Description = "Free plan" },
+                new SubscriptionPlan { Id = 2, Name = "Monthly", Price = 19.99m, IsActive = true, Description = "Monthly plan" },
+                new SubscriptionPlan { Id = 3, Name = "Yearly", Price = 199.99m, IsActive = true, Description = "Yearly plan" }
             };
 
             _context.SubscriptionPlans.AddRange(plans);
@@ -100,7 +101,8 @@ namespace Fitessa.Tests.Services
                 Id = 1,
                 Name = "Original Plan",
                 Price = 19.99m,
-                IsActive = true
+                IsActive = true,
+                Description = "Original Description"
             };
 
             _context.SubscriptionPlans.Add(plan);

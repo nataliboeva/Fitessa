@@ -136,6 +136,10 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[12.0.1, )"
+            },
+            "Microsoft.AspNetCore.SignalR": {
+              "target": "Package",
+              "version": "[1.2.0, )"
             }
           },
           "imports": [
@@ -186,6 +190,9 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
+              "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa.Data\\Fitessa.Data.csproj": {
+                "projectPath": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa.Data\\Fitessa.Data.csproj"
+              },
               "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa.Services\\Fitessa.Services.csproj": {
                 "projectPath": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa.Services\\Fitessa.Services.csproj"
               },

@@ -84,6 +84,18 @@
       <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r2surlgg63"},{"Name":"integrity","Value":"sha256-o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE="},{"Name":"label","Value":"_content/Fitessa.Web/js/admin-scripts.js"}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"9115"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE=\u0022"},{"Name":"Last-Modified","Value":"Sat, 02 Aug 2025 15:48:06 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/ajax-functions.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ajax-functions.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"7486"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 10:36:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/ajax-functions.urihk9qzcz.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\ajax-functions.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"urihk9qzcz"},{"Name":"integrity","Value":"sha256-SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw="},{"Name":"label","Value":"_content/Fitessa.Web/js/ajax-functions.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"7486"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=\u0022"},{"Name":"Last-Modified","Value":"Wed, 06 Aug 2025 10:36:40 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/Fitessa.Web/js/site.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>

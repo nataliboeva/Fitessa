@@ -1,10 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
-using Fitessa.Controllers;
+using Fitessa.Web.Controllers;
 using Fitessa.Services.Interfaces;
 using Fitessa.Data.Entities;
 using Moq;
 using DinkToPdf.Contracts;
+using Microsoft.Extensions.Logging;
+using System.Collections.Generic;
 
 namespace Fitessa.Tests.Controllers
 {
@@ -24,10 +26,11 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Index_ReturnsViewResult()
         {
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var programs = new List<WorkoutProgram>
             {
-                new WorkoutProgram { Id = 1, Name = "Beginner Program", Difficulty = "Beginner" },
-                new WorkoutProgram { Id = 2, Name = "Advanced Program", Difficulty = "Advanced" }
+                new WorkoutProgram { Id = 1, Name = "Beginner Program", Difficulty = "Beginner", Description = "Test", UserId = "test", User = testUser },
+                new WorkoutProgram { Id = 2, Name = "Advanced Program", Difficulty = "Advanced", Description = "Test", UserId = "test", User = testUser }
             };
 
             _mockWorkoutProgramService.Setup(x => x.GetAll()).Returns(programs);
@@ -45,10 +48,11 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Details_WithValidId_ReturnsViewResult()
         {
-            var program = new WorkoutProgram { Id = 1, Name = "Test Program", Difficulty = "Intermediate" };
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var program = new WorkoutProgram { Id = 1, Name = "Test Program", Difficulty = "Intermediate", Description = "Test", UserId = "test", User = testUser };
             var exercises = new List<Exercise>
             {
-                new Exercise { Id = 1, Name = "Push Up", MuscleGroup = "Chest" }
+                new Exercise { Id = 1, Name = "Push Up", MuscleGroup = "Chest", Description = "Test", DifficultyLevel = "Beginner" }
             };
 
             _mockWorkoutProgramService.Setup(x => x.GetById(1)).Returns(program);
@@ -95,7 +99,8 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Create_Post_WithValidModel_RedirectsToIndex()
         {
-            var program = new WorkoutProgram { Name = "Test Program", Difficulty = "Beginner" };
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var program = new WorkoutProgram { Name = "Test Program", Difficulty = "Beginner", Description = "Test", UserId = "test", User = testUser };
 
             var controller = new WorkoutProgramsController(
                 _mockWorkoutProgramService.Object,
@@ -112,7 +117,8 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Edit_WithValidId_ReturnsViewResult()
         {
-            var program = new WorkoutProgram { Id = 1, Name = "Test Program", Difficulty = "Intermediate" };
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var program = new WorkoutProgram { Id = 1, Name = "Test Program", Difficulty = "Intermediate", Description = "Test", UserId = "test", User = testUser };
 
             _mockWorkoutProgramService.Setup(x => x.GetById(1)).Returns(program);
 
@@ -144,7 +150,8 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public void Delete_WithValidId_ReturnsViewResult()
         {
-            var program = new WorkoutProgram { Id = 1, Name = "Test Program", Difficulty = "Intermediate" };
+            var testUser = new ApplicationUser { Id = "test", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var program = new WorkoutProgram { Id = 1, Name = "Test Program", Difficulty = "Intermediate", Description = "Test", UserId = "test", User = testUser };
 
             _mockWorkoutProgramService.Setup(x => x.GetById(1)).Returns(program);
 

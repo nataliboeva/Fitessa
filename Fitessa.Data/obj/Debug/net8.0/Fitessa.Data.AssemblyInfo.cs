@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Fitessa.Data")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a760174f6b65221933e0e878447bd76cdf1b525e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6d2216a4b51a61f5d46af4b84cbdf36719d8d44f")]
 [assembly: System.Reflection.AssemblyProductAttribute("Fitessa.Data")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Fitessa.Data")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

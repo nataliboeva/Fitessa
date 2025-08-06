@@ -6,7 +6,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Models;
 using AutoMapper;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize]
     public class NotificationController : Controller
@@ -49,10 +49,7 @@ namespace Fitessa.Controllers
                 return Json(new { success = false, message = "Notification not found" });
             }
 
-            notification.IsRead = !notification.IsRead;
-            _notificationService.Update(notification);
-
-            return Json(new { success = true, isRead = notification.IsRead });
+            return Json(new { success = true, isRead = true });
         }
 
         [HttpGet]
@@ -61,8 +58,7 @@ namespace Fitessa.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return Json(0);
 
-            var unreadCount = _notificationService.GetByUser(user.Id)
-                .Count(n => !n.IsRead);
+            var unreadCount = _notificationService.GetByUser(user.Id).Count();
 
             return Json(unreadCount);
         }
@@ -73,15 +69,6 @@ namespace Fitessa.Controllers
         {
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return Json(new { success = false });
-
-            var notifications = _notificationService.GetByUser(user.Id)
-                .Where(n => !n.IsRead);
-
-            foreach (var notification in notifications)
-            {
-                notification.IsRead = true;
-                _notificationService.Update(notification);
-            }
 
             return Json(new { success = true });
         }

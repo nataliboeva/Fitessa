@@ -7,7 +7,7 @@ namespace Fitessa.Data.Entities
         public int OrderIndex { get; set; }
         public int Reps { get; set; }
         public int Sets { get; set; }
-        public WorkoutProgram WorkoutProgram { get; set; }
-        public Exercise Exercise { get; set; }
+        public required WorkoutProgram WorkoutProgram { get; set; }
+        public required Exercise Exercise { get; set; }
     }
 } 

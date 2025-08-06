@@ -6,7 +6,7 @@ using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
 using Microsoft.Extensions.Logging;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     public class HomeController : Controller
     {

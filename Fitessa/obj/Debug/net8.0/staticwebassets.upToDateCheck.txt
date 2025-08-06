@@ -5,6 +5,7 @@ wwwroot\favicon.ico
 wwwroot\images\logo\fitessa-logo.png
 wwwroot\images\logo\README.md
 wwwroot\js\admin-scripts.js
+wwwroot\js\ajax-functions.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map

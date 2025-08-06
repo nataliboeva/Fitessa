@@ -1,11 +1,12 @@
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
-using Fitessa.Controllers;
+using Fitessa.Web.Controllers;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
 using Moq;
+using System.Threading.Tasks;
 
 namespace Fitessa.Tests.Controllers
 {

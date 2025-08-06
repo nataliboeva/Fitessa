@@ -42,13 +42,15 @@ namespace Fitessa.Data
             if (!context.WorkoutPrograms.Any())
             {
                 var user = context.Users.FirstOrDefault();
+                var defaultUser = user ?? new ApplicationUser { Id = "admin", UserName = "admin@fitessa.com", FirstName = "Admin", LastName = "User", Email = "admin@fitessa.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
                 var program = new WorkoutProgram
                 {
                     Name = "Full Body Starter",
                     Description = "A beginner-friendly full body workout plan.",
-                    UserId = user?.Id,
+                    UserId = defaultUser.Id,
                     Difficulty = "Beginner",
-                    DurationDays = 30
+                    DurationDays = 30,
+                    User = defaultUser
                 };
                 context.WorkoutPrograms.Add(program);
                 context.SaveChanges();
@@ -56,8 +58,8 @@ namespace Fitessa.Data
                 var squat = context.Exercises.FirstOrDefault(e => e.Name == "Squat");
                 if (pushUp != null && squat != null)
                 {
-                    context.WorkoutProgramExercises.Add(new WorkoutProgramExercise { WorkoutProgramId = program.Id, ExerciseId = pushUp.Id, OrderIndex = 1, Reps = 10, Sets = 3 });
-                    context.WorkoutProgramExercises.Add(new WorkoutProgramExercise { WorkoutProgramId = program.Id, ExerciseId = squat.Id, OrderIndex = 2, Reps = 15, Sets = 3 });
+                    context.WorkoutProgramExercises.Add(new WorkoutProgramExercise { WorkoutProgramId = program.Id, ExerciseId = pushUp.Id, OrderIndex = 1, Reps = 10, Sets = 3, WorkoutProgram = program, Exercise = pushUp });
+                    context.WorkoutProgramExercises.Add(new WorkoutProgramExercise { WorkoutProgramId = program.Id, ExerciseId = squat.Id, OrderIndex = 2, Reps = 15, Sets = 3, WorkoutProgram = program, Exercise = squat });
                 }
                 context.SaveChanges();
             }

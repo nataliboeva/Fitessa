@@ -25,6 +25,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Fitessa\Fitessa.Web.csproj" />
     <ProjectReference Include="..\Fitessa.Services\Fitessa.Services.csproj" />
+    <ProjectReference Include="..\Fitessa.Data\Fitessa.Data.csproj" />
   </ItemGroup>
 
 </Project>

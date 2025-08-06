@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Fitessa.Data\Fitessa.Data.csproj" />
     <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.SignalR" Version="1.2.0" />
   </ItemGroup>
 
 </Project>

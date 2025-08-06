@@ -5,8 +5,7 @@ using Fitessa.Data.Entities;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.SignalR;
-using Fitessa.Hubs;
+
 
 namespace Fitessa.Web.Controllers
 {
@@ -15,13 +14,10 @@ namespace Fitessa.Web.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
-        private readonly IHubContext<NotificationHub> _hubContext;
-
-        public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager, IHubContext<NotificationHub> hubContext)
+        public AdminController(UserManager<ApplicationUser> userManager, RoleManager<IdentityRole> roleManager)
         {
             _userManager = userManager;
             _roleManager = roleManager;
-            _hubContext = hubContext;
         }
 
         public IActionResult Dashboard()
@@ -73,7 +69,6 @@ namespace Fitessa.Web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> SendTestNotification(string message)
         {
-            await _hubContext.Clients.All.SendAsync("ReceiveNotification", message);
             TempData["NotificationSent"] = true;
             return RedirectToAction("Dashboard");
         }

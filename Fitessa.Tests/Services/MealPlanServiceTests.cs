@@ -5,6 +5,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
+using System.Collections.Generic;
 
 namespace Fitessa.Tests.Services
 {
@@ -27,10 +28,11 @@ namespace Fitessa.Tests.Services
         public void GetByUser_WithValidUserId_ReturnsUserMealPlans()
         {
             var userId = "test-user-id";
+            var testUser = new ApplicationUser { Id = userId, UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var mealPlans = new List<MealPlan>
             {
-                new MealPlan { Id = 1, UserId = userId, Name = "Breakfast Plan", Description = "Healthy breakfast options" },
-                new MealPlan { Id = 2, UserId = userId, Name = "Lunch Plan", Description = "Balanced lunch meals" }
+                new MealPlan { Id = 1, UserId = userId, Name = "Breakfast Plan", Description = "Healthy breakfast options", User = testUser },
+                new MealPlan { Id = 2, UserId = userId, Name = "Lunch Plan", Description = "Balanced lunch meals", User = testUser }
             };
 
             _context.MealPlans.AddRange(mealPlans);
@@ -54,11 +56,13 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void Create_WithValidMealPlan_AddsToDatabase()
         {
+            var testUser = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var mealPlan = new MealPlan
             {
                 UserId = "test-user",
                 Name = "Test Meal Plan",
-                Description = "Test description"
+                Description = "Test description",
+                User = testUser
             };
 
             _service.Create(mealPlan);
@@ -71,12 +75,14 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void GetById_WithValidId_ReturnsMealPlan()
         {
+            var testUser = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var mealPlan = new MealPlan
             {
                 Id = 1,
                 UserId = "test-user",
                 Name = "Test Plan",
-                Description = "Test Description"
+                Description = "Test Description",
+                User = testUser
             };
 
             _context.MealPlans.Add(mealPlan);

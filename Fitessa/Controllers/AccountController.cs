@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Fitessa.Data.Entities;
 using Fitessa.Models;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     public class AccountController : Controller
     {

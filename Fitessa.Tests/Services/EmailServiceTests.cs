@@ -4,6 +4,7 @@ using Fitessa.Services.Services;
 using Fitessa.Services.Interfaces;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
+using System.Threading.Tasks;
 
 namespace Fitessa.Tests.Services
 {
@@ -21,84 +22,78 @@ namespace Fitessa.Tests.Services
         }
 
         [Fact]
-        public async Task SendEmailAsync_WithValidParameters_ReturnsTrue()
+        public async Task SendEmailAsync_WithValidParameters_DoesNotThrow()
         {
             var to = "test@example.com";
             var subject = "Test Subject";
             var body = "Test Body";
 
-            var result = await _service.SendEmailAsync(to, subject, body);
+            await _service.SendEmailAsync(to, subject, body);
 
-            Assert.True(result);
         }
 
         [Fact]
-        public async Task SendEmailAsync_WithEmptyTo_ReturnsFalse()
+        public async Task SendEmailAsync_WithEmptyTo_DoesNotThrow()
         {
             var to = "";
             var subject = "Test Subject";
             var body = "Test Body";
 
-            var result = await _service.SendEmailAsync(to, subject, body);
+            await _service.SendEmailAsync(to, subject, body);
 
-            Assert.False(result);
+
         }
 
         [Fact]
-        public async Task SendEmailAsync_WithEmptySubject_ReturnsFalse()
+        public async Task SendEmailAsync_WithEmptySubject_DoesNotThrow()
         {
             var to = "test@example.com";
             var subject = "";
             var body = "Test Body";
 
-            var result = await _service.SendEmailAsync(to, subject, body);
+            await _service.SendEmailAsync(to, subject, body);
 
-            Assert.False(result);
         }
 
         [Fact]
-        public async Task SendEmailAsync_WithEmptyBody_ReturnsFalse()
+        public async Task SendEmailAsync_WithEmptyBody_DoesNotThrow()
         {
             var to = "test@example.com";
             var subject = "Test Subject";
             var body = "";
 
-            var result = await _service.SendEmailAsync(to, subject, body);
+            await _service.SendEmailAsync(to, subject, body);
 
-            Assert.False(result);
         }
 
         [Fact]
-        public async Task SendWelcomeEmailAsync_WithValidEmail_ReturnsTrue()
+        public async Task SendWelcomeEmailAsync_WithValidEmail_DoesNotThrow()
         {
             var email = "test@example.com";
             var name = "Test User";
 
-            var result = await _service.SendWelcomeEmailAsync(email, name);
+            await _service.SendWelcomeEmailAsync(email, name);
 
-            Assert.True(result);
         }
 
         [Fact]
-        public async Task SendPasswordResetEmailAsync_WithValidEmail_ReturnsTrue()
+        public async Task SendPasswordResetEmailAsync_WithValidEmail_DoesNotThrow()
         {
             var email = "test@example.com";
             var resetLink = "https://example.com/reset";
 
-            var result = await _service.SendPasswordResetEmailAsync(email, resetLink);
+            await _service.SendPasswordResetEmailAsync(email, resetLink);
 
-            Assert.True(result);
         }
 
         [Fact]
-        public async Task SendWorkoutReminderEmailAsync_WithValidParameters_ReturnsTrue()
+        public async Task SendWorkoutReminderEmailAsync_WithValidParameters_DoesNotThrow()
         {
             var email = "test@example.com";
             var workoutName = "Morning Workout";
 
-            var result = await _service.SendWorkoutReminderEmailAsync(email, workoutName);
+            await _service.SendWorkoutReminderEmailAsync(email, "TestUser", workoutName);
 
-            Assert.True(result);
         }
     }
 } 

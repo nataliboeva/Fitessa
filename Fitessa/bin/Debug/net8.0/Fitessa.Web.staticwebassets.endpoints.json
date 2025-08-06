@@ -2797,6 +2797,88 @@
       ]
     },
     {
+      "Route": "js/ajax-functions.js",
+      "AssetFile": "js/ajax-functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Aug 2025 10:36:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw="
+        }
+      ]
+    },
+    {
+      "Route": "js/ajax-functions.urihk9qzcz.js",
+      "AssetFile": "js/ajax-functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Aug 2025 10:36:40 GMT"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "urihk9qzcz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw="
+        },
+        {
+          "Name": "label",
+          "Value": "js/ajax-functions.js"
+        }
+      ]
+    },
+    {
       "Route": "js/site.js",
       "AssetFile": "js/site.js",
       "Selectors": [],

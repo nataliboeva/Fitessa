@@ -35,5 +35,17 @@ namespace Fitessa.Services.Services
             _context.UserSubscriptions.Add(userSubscription);
             _context.SaveChanges();
         }
+
+        public void Create(SubscriptionPlan plan)
+        {
+            _context.SubscriptionPlans.Add(plan);
+            _context.SaveChanges();
+        }
+
+        public void Update(SubscriptionPlan plan)
+        {
+            _context.SubscriptionPlans.Update(plan);
+            _context.SaveChanges();
+        }
     }
 }

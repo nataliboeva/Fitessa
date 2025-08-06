@@ -94,5 +94,10 @@ namespace Fitessa.Services.Services
 
             await SendEmailAsync(to, subject, body);
         }
+
+        public async Task SendWorkoutReminderEmailAsync(string to, string userName, string workoutName)
+        {
+            await SendWorkoutReminderAsync(to, userName, workoutName);
+        }
     }
 } 

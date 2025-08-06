@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
-using Fitessa.Controllers;
+using Fitessa.Web.Controllers;
 using Microsoft.Extensions.Logging;
 using Microsoft.AspNetCore.Identity;
 using Fitessa.Data.Entities;
@@ -8,6 +8,7 @@ using Fitessa.Services.Interfaces;
 using Moq;
 using AutoMapper;
 using Fitessa.Models;
+using System.Threading.Tasks;
 
 namespace Fitessa.Tests.Controllers
 {
@@ -40,7 +41,7 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public async Task Index_WithAuthenticatedUser_ReturnsViewResult()
         {
-            var user = new ApplicationUser { Id = "test-user", UserName = "test@example.com" };
+            var user = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             _mockUserManager.Setup(x => x.GetUserAsync(It.IsAny<System.Security.Claims.ClaimsPrincipal>()))
                 .ReturnsAsync(user);
 
@@ -83,7 +84,7 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public async Task Progress_WithValidUser_ReturnsViewResult()
         {
-            var user = new ApplicationUser { Id = "test-user" };
+            var user = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             _mockUserManager.Setup(x => x.GetUserAsync(It.IsAny<System.Security.Claims.ClaimsPrincipal>()))
                 .ReturnsAsync(user);
 
@@ -105,7 +106,7 @@ namespace Fitessa.Tests.Controllers
         [Fact]
         public async Task Analytics_WithValidUser_ReturnsViewResult()
         {
-            var user = new ApplicationUser { Id = "test-user" };
+            var user = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             _mockUserManager.Setup(x => x.GetUserAsync(It.IsAny<System.Security.Claims.ClaimsPrincipal>()))
                 .ReturnsAsync(user);
 

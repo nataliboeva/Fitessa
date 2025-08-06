@@ -4,11 +4,10 @@ using Microsoft.AspNetCore.Identity;
 using Fitessa.Data.Entities;
 using Fitessa.Models;
 using Fitessa.Services.Interfaces;
-using Fitessa.Services;
 using Stripe;
 using System.Security.Claims;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize]
     public class PaymentController : Controller
@@ -89,7 +88,11 @@ namespace Fitessa.Controllers
                         StartDate = DateTime.UtcNow,
                         EndDate = DateTime.UtcNow.AddDays(plan.DurationDays),
                         IsActive = true,
-                        PaymentId = charge.Id
+                        Status = "Active",
+                        RenewalType = "Manual",
+                        PaymentId = charge.Id,
+                        User = user,
+                        SubscriptionPlan = plan
                     };
                     
                     _subscriptionPlanService.CreateUserSubscription(userSubscription);

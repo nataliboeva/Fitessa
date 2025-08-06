@@ -44,16 +44,24 @@ namespace Fitessa.Services.Services
         }
         public void AssignExercise(int programId, int exerciseId, int orderIndex, int reps, int sets)
         {
-            var assignment = new WorkoutProgramExercise
+            var program = _context.WorkoutPrograms.Find(programId);
+            var exercise = _context.Exercises.Find(exerciseId);
+            
+            if (program != null && exercise != null)
             {
-                WorkoutProgramId = programId,
-                ExerciseId = exerciseId,
-                OrderIndex = orderIndex,
-                Reps = reps,
-                Sets = sets
-            };
-            _context.WorkoutProgramExercises.Add(assignment);
-            _context.SaveChanges();
+                var assignment = new WorkoutProgramExercise
+                {
+                    WorkoutProgramId = programId,
+                    ExerciseId = exerciseId,
+                    OrderIndex = orderIndex,
+                    Reps = reps,
+                    Sets = sets,
+                    WorkoutProgram = program,
+                    Exercise = exercise
+                };
+                _context.WorkoutProgramExercises.Add(assignment);
+                _context.SaveChanges();
+            }
         }
         public void RemoveExercise(int programId, int exerciseId)
         {

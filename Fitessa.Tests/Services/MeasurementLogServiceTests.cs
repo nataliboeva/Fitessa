@@ -5,6 +5,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
+using System.Collections.Generic;
 
 namespace Fitessa.Tests.Services
 {
@@ -27,10 +28,11 @@ namespace Fitessa.Tests.Services
         public void GetByUser_WithValidUserId_ReturnsUserLogs()
         {
             var userId = "test-user-id";
+            var user = new ApplicationUser { Id = userId, UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var logs = new List<MeasurementLog>
             {
-                new MeasurementLog { Id = 1, UserId = userId, Weight = 70.5, Date = DateTime.Now.AddDays(-1) },
-                new MeasurementLog { Id = 2, UserId = userId, Weight = 70.0, Date = DateTime.Now }
+                new MeasurementLog { Id = 1, UserId = userId, WeightKg = 70.5m, LoggedAt = DateTime.Now.AddDays(-1), User = user },
+                new MeasurementLog { Id = 2, UserId = userId, WeightKg = 70.0m, LoggedAt = DateTime.Now, User = user }
             };
 
             _context.MeasurementLogs.AddRange(logs);
@@ -54,31 +56,35 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void Create_WithValidLog_AddsToDatabase()
         {
+            var user = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var log = new MeasurementLog
             {
                 UserId = "test-user",
-                Weight = 75.5,
-                Height = 180.0,
-                Date = DateTime.Now
+                WeightKg = 75.5m,
+                HeightCm = 180,
+                LoggedAt = DateTime.Now,
+                User = user
             };
 
             _service.Create(log);
 
             var savedLog = _context.MeasurementLogs.FirstOrDefault(m => m.UserId == "test-user");
             Assert.NotNull(savedLog);
-            Assert.Equal(75.5, savedLog.Weight);
+            Assert.Equal(75.5m, savedLog.WeightKg);
         }
 
         [Fact]
         public void GetById_WithValidId_ReturnsLog()
         {
+            var user = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var log = new MeasurementLog
             {
                 Id = 1,
                 UserId = "test-user",
-                Weight = 70.0,
-                Height = 175.0,
-                Date = DateTime.Now
+                WeightKg = 70.0m,
+                HeightCm = 175,
+                LoggedAt = DateTime.Now,
+                User = user
             };
 
             _context.MeasurementLogs.Add(log);
@@ -87,7 +93,7 @@ namespace Fitessa.Tests.Services
             var result = _service.GetById(1);
 
             Assert.NotNull(result);
-            Assert.Equal(70.0, result.Weight);
+            Assert.Equal(70.0m, result.WeightKg);
         }
 
         [Fact]

@@ -5,6 +5,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
+using System.Collections.Generic;
 
 namespace Fitessa.Tests.Services
 {
@@ -28,9 +29,9 @@ namespace Fitessa.Tests.Services
         {
             var exercises = new List<Exercise>
             {
-                new Exercise { Id = 1, Name = "Push Up", MuscleGroup = "Chest", DifficultyLevel = "Beginner" },
-                new Exercise { Id = 2, Name = "Squat", MuscleGroup = "Legs", DifficultyLevel = "Beginner" },
-                new Exercise { Id = 3, Name = "Pull Up", MuscleGroup = "Back", DifficultyLevel = "Intermediate" }
+                new Exercise { Id = 1, Name = "Push Up", MuscleGroup = "Chest", DifficultyLevel = "Beginner", Description = "Test" },
+                new Exercise { Id = 2, Name = "Squat", MuscleGroup = "Legs", DifficultyLevel = "Beginner", Description = "Test" },
+                new Exercise { Id = 3, Name = "Pull Up", MuscleGroup = "Back", DifficultyLevel = "Intermediate", Description = "Test" }
             };
 
             _context.Exercises.AddRange(exercises);

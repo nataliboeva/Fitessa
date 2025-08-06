@@ -6,7 +6,7 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Models;
 using AutoMapper;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize]
     public class DashboardController : Controller
@@ -64,12 +64,12 @@ namespace Fitessa.Controllers
             if (user == null) return Json(new { success = false });
 
             var progressLogs = _measurementLogService.GetByUser(user.Id)
-                .OrderBy(p => p.Date)
+                .OrderBy(p => p.LoggedAt)
                 .Take(10)
                 .ToList();
 
-            var labels = progressLogs.Select(p => p.Date.ToString("MM/dd")).ToArray();
-            var weights = progressLogs.Select(p => p.Weight).ToArray();
+            var labels = progressLogs.Select(p => p.LoggedAt.ToString("MM/dd")).ToArray();
+            var weights = progressLogs.Select(p => p.WeightKg).ToArray();
 
             return Json(new
             {
@@ -110,87 +110,6 @@ namespace Fitessa.Controllers
             return View(analyticsViewModel);
         }
 
-        public async Task<IActionResult> Goals()
-        {
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null) return NotFound();
 
-            var latestMeasurement = _measurementLogService.GetByUser(user.Id).OrderByDescending(m => m.LoggedAt).FirstOrDefault();
-            
-            var goalsViewModel = new GoalsViewModel
-            {
-                User = user,
-                CurrentWeight = (double)(latestMeasurement?.WeightKg ?? 70),
-                TargetWeight = (double)(user.GoalValue ?? 70)
-            };
-
-            if (latestMeasurement != null && user.GoalValue.HasValue)
-            {
-                goalsViewModel.WeightProgress = _fitnessAnalyticsService.CalculateProgressPercentage((double)latestMeasurement.WeightKg, (double)user.GoalValue.Value);
-                goalsViewModel.IsGoalAchieved = _fitnessAnalyticsService.IsGoalAchieved((double)latestMeasurement.WeightKg, (double)user.GoalValue.Value);
-                goalsViewModel.Milestones = _fitnessAnalyticsService.GenerateMilestones((double)latestMeasurement.WeightKg, (double)user.GoalValue.Value, 5);
-            }
-
-            return View(goalsViewModel);
-        }
-
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> UpdateGoals(GoalsViewModel model)
-        {
-            if (!ModelState.IsValid) return View("Goals", model);
-
-            var user = await _userManager.GetUserAsync(User);
-            if (user == null) return NotFound();
-
-            user.GoalValue = (decimal)model.TargetWeight;
-            user.Goal = model.FitnessGoal;
-
-            await _userManager.UpdateAsync(user);
-
-            TempData["Success"] = "Goals updated successfully!";
-            return RedirectToAction(nameof(Goals));
-        }
-
-        public async Task<IActionResult> NutritionAnalysis(int mealPlanId)
-        {
-            var mealPlan = _mealPlanService.GetById(mealPlanId);
-            if (mealPlan == null) return NotFound();
-
-            var analysis = _fitnessAnalyticsService.AnalyzeMealPlan(mealPlan);
-
-            var nutritionViewModel = new NutritionAnalysisViewModel
-            {
-                MealPlan = mealPlan,
-                Analysis = analysis
-            };
-
-            return View(nutritionViewModel);
-        }
-
-        public async Task<IActionResult> WorkoutIntensity(int workoutId)
-        {
-            var workout = _workoutProgramService.GetById(workoutId);
-            if (workout == null) return NotFound();
-
-            var exercises = _exerciseService.GetAll().Take(5).ToList(); // Simulated exercises
-            var intensity = _fitnessAnalyticsService.CalculateWorkoutIntensity(exercises, workout.DurationDays * 30);
-
-            var intensityViewModel = new WorkoutIntensityViewModel
-            {
-                WorkoutProgram = workout,
-                Exercises = exercises,
-                Intensity = intensity,
-                IntensityLevel = intensity switch
-                {
-                    < 1.5 => "Low",
-                    < 2.5 => "Moderate",
-                    < 3.5 => "High",
-                    _ => "Very High"
-                }
-            };
-
-            return View(intensityViewModel);
-        }
     }
 } 

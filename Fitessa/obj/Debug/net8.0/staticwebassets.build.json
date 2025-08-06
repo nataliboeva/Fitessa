@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iKuZrWVzzlMGJtHGTRHsJegs3FlObWfa5vcYLPg8LaE=",
+  "Hash": "2geVk3QH0GFTzJYgSZJypL15QDMDyKipBXrUkonprzU=",
   "Source": "Fitessa.Web",
   "BasePath": "_content/Fitessa.Web",
   "Mode": "Default",
@@ -1422,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\admin-scripts.js"
+    },
+    {
+      "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\ajax-functions.js",
+      "SourceId": "Fitessa.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\",
+      "BasePath": "_content/Fitessa.Web",
+      "RelativePath": "js/ajax-functions#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "urihk9qzcz",
+      "Integrity": "SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\ajax-functions.js"
     },
     {
       "Identity": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
@@ -5497,6 +5518,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-o1hA1y29f85Y3rx1XuipgdZtvH92Zxtmq0SMoVWA5yE="
+        }
+      ]
+    },
+    {
+      "Route": "js/ajax-functions.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\ajax-functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Aug 2025 10:36:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw="
+        }
+      ]
+    },
+    {
+      "Route": "js/ajax-functions.urihk9qzcz.js",
+      "AssetFile": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\ajax-functions.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7486"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 06 Aug 2025 10:36:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "urihk9qzcz"
+        },
+        {
+          "Name": "label",
+          "Value": "js/ajax-functions.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-SjFfYzQ/gbcqHqRJlc85dWGk1Tr3hqrdcAANs/Pf2Vw="
         }
       ]
     },

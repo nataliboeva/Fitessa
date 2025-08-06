@@ -8,8 +8,29 @@ namespace Fitessa.Models
         public int TotalWorkoutPrograms { get; set; }
         public int TotalExercises { get; set; }
         public int TotalMealPlans { get; set; }
-        public List<ApplicationUser> RecentUsers { get; set; } = new();
-        public SystemStatsViewModel SystemStats { get; set; } = new();
+        public List<ApplicationUser> RecentUsers { get; set; }
+        public SystemStatsViewModel SystemStats { get; set; }
+    }
+
+    public class AdminUserViewModel
+    {
+        public string Id { get; set; }
+        public string UserName { get; set; }
+        public string Email { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public string Role { get; set; }
+        public bool IsBanned { get; set; }
+        public DateTime CreatedAt { get; set; }
+    }
+
+    public class AdminUserDetailsViewModel
+    {
+        public ApplicationUser User { get; set; }
+        public List<WorkoutProgram> WorkoutPrograms { get; set; }
+        public List<MealPlan> MealPlans { get; set; }
+        public List<MeasurementLog> ProgressLogs { get; set; }
+        public object ProgressInsights { get; set; }
     }
 
     public class SystemStatsViewModel
@@ -20,25 +41,5 @@ namespace Fitessa.Models
         public int TotalExercises { get; set; }
         public int TotalMealPlans { get; set; }
         public int TotalProgressLogs { get; set; }
-    }
-
-    public class AdminUserViewModel
-    {
-        public string Id { get; set; } = string.Empty;
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        public bool IsBanned { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public string Role { get; set; } = string.Empty;
-    }
-
-    public class AdminUserDetailsViewModel
-    {
-        public ApplicationUser User { get; set; } = new();
-        public List<WorkoutProgram> WorkoutPrograms { get; set; } = new();
-        public List<MealPlan> MealPlans { get; set; } = new();
-        public List<MeasurementLog> ProgressLogs { get; set; } = new();
-        public object ProgressInsights { get; set; } = new();
     }
 } 

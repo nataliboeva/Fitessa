@@ -5,16 +5,14 @@ using Fitessa.Services.Interfaces;
 using Fitessa.Data;
 using Microsoft.EntityFrameworkCore;
 using Fitessa.Data.Entities;
-using Microsoft.AspNetCore.SignalR;
-using Fitessa.Hubs;
+using System.Collections.Generic;
+
 
 namespace Fitessa.Tests.Services
 {
     public class NotificationServiceTests
     {
         private readonly ApplicationDbContext _context;
-        private readonly Mock<IHubContext<NotificationHub>> _mockHubContext;
-        private readonly Mock<IClientProxy> _mockClientProxy;
         private readonly NotificationService _service;
 
         public NotificationServiceTests()
@@ -24,18 +22,18 @@ namespace Fitessa.Tests.Services
                 .Options;
 
             _context = new ApplicationDbContext(options);
-            _mockHubContext = new Mock<IHubContext<NotificationHub>>();
-            _mockClientProxy = new Mock<IClientProxy>();
-            _service = new NotificationService(_context, _mockHubContext.Object);
+            _service = new NotificationService(_context);
         }
 
         [Fact]
         public void GetAll_ReturnsAllNotifications()
         {
+            var user1 = new ApplicationUser { Id = "user1", UserName = "user1@example.com", FirstName = "User", LastName = "One", Email = "user1@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var user2 = new ApplicationUser { Id = "user2", UserName = "user2@example.com", FirstName = "User", LastName = "Two", Email = "user2@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var notifications = new List<Notification>
             {
-                new Notification { Id = 1, UserId = "user1", Message = "Test 1", Type = "info" },
-                new Notification { Id = 2, UserId = "user2", Message = "Test 2", Type = "warning" }
+                new Notification { Id = 1, UserId = "user1", Message = "Test 1", Type = "info", Title = "Test 1", User = user1 },
+                new Notification { Id = 2, UserId = "user2", Message = "Test 2", Type = "warning", Title = "Test 2", User = user2 }
             };
 
             _context.Notifications.AddRange(notifications);
@@ -51,11 +49,13 @@ namespace Fitessa.Tests.Services
         public void GetByUser_WithValidUserId_ReturnsUserNotifications()
         {
             var userId = "test-user";
+            var testUser = new ApplicationUser { Id = userId, UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
+            var otherUser = new ApplicationUser { Id = "other-user", UserName = "other@example.com", FirstName = "Other", LastName = "User", Email = "other@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var notifications = new List<Notification>
             {
-                new Notification { Id = 1, UserId = userId, Message = "Test 1", Type = "info" },
-                new Notification { Id = 2, UserId = userId, Message = "Test 2", Type = "warning" },
-                new Notification { Id = 3, UserId = "other-user", Message = "Test 3", Type = "info" }
+                new Notification { Id = 1, UserId = userId, Message = "Test 1", Type = "info", Title = "Test 1", User = testUser },
+                new Notification { Id = 2, UserId = userId, Message = "Test 2", Type = "warning", Title = "Test 2", User = testUser },
+                new Notification { Id = 3, UserId = "other-user", Message = "Test 3", Type = "info", Title = "Test 3", User = otherUser }
             };
 
             _context.Notifications.AddRange(notifications);
@@ -71,12 +71,15 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void GetById_WithValidId_ReturnsNotification()
         {
+            var testUser = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var notification = new Notification
             {
                 Id = 1,
                 UserId = "test-user",
                 Message = "Test Message",
-                Type = "info"
+                Type = "info",
+                Title = "Test Message",
+                User = testUser
             };
 
             _context.Notifications.Add(notification);
@@ -99,11 +102,14 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void Create_WithValidNotification_AddsToDatabase()
         {
+            var testUser = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var notification = new Notification
             {
                 UserId = "test-user",
                 Message = "Test Message",
-                Type = "info"
+                Type = "info",
+                Title = "Test Message",
+                User = testUser
             };
 
             _service.Create(notification);
@@ -116,12 +122,15 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void Update_WithValidNotification_UpdatesDatabase()
         {
+            var testUser = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var notification = new Notification
             {
                 Id = 1,
                 UserId = "test-user",
                 Message = "Original Message",
-                Type = "info"
+                Type = "info",
+                Title = "Original Message",
+                User = testUser
             };
 
             _context.Notifications.Add(notification);
@@ -137,12 +146,15 @@ namespace Fitessa.Tests.Services
         [Fact]
         public void Delete_WithValidId_RemovesFromDatabase()
         {
+            var testUser = new ApplicationUser { Id = "test-user", UserName = "test@example.com", FirstName = "Test", LastName = "User", Email = "test@example.com", Gender = "Other", ProfilePictureUrl = "/images/default-profile.png" };
             var notification = new Notification
             {
                 Id = 1,
                 UserId = "test-user",
                 Message = "Test Message",
-                Type = "info"
+                Type = "info",
+                Title = "Test Message",
+                User = testUser
             };
 
             _context.Notifications.Add(notification);

@@ -1,20 +1,16 @@
 using Fitessa.Data;
 using Fitessa.Data.Entities;
 using Fitessa.Services.Interfaces;
-using Microsoft.AspNetCore.SignalR;
-using Fitessa.Hubs;
 
 namespace Fitessa.Services.Services
 {
     public class NotificationService : INotificationService
     {
         private readonly ApplicationDbContext _context;
-        private readonly IHubContext<NotificationHub> _hubContext;
 
-        public NotificationService(ApplicationDbContext context, IHubContext<NotificationHub> hubContext)
+        public NotificationService(ApplicationDbContext context)
         {
             _context = context;
-            _hubContext = hubContext;
         }
 
         public IEnumerable<Notification> GetAll()
@@ -26,7 +22,7 @@ namespace Fitessa.Services.Services
         {
             return _context.Notifications
                 .Where(n => n.UserId == userId)
-                .OrderByDescending(n => n.CreatedAt)
+                .OrderByDescending(n => n.DeliveryTime)
                 .ToList();
         }
 
@@ -37,7 +33,7 @@ namespace Fitessa.Services.Services
 
         public void Create(Notification notification)
         {
-            notification.CreatedAt = DateTime.UtcNow;
+            notification.DeliveryTime = DateTime.UtcNow;
             _context.Notifications.Add(notification);
             _context.SaveChanges();
         }
@@ -60,18 +56,20 @@ namespace Fitessa.Services.Services
 
         public async Task SendPersonalNotification(string userId, string message, string type = "info")
         {
+            var user = _context.Users.Find(userId);
+            if (user == null) return;
+
             var notification = new Notification
             {
                 UserId = userId,
                 Message = message,
                 Type = type,
-                IsRead = false,
-                CreatedAt = DateTime.UtcNow
+                Title = "Notification",
+                DeliveryTime = DateTime.UtcNow,
+                User = user
             };
 
             Create(notification);
-
-            await _hubContext.Clients.User(userId).SendAsync("ReceiveNotification", message, type);
         }
 
         public async Task SendGlobalNotification(string message, string type = "info")
@@ -86,15 +84,14 @@ namespace Fitessa.Services.Services
                     UserId = user.Id,
                     Message = message,
                     Type = type,
-                    IsRead = false,
-                    CreatedAt = DateTime.UtcNow
+                    Title = "Global Notification",
+                    DeliveryTime = DateTime.UtcNow,
+                    User = user
                 });
             }
 
             _context.Notifications.AddRange(notifications);
             _context.SaveChanges();
-
-            await _hubContext.Clients.All.SendAsync("ReceiveNotification", message, type);
         }
 
         public async Task SendWorkoutReminder(string userId, string workoutName)

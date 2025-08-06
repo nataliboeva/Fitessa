@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Fitessa.Controllers
+namespace Fitessa.Web.Controllers
 {
     [Authorize]
     public class SubscriptionPlansController : Controller
@@ -53,7 +53,10 @@ namespace Fitessa.Controllers
                     StartDate = System.DateTime.UtcNow,
                     EndDate = System.DateTime.UtcNow.AddDays(plan.DurationDays),
                     Status = "Active",
-                    RenewalType = "Manual"
+                    RenewalType = "Manual",
+                    PaymentId = "manual-purchase",
+                    User = user,
+                    SubscriptionPlan = plan
                 };
                 _context.UserSubscriptions.Add(userSub);
             }

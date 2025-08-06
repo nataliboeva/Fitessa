@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets\\js\\admin-scripts.js"
     },
     {
+      "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\ajax-functions.js",
+      "PackagePath": "staticwebassets\\js\\ajax-functions.js"
+    },
+    {
       "Id": "C:\\Users\\User69\\Desktop\\nattie\\Fitessa\\Fitessa\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
