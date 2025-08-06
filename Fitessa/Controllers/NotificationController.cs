@@ -1,94 +1,123 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Fitessa.Services;
+using Microsoft.AspNetCore.Identity;
+using Fitessa.Data.Entities;
+using Fitessa.Services.Interfaces;
+using Fitessa.Models;
+using AutoMapper;
 
 namespace Fitessa.Controllers
 {
     [Authorize]
     public class NotificationController : Controller
     {
-        private readonly NotificationService _notificationService;
+        private readonly UserManager<ApplicationUser> _userManager;
+        private readonly INotificationService _notificationService;
+        private readonly IMapper _mapper;
 
-        public NotificationController(NotificationService notificationService)
+        public NotificationController(
+            UserManager<ApplicationUser> userManager,
+            INotificationService notificationService,
+            IMapper mapper)
         {
+            _userManager = userManager;
             _notificationService = notificationService;
+            _mapper = mapper;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            return View();
-        }
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return NotFound();
 
-        [HttpPost]
-        public async Task<IActionResult> SendTestNotification(string message, string type = "info")
-        {
-            try
-            {
-                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
-                if (!string.IsNullOrEmpty(userId))
-                {
-                    await _notificationService.SendPersonalNotification(userId, message, type);
-                    return Json(new { success = true, message = "Notification sent successfully" });
-                }
-                return Json(new { success = false, message = "User not found" });
-            }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
+            var notifications = _notificationService.GetByUser(user.Id);
+            var notificationViewModels = _mapper.Map<List<NotificationViewModel>>(notifications);
+
+            return View(notificationViewModels);
         }
 
         [HttpPost]
-        [Authorize(Roles = "Admin")]
-        public async Task<IActionResult> SendGlobalNotification(string message, string type = "info")
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> ToggleRead(int id)
         {
-            try
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Json(new { success = false });
+
+            var notification = _notificationService.GetById(id);
+            if (notification == null || notification.UserId != user.Id)
             {
-                await _notificationService.SendGlobalNotification(message, type);
-                return Json(new { success = true, message = "Global notification sent successfully" });
+                return Json(new { success = false, message = "Notification not found" });
             }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
+
+            notification.IsRead = !notification.IsRead;
+            _notificationService.Update(notification);
+
+            return Json(new { success = true, isRead = notification.IsRead });
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetUnreadCount()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Json(0);
+
+            var unreadCount = _notificationService.GetByUser(user.Id)
+                .Count(n => !n.IsRead);
+
+            return Json(unreadCount);
         }
 
         [HttpPost]
-        public async Task<IActionResult> SendWorkoutReminder(string workoutName)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> MarkAllAsRead()
         {
-            try
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Json(new { success = false });
+
+            var notifications = _notificationService.GetByUser(user.Id)
+                .Where(n => !n.IsRead);
+
+            foreach (var notification in notifications)
             {
-                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
-                if (!string.IsNullOrEmpty(userId))
-                {
-                    await _notificationService.SendWorkoutReminder(userId, workoutName);
-                    return Json(new { success = true, message = "Workout reminder sent" });
-                }
-                return Json(new { success = false, message = "User not found" });
+                notification.IsRead = true;
+                _notificationService.Update(notification);
             }
-            catch (Exception ex)
-            {
-                return Json(new { success = false, message = ex.Message });
-            }
+
+            return Json(new { success = true });
         }
 
         [HttpPost]
-        public async Task<IActionResult> SendGoalAchievement(string goalType, string achievement)
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete(int id)
         {
-            try
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Json(new { success = false });
+
+            var notification = _notificationService.GetById(id);
+            if (notification == null || notification.UserId != user.Id)
             {
-                var userId = User.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
-                if (!string.IsNullOrEmpty(userId))
-                {
-                    await _notificationService.SendGoalAchievement(userId, goalType, achievement);
-                    return Json(new { success = true, message = "Goal achievement notification sent" });
-                }
-                return Json(new { success = false, message = "User not found" });
+                return Json(new { success = false, message = "Notification not found" });
             }
-            catch (Exception ex)
+
+            _notificationService.Delete(id);
+
+            return Json(new { success = true });
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteAll()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Json(new { success = false });
+
+            var notifications = _notificationService.GetByUser(user.Id);
+            foreach (var notification in notifications)
             {
-                return Json(new { success = false, message = ex.Message });
+                _notificationService.Delete(notification.Id);
             }
+
+            return Json(new { success = true });
         }
     }
 } 

@@ -47,7 +47,7 @@ namespace Fitessa.Web
             builder.Services.AddScoped<IEmailService, EmailService>();
             builder.Services.AddScoped<INutritionApiService, NutritionApiService>();
             builder.Services.AddScoped<IFitnessAnalyticsService, FitnessAnalyticsService>();
-            builder.Services.AddScoped<Fitessa.Services.NotificationService>();
+            builder.Services.AddScoped<INotificationService, NotificationService>();
             
             builder.Services.AddAutoMapper(typeof(Program));
             

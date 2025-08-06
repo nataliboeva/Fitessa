@@ -88,6 +88,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlcmNpc2VzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Exercises/_ExercisesList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXhlcmNpc2VzXF9FeGVyY2lzZXNMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -210,6 +214,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/WorkoutPrograms/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya291dFByb2dyYW1zXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/WorkoutPrograms/_WorkoutProgramsList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV29ya291dFByb2dyYW1zXF9Xb3Jrb3V0UHJvZ3JhbXNMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/User69/Desktop/nattie/Fitessa/Fitessa/Views/_ViewImports.cshtml]

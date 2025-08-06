@@ -24,6 +24,34 @@ namespace Fitessa.Web.Controllers
             var programs = _service.GetAll();
             return View(programs);
         }
+
+        [HttpGet]
+        public IActionResult Filter(string difficulty, string duration)
+        {
+            var programs = _service.GetAll().AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(difficulty))
+            {
+                programs = programs.Where(p => p.Difficulty == difficulty);
+            }
+            if (!string.IsNullOrWhiteSpace(duration))
+            {
+                if (int.TryParse(duration, out int durationDays))
+                {
+                    programs = programs.Where(p => p.DurationDays <= durationDays);
+                }
+            }
+
+            var filteredPrograms = programs.ToList();
+
+            if (Request.Headers["X-Requested-With"] == "XMLHttpRequest")
+            {
+                return PartialView("_WorkoutProgramsList", filteredPrograms);
+            }
+
+            return View("Index", filteredPrograms);
+        }
+
         public IActionResult Details(int id)
         {
             var program = _service.GetById(id);
@@ -31,6 +59,82 @@ namespace Fitessa.Web.Controllers
             ViewBag.Exercises = _exerciseService.GetAll();
             return View(program);
         }
+
+        [HttpGet]
+        public IActionResult Export(int id)
+        {
+            var program = _service.GetById(id);
+            if (program == null) return NotFound();
+
+            var exercises = _exerciseService.GetAll();
+            var programExercises = exercises.Where(e => e.WorkoutProgramExercises.Any(wpe => wpe.WorkoutProgramId == id));
+
+            var htmlContent = GenerateWorkoutProgramHtml(program, programExercises);
+            var pdfBytes = ConvertHtmlToPdf(htmlContent);
+
+            return File(pdfBytes, "application/pdf", $"workout-program-{id}.pdf");
+        }
+
+        private string GenerateWorkoutProgramHtml(WorkoutProgram program, IEnumerable<Exercise> exercises)
+        {
+            return $@"
+                <html>
+                <head>
+                    <style>
+                        body {{ font-family: Arial, sans-serif; margin: 20px; }}
+                        .header {{ text-align: center; margin-bottom: 30px; }}
+                        .program-info {{ margin-bottom: 20px; }}
+                        .exercise {{ margin-bottom: 15px; padding: 10px; border: 1px solid #ddd; }}
+                    </style>
+                </head>
+                <body>
+                    <div class='header'>
+                        <h1>{program.Name}</h1>
+                        <p>Difficulty: {program.Difficulty} | Duration: {program.DurationDays} days</p>
+                    </div>
+                    <div class='program-info'>
+                        <p><strong>Description:</strong> {program.Description}</p>
+                    </div>
+                    <h2>Exercises</h2>
+                    {string.Join("", exercises.Select(e => $@"
+                        <div class='exercise'>
+                            <h3>{e.Name}</h3>
+                            <p><strong>Muscle Group:</strong> {e.MuscleGroup}</p>
+                            <p><strong>Difficulty:</strong> {e.DifficultyLevel}</p>
+                            <p><strong>Description:</strong> {e.Description}</p>
+                        </div>
+                    "))}
+                </body>
+                </html>
+            ";
+        }
+
+        private byte[] ConvertHtmlToPdf(string htmlContent)
+        {
+            var globalSettings = new GlobalSettings
+            {
+                ColorMode = ColorMode.Color,
+                Orientation = Orientation.Portrait,
+                PaperSize = PaperKind.A4,
+                Margins = new MarginSettings() { Top = 10, Bottom = 10, Left = 10, Right = 10 }
+            };
+
+            var objectSettings = new ObjectSettings
+            {
+                PagesCount = true,
+                HtmlContent = htmlContent,
+                WebSettings = { DefaultEncoding = "utf-8" }
+            };
+
+            var document = new HtmlToPdfDocument()
+            {
+                GlobalSettings = globalSettings,
+                Objects = { objectSettings }
+            };
+
+            return _pdfConverter.Convert(document);
+        }
+
         public IActionResult Create()
         {
             return View();
@@ -67,7 +171,11 @@ namespace Fitessa.Web.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult DeleteConfirmed(int id)
         {
-            _service.Delete(id);
+            var program = _service.GetById(id);
+            if (program != null)
+            {
+                _service.Delete(id);
+            }
             return RedirectToAction("Index");
         }
         [HttpPost]
@@ -83,60 +191,6 @@ namespace Fitessa.Web.Controllers
         {
             _service.RemoveExercise(programId, exerciseId);
             return RedirectToAction("Details", new { id = programId });
-        }
-        public IActionResult ExportToPdf(int id)
-        {
-            var program = _service.GetById(id);
-            if (program == null) return NotFound();
-            
-            var html = $@"
-                <html>
-                <head>
-                    <style>
-                        body {{ font-family: Arial, sans-serif; margin: 20px; }}
-                        h1 {{ color: #333; }}
-                        .info {{ margin: 10px 0; }}
-                        .exercises {{ margin-top: 20px; }}
-                    </style>
-                </head>
-                <body>
-                    <h1>{program.Name}</h1>
-                    <div class='info'>
-                        <p><strong>Description:</strong> {program.Description}</p>
-                        <p><strong>Difficulty:</strong> {program.Difficulty}</p>
-                        <p><strong>Duration:</strong> {program.DurationDays} days</p>
-                    </div>
-                    <div class='exercises'>
-                        <h2>Exercises</h2>
-                        <p>This workout program includes various exercises to help you achieve your fitness goals.</p>
-                    </div>
-                </body>
-                </html>";
-            
-            var doc = new HtmlToPdfDocument()
-            {
-                GlobalSettings = { 
-                    PaperSize = PaperKind.A4, 
-                    Orientation = Orientation.Portrait,
-                    Margins = new MarginSettings { Top = 20, Bottom = 20, Left = 20, Right = 20 }
-                },
-                Objects = { 
-                    new ObjectSettings { 
-                        HtmlContent = html,
-                        WebSettings = { DefaultEncoding = "utf-8" }
-                    } 
-                }
-            };
-            
-            try
-            {
-                var pdf = _pdfConverter.Convert(doc);
-                return File(pdf, "application/pdf", $"WorkoutProgram_{program.Name.Replace(" ", "_")}.pdf");
-            }
-            catch (Exception ex)
-            {
-                return RedirectToAction("Details", new { id = id });
-            }
         }
     }
 } 

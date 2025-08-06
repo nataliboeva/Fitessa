@@ -45,44 +45,53 @@ namespace Fitessa.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return NotFound();
 
-            var dashboardViewModel = new UserDashboardViewModel
+            var dashboardViewModel = new DashboardViewModel
             {
                 User = user,
-                RecentWorkouts = _workoutProgramService.GetAll().Take(3).ToList(),
+                RecentWorkoutPrograms = _workoutProgramService.GetAll().Take(3).ToList(),
                 RecentMealPlans = _mealPlanService.GetByUser(user.Id).Take(3).ToList(),
-                ProgressLogs = _measurementLogService.GetByUser(user.Id).Take(5).ToList(),
+                RecentProgressLogs = _measurementLogService.GetByUser(user.Id).Take(5).ToList(),
                 ProgressInsights = _progressInsightsService.GetInsights(user.Id)
             };
 
-            // Calculate fitness metrics using business logic
-            var latestMeasurement = _measurementLogService.GetByUser(user.Id).OrderByDescending(m => m.LoggedAt).FirstOrDefault();
-            if (latestMeasurement != null && user.Age > 0)
-            {
-                dashboardViewModel.BMI = _fitnessAnalyticsService.CalculateBMI((double)latestMeasurement.WeightKg, latestMeasurement.HeightCm);
-                dashboardViewModel.BMICategory = _fitnessAnalyticsService.GetBMICategory(dashboardViewModel.BMI);
-                dashboardViewModel.BMR = _fitnessAnalyticsService.CalculateBMR((double)latestMeasurement.WeightKg, latestMeasurement.HeightCm, user.Age, user.Gender ?? "Unknown");
-                dashboardViewModel.TDEE = _fitnessAnalyticsService.CalculateTDEE(dashboardViewModel.BMR, "sedentary");
-                
-                if (user.GoalValue.HasValue)
-                {
-                    dashboardViewModel.WeightProgress = _fitnessAnalyticsService.CalculateProgressPercentage((double)latestMeasurement.WeightKg, (double)user.GoalValue.Value);
-                    dashboardViewModel.WeightStatus = _fitnessAnalyticsService.GetProgressStatus(dashboardViewModel.WeightProgress);
-                }
-            }
-
-            // Get personalized recommendations
-            dashboardViewModel.WorkoutRecommendations = _fitnessAnalyticsService.GenerateWorkoutRecommendations(
-                "Beginner", 
-                user.Goal ?? "Maintenance", 
-                (double)(latestMeasurement?.WeightKg ?? 70), 
-                (double)(user.GoalValue ?? 70));
-
-            dashboardViewModel.NutritionRecommendations = _fitnessAnalyticsService.GenerateNutritionRecommendations(
-                user.Goal ?? "Maintenance", 
-                (double)(latestMeasurement?.WeightKg ?? 70), 
-                (double)(user.GoalValue ?? 70));
-
             return View(dashboardViewModel);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetProgressData()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return Json(new { success = false });
+
+            var progressLogs = _measurementLogService.GetByUser(user.Id)
+                .OrderBy(p => p.Date)
+                .Take(10)
+                .ToList();
+
+            var labels = progressLogs.Select(p => p.Date.ToString("MM/dd")).ToArray();
+            var weights = progressLogs.Select(p => p.Weight).ToArray();
+
+            return Json(new
+            {
+                success = true,
+                labels = labels,
+                weights = weights
+            });
+        }
+
+        public async Task<IActionResult> Progress()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null) return NotFound();
+
+            var progressViewModel = new ProgressViewModel
+            {
+                User = user,
+                ProgressLogs = _measurementLogService.GetByUser(user.Id).ToList(),
+                ProgressInsights = _progressInsightsService.GetInsights(user.Id)
+            };
+
+            return View(progressViewModel);
         }
 
         public async Task<IActionResult> Analytics()
@@ -90,27 +99,13 @@ namespace Fitessa.Controllers
             var user = await _userManager.GetUserAsync(User);
             if (user == null) return NotFound();
 
-            var startDate = DateTime.Now.AddDays(-30);
-            var endDate = DateTime.Now;
-
-            var latestMeasurement = _measurementLogService.GetByUser(user.Id).OrderByDescending(m => m.LoggedAt).FirstOrDefault();
-            
             var analyticsViewModel = new AnalyticsViewModel
             {
-                PerformanceMetrics = _fitnessAnalyticsService.CalculatePerformanceMetrics(user.Id, startDate, endDate),
-                ProgressTrends = _fitnessAnalyticsService.AnalyzeProgressTrends(user.Id, "weight", 30),
-                ConsistencyScore = _fitnessAnalyticsService.CalculateConsistencyScore(user.Id, startDate, endDate),
-                PersonalizedWorkouts = _fitnessAnalyticsService.GetPersonalizedWorkouts(user.Id, user.Goal ?? "Maintenance", "Beginner"),
-                PersonalizedNutrition = _fitnessAnalyticsService.GetPersonalizedNutrition(user.Id, user.Goal ?? "Maintenance", (double)(latestMeasurement?.WeightKg ?? 70))
+                User = user,
+                ProgressLogs = _measurementLogService.GetByUser(user.Id).ToList(),
+                WorkoutPrograms = _workoutProgramService.GetAll().ToList(),
+                MealPlans = _mealPlanService.GetByUser(user.Id).ToList()
             };
-
-            // Calculate body composition metrics
-            if (latestMeasurement != null && user.Age > 0)
-            {
-                var bmi = _fitnessAnalyticsService.CalculateBMI((double)latestMeasurement.WeightKg, latestMeasurement.HeightCm);
-                analyticsViewModel.BodyFatPercentage = _fitnessAnalyticsService.CalculateBodyFatPercentage(bmi, user.Age, user.Gender ?? "Unknown");
-                analyticsViewModel.LeanBodyMass = _fitnessAnalyticsService.CalculateLeanBodyMass((double)latestMeasurement.WeightKg, analyticsViewModel.BodyFatPercentage);
-            }
 
             return View(analyticsViewModel);
         }
