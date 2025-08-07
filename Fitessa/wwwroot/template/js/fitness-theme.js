@@ -58,17 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
-    const themeCustomizer = document.getElementById('theme-customizer');
-    if (themeCustomizer) {
-        const colorInputs = themeCustomizer.querySelectorAll('input[type="color"]');
-        colorInputs.forEach(input => {
-            input.addEventListener('change', function() {
-                const color = this.value;
-                const property = this.getAttribute('data-property');
-                document.documentElement.style.setProperty(property, color);
-            });
-        });
-    }
+
     
     const notificationSystem = {
         show: function(message, type = 'info') {

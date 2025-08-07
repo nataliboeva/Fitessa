@@ -1,21 +1,5 @@
-/* Admin Theme Styles */
+/* Admin Theme Styles - Dark Mode Only */
 :root {
-    --admin-primary: #4e73df;
-    --admin-secondary: #858796;
-    --admin-success: #1cc88a;
-    --admin-info: #36b9cc;
-    --admin-warning: #f6c23e;
-    --admin-danger: #e74a3b;
-    --admin-light: #f8f9fc;
-    --admin-dark: #5a5c69;
-    --admin-bg: #ffffff;
-    --admin-text: #5a5c69;
-    --admin-border: #e3e6f0;
-    --admin-sidebar-bg: #4e73df;
-    --admin-sidebar-text: #ffffff;
-}
-
-[data-theme="dark"] {
     --admin-primary: #4e73df;
     --admin-secondary: #858796;
     --admin-success: #1cc88a;
@@ -30,6 +14,8 @@
     --admin-sidebar-bg: #2d3748;
     --admin-sidebar-text: #e2e8f0;
 }
+
+
 
 .admin-body {
     background-color: var(--admin-bg);
@@ -247,22 +233,22 @@
     }
 }
 
-/* Dark Mode Enhancements */
-[data-theme="dark"] .card {
+/* Enhanced Dark Theme Styles */
+.card {
     box-shadow: 0 0.15rem 1.75rem 0 rgba(0, 0, 0, 0.3);
 }
 
-[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) {
+.table-striped > tbody > tr:nth-of-type(odd) {
     background-color: rgba(255, 255, 255, 0.05);
 }
 
-[data-theme="dark"] .form-control {
+.form-control {
     background-color: var(--admin-light);
     border-color: var(--admin-border);
     color: var(--admin-text);
 }
 
-[data-theme="dark"] .form-control:focus {
+.form-control:focus {
     background-color: var(--admin-light);
     border-color: var(--admin-primary);
     color: var(--admin-text);

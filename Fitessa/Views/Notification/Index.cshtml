@@ -186,7 +186,7 @@
             const history = document.getElementById('notificationHistory');
             const timestamp = new Date().toLocaleTimeString();
             const entry = document.createElement('div');
-            entry.className = `mb-2 p-2 border-start border-${type} bg-light`;
+            entry.className = `mb-2 p-2 border-start border-${type}`;
             entry.innerHTML = `
                 <small class="text-muted">${timestamp}</small><br>
                 <span class="text-${type}">${message}</span>

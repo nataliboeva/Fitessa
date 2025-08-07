@@ -1,30 +1,7 @@
 ﻿// Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
 // for details on configuring this project to bundle and minify static web assets.
 
-function initializeDarkMode() {
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const darkModeIcon = document.getElementById('darkModeIcon');
-    
-    const currentTheme = localStorage.getItem('theme') || 'light';
-    document.body.classList.toggle('dark-mode', currentTheme === 'dark');
-    updateDarkModeIcon(currentTheme === 'dark');
-    
-    if (darkModeToggle) {
-        darkModeToggle.addEventListener('click', function() {
-            const isDark = document.body.classList.toggle('dark-mode');
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-            updateDarkModeIcon(isDark);
-        });
-    }
-}
 
-function updateDarkModeIcon(isDark) {
-    const darkModeIcon = document.getElementById('darkModeIcon');
-    if (darkModeIcon) {
-        darkModeIcon.className = isDark ? 'fas fa-sun' : 'fas fa-moon';
-        darkModeIcon.title = isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode';
-    }
-}
 
 if (window.signalR === undefined) {
     var script = document.createElement('script');
@@ -51,8 +28,6 @@ function setupSignalR() {
 }
 
 $(document).ready(function() {
-
-    initializeDarkMode();
     
     var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
     var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
