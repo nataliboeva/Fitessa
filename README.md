@@ -10,8 +10,7 @@ Fitessa allows users to browse a database of exercises, create personalized work
 
 | Home Page | Pricing Catalog |
 |:---:|:---:|
-| <<img width="400" alt="home" src="https://github.com/user-attachments/assets/592b7d84-72b8-42c5-a290-5ffb68df8ba6" />| <img width="400" alt="pricing" src="https://github.com/user-attachments/assets/fd72bca7-2dd7-42b7-9002-22d8cb8405b2" />
- |
+| <img width="400" alt="home" src="https://github.com/user-attachments/assets/592b7d84-72b8-42c5-a290-5ffb68df8ba6" />| <img width="400" alt="pricing" src="https://github.com/user-attachments/assets/fd72bca7-2dd7-42b7-9002-22d8cb8405b2" /> |
 | *Landing page view* | *List of available plans* |
 
 | Workout Planner | Dashboard |
